@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BBE 3D Manufatura — Peças, Brindes e Soluções Sob Medida | Praia Grande/SP</title>
-<meta name="description" content="Impressão 3D profissional em Praia Grande/SP. Chaveiros personalizados, peças técnicas, expositores, brindes corporativos.">
+<title>BBE 3D Manufatura — Captura Técnica, Remodelagem e Impressão 3D | Praia Grande/SP</title>
+<meta name="description" content="Única operação em SP com Scanner 3D + Impressão 3D integrados. Capturamos, remodelamos e imprimimos localmente em Praia Grande. Peças técnicas, brindes, maquetes e engenharia reversa.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -46,20 +46,20 @@ nav {
   border-radius: 50%; animation: pulse 8s ease-in-out infinite;
 }
 @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
-
 .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
 .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,228,206,0.15); border: 1px solid rgba(245,228,206,0.3); color: var(--bege); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 20px; margin-bottom: 24px; animation: fadeUp .6s ease both; }
-.hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(42px,6vw,68px); font-weight: 800; color: #fff; line-height: 1.0; margin-bottom: 10px; animation: fadeUp .7s .1s ease both; }
+.hero-badge-destaque { background: rgba(255,200,0,0.15); border-color: rgba(255,200,0,0.4); color: #ffd700; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; border: 1px solid; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 12px; }
+.hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(38px,5.5vw,64px); font-weight: 800; color: #fff; line-height: 1.0; margin-bottom: 10px; animation: fadeUp .7s .1s ease both; }
 .hero h1 span { color: var(--bege); }
-.hero-sub { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(18px,2.5vw,26px); font-weight: 600; color: rgba(245,228,206,0.85); margin-bottom: 20px; animation: fadeUp .7s .2s ease both; }
-.hero p { font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.8); margin-bottom: 32px; animation: fadeUp .7s .3s ease both; }
+.hero-sub { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(17px,2.2vw,24px); font-weight: 600; color: rgba(245,228,206,0.85); margin-bottom: 20px; animation: fadeUp .7s .2s ease both; }
+.hero p { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.8); margin-bottom: 32px; animation: fadeUp .7s .3s ease both; }
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeUp .7s .4s ease both; }
 .hero-img-wrap { position: relative; animation: fadeUp .8s .3s ease both; text-align: center; }
 .hero-img-wrap img { width: 100%; max-width: 460px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
 .hero-img-badge { position: absolute; bottom: -16px; left: 20px; background: var(--bege); color: var(--azul); font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; padding: 10px 18px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
 .hero-stats { display: flex; gap: 28px; margin-top: 44px; animation: fadeUp .7s .5s ease both; flex-wrap: wrap; }
-.stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 800; color: var(--bege); line-height: 1; }
-.stat-lbl { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 3px; }
+.stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 800; color: var(--bege); line-height: 1; }
+.stat-lbl { font-size: 11px; color: rgba(255,255,255,0.65); margin-top: 3px; }
 @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
 
 .btn-wa { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 16px 28px; border-radius: 6px; font-size: 16px; font-weight: 700; text-decoration: none; transition: transform .2s, box-shadow .2s; box-shadow: 0 4px 20px rgba(37,211,102,0.35); }
@@ -74,17 +74,53 @@ nav {
 .sec-bege { background: var(--bege); }
 .sec-azul { background: var(--azul); }
 .sec-cinza { background: var(--cinza); }
+.sec-dark { background: #0a2540; }
 .lbl { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--azul); margin-bottom: 10px; }
 .lbl.light { color: var(--bege); }
+.lbl.gold { color: #ffd700; }
 .h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(28px,4vw,48px); font-weight: 800; line-height: 1.1; color: var(--azul-escuro); margin-bottom: 14px; }
 .h2.light { color: #fff; }
-.desc { font-size: 16px; color: #555; line-height: 1.7; max-width: 560px; margin-bottom: 44px; }
+.desc { font-size: 16px; color: #555; line-height: 1.7; max-width: 580px; margin-bottom: 44px; }
 .desc.light { color: rgba(255,255,255,0.8); }
+
+/* SCANNER SECTION */
+.scanner-hero { background: linear-gradient(135deg, #0a2540 0%, #0f3d6e 60%, #17579B 100%); padding: 80px 5vw; position: relative; overflow: hidden; }
+.scanner-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,215,0,0.06) 0%, transparent 70%); border-radius: 50%; }
+.scanner-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
+.scanner-badge-sp { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,215,0,0.15); border: 1.5px solid rgba(255,215,0,0.5); color: #ffd700; font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 20px; margin-bottom: 20px; letter-spacing: 0.03em; }
+.scanner-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(34px,5vw,58px); font-weight: 800; color: #fff; line-height: 1.0; margin-bottom: 12px; }
+.scanner-title span { color: #ffd700; }
+.scanner-sub { font-size: 16px; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; }
+.scanner-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 32px; }
+.scanner-spec { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 14px 16px; }
+.scanner-spec-val { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: #ffd700; line-height: 1; }
+.scanner-spec-lbl { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 3px; }
+.scanner-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.scanner-img-main { grid-column: 1 / -1; border-radius: 14px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+.scanner-img-main img { width: 100%; height: 280px; object-fit: cover; }
+.scanner-img-sm { border-radius: 10px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+.scanner-img-sm img { width: 100%; height: 140px; object-fit: cover; }
+
+/* FLUXO */
+.fluxo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 0; margin-top: 44px; position: relative; }
+.fluxo-step { text-align: center; padding: 28px 16px; position: relative; }
+.fluxo-step:not(:last-child)::after { content: '→'; position: absolute; right: -8px; top: 50%; transform: translateY(-50%); font-size: 20px; color: rgba(255,255,255,0.3); }
+.fluxo-num { width: 52px; height: 52px; border-radius: 50%; border: 2px solid #ffd700; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 800; color: #ffd700; margin: 0 auto 14px; }
+.fluxo-t { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.fluxo-d { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+/* SCANNER SERVIÇOS */
+.scan-srv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 20px; margin-top: 44px; }
+.scan-srv { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 28px; transition: background .25s, transform .25s; }
+.scan-srv:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); }
+.scan-srv-ico { font-size: 32px; margin-bottom: 14px; }
+.scan-srv-title { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.scan-srv-desc { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.6; }
 
 /* Máquina */
 .maq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .maq-img { border-radius: 16px; overflow: hidden; box-shadow: var(--sombra); background: #f9f9f9; padding: 16px; text-align: center; }
-.maq-img img { width: 100%; max-height: 400px; object-fit: contain; }
+.maq-img img { width: 100%; max-height: 380px; object-fit: contain; }
 .feat-list { display: flex; flex-direction: column; gap: 18px; margin-top: 28px; }
 .feat { display: flex; gap: 14px; align-items: flex-start; }
 .feat-ico { width: 44px; height: 44px; min-width: 44px; background: var(--azul); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
@@ -123,14 +159,7 @@ nav {
 .dif p { font-size: 13px; color: #666; line-height: 1.5; }
 
 /* PESQUISA */
-.pesq-header { text-align: center; margin-bottom: 48px; }
-.pesq-header .h2 { color: var(--azul-escuro); }
-.pesq-header .desc { max-width: 640px; margin: 0 auto 0; }
-.pesq-destaque { background: var(--azul); border-radius: 16px; padding: 32px; display: flex; align-items: center; gap: 28px; margin-bottom: 40px; flex-wrap: wrap; }
-.pesq-destaque img { width: 120px; height: 120px; object-fit: contain; border-radius: 12px; background: white; padding: 8px; flex-shrink: 0; }
-.pesq-destaque-text h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 10px; }
-.pesq-destaque-text p { font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.6; }
-.pesq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; }
+.pesq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; margin-top: 44px; }
 .pesq-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: var(--sombra); text-align: center; transition: transform .25s; }
 .pesq-card:hover { transform: translateY(-5px); }
 .pesq-qr { padding: 28px 28px 16px; background: var(--bege); display: flex; align-items: center; justify-content: center; }
@@ -175,11 +204,13 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 
 @media(max-width:768px){
   .nav-links{display:none}
-  .hero-grid,.maq-grid,.ctt-wrap{grid-template-columns:1fr}
+  .hero-grid,.maq-grid,.ctt-wrap,.scanner-grid{grid-template-columns:1fr}
   .hero-img-wrap{display:none}
+  .scanner-imgs{grid-template-columns:1fr}
+  .scanner-img-main{grid-column:1}
+  .fluxo-step::after{display:none}
   footer{flex-direction:column;text-align:center}
   .footer-links{justify-content:center}
-  .pesq-destaque{flex-direction:column;text-align:center}
 }
 </style>
 </head>
@@ -191,7 +222,8 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
     <div class="nav-logo-text">BBE 3D Manufatura<span class="nav-logo-sub">Praia Grande / SP</span></div>
   </a>
   <div class="nav-links">
-    <a href="#maquina">Nossa Máquina</a>
+    <a href="#scanner">Scanner 3D</a>
+    <a href="#maquina">Infraestrutura</a>
     <a href="#servicos">Serviços</a>
     <a href="#pesquisa">Pesquisa</a>
     <a href="#contato" class="nav-cta">📲 Orçamento</a>
@@ -202,46 +234,122 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 <section class="hero">
   <div class="hero-grid">
     <div>
+      <div class="hero-badge-destaque">⭐ Única operação com Scanner 3D + Impressão 3D em SP</div>
       <div class="hero-badge">📍 Praia Grande / SP — Fabricação Local</div>
-      <h1>Impressão 3D<br><span>Profissional</span></h1>
-      <p class="hero-sub">Peças, Brindes e Soluções Sob Medida</p>
-      <p>Fabricamos aqui em Praia Grande. Chaveiros personalizados, peças técnicas, expositores e brindes corporativos — entrega rápida, sem mínimo de quantidade e acabamento premium.</p>
+      <h1>Captura Técnica,<br>Remodelagem e<br><span>Impressão 3D</span></h1>
+      <p class="hero-sub">Solução integrada do zero à peça final</p>
+      <p>Digitalizamos, remodelamos e imprimimos localmente. Você manda a peça, a foto ou a ideia — a gente entrega a solução. Chaveiros, peças técnicas, engenharia reversa, maquetes e brindes em Praia Grande.</p>
       <div class="hero-btns">
         <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." class="btn-wa" target="_blank">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Pedir Orçamento
         </a>
-        <a href="#servicos" class="btn-out">Ver Serviços ↓</a>
+        <a href="#scanner" class="btn-out">Conheça o Scanner ↓</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num">18+</div><div class="stat-lbl">Impressões realizadas</div></div>
-        <div class="stat"><div class="stat-num">PETG</div><div class="stat-lbl">Material premium</div></div>
-        <div class="stat"><div class="stat-num">K2 Pro</div><div class="stat-lbl">Equipamento industrial</div></div>
+        <div class="stat"><div class="stat-num">0,02mm</div><div class="stat-lbl">Precisão do scanner</div></div>
+        <div class="stat"><div class="stat-num">K2 Pro</div><div class="stat-lbl">Impressora industrial</div></div>
+        <div class="stat"><div class="stat-num">Local</div><div class="stat-lbl">Fabricação em PG/SP</div></div>
       </div>
     </div>
     <div class="hero-img-wrap">
       <img src="creality-pro.png" alt="Creality K2 Pro — BBE 3D Manufatura">
-      <div class="hero-img-badge">⚙️ Creality K2 Pro com CFS</div>
+      <div class="hero-img-badge">⚙️ Creality K2 Pro + CR-Scan Otter</div>
     </div>
   </div>
 </section>
 
 <!-- FAIXA -->
 <div class="faixa">
-  <div class="faixa-item"><span>📍</span> Fabricação Local</div>
-  <div class="faixa-item"><span>⚡</span> Entrega Rápida</div>
-  <div class="faixa-item"><span>🔧</span> Sem Mínimo</div>
-  <div class="faixa-item"><span>✅</span> PETG Premium</div>
-  <div class="faixa-item"><span>💬</span> Atendimento WhatsApp</div>
+  <div class="faixa-item"><span>🔬</span> Scanner 3D Profissional</div>
+  <div class="faixa-item"><span>📐</span> Fusion 360</div>
+  <div class="faixa-item"><span>🏭</span> K2 Pro Industrial</div>
+  <div class="faixa-item"><span>📍</span> 100% Local em PG</div>
+  <div class="faixa-item"><span>⚡</span> Sem Mínimo</div>
 </div>
+
+<!-- SCANNER 3D — SEÇÃO PRINCIPAL -->
+<section class="scanner-hero" id="scanner">
+  <div class="scanner-grid">
+    <div>
+      <div class="scanner-badge-sp">⭐ Pioneiros em SP — Scanner 3D + Impressão 3D Integrados</div>
+      <h2 class="scanner-title">Creality CR-Scan<br><span>Otter</span> — 0,02mm</h2>
+      <p class="scanner-sub">Somos a única operação do Estado de São Paulo que une scanner 3D de alta precisão com impressão 3D profissional em um serviço local integrado. Você manda a peça — a gente escaneia, remodela e imprime.</p>
+
+      <div class="scanner-specs">
+        <div class="scanner-spec"><div class="scanner-spec-val">0,02mm</div><div class="scanner-spec-lbl">Precisão de captura</div></div>
+        <div class="scanner-spec"><div class="scanner-spec-val">10–2000mm</div><div class="scanner-spec-lbl">Range de objetos</div></div>
+        <div class="scanner-spec"><div class="scanner-spec-val">4 lentes</div><div class="scanner-spec-lbl">Visão estéreo</div></div>
+        <div class="scanner-spec"><div class="scanner-spec-val">Sem spray</div><div class="scanner-spec-lbl">Escaneia metal e preto</div></div>
+      </div>
+
+      <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20scanner%203D%20e%20gostaria%20de%20um%20orçamento." class="btn-wa" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Solicitar Captura Técnica
+      </a>
+    </div>
+
+    <div class="scanner-imgs">
+      <div class="scanner-img-main">
+        <img src="imagens/CR-Scan_Otter_1_7b7e47be-32c2-447d-87e3-a252c32311a4.webp" alt="Creality CR-Scan Otter — BBE 3D Manufatura" onerror="this.src='creality-pro.png'">
+      </div>
+      <div class="scanner-img-sm">
+        <img src="imagens/1---key-features.webp" alt="CR-Scan Otter Key Features" onerror="this.style.display='none'">
+      </div>
+      <div class="scanner-img-sm">
+        <img src="imagens/7dc25f7a5d10523f53aba117de3bc5bd.webp" alt="Scanner capturando peça pequena e grande" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+
+  <!-- FLUXO DE TRABALHO -->
+  <div style="max-width:1200px;margin:60px auto 0;position:relative;z-index:2">
+    <p class="lbl gold" style="text-align:center;margin-bottom:8px">Nosso fluxo integrado</p>
+    <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(24px,3vw,36px);font-weight:800;color:#fff;text-align:center;margin-bottom:0">Da peça existente ao modelo final impresso</h3>
+    <div class="fluxo-grid">
+      <div class="fluxo-step"><div class="fluxo-num">1</div><div class="fluxo-t">Você traz a peça</div><div class="fluxo-d">Peça quebrada, sem referência ou com geometria complexa</div></div>
+      <div class="fluxo-step"><div class="fluxo-num">2</div><div class="fluxo-t">Escaneamos</div><div class="fluxo-d">CR-Scan Otter captura a geometria em 0,02mm de precisão</div></div>
+      <div class="fluxo-step"><div class="fluxo-num">3</div><div class="fluxo-t">Remodelamos</div><div class="fluxo-d">Fusion 360 — tolerâncias, encaixes e folgas funcionais corretos</div></div>
+      <div class="fluxo-step"><div class="fluxo-num">4</div><div class="fluxo-t">Imprimimos</div><div class="fluxo-d">Creality K2 Pro com PETG premium para uso real</div></div>
+      <div class="fluxo-step"><div class="fluxo-num">5</div><div class="fluxo-t">Você recebe</div><div class="fluxo-d">Peça final local, rápida e com garantia de encaixe</div></div>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS DO SCANNER -->
+  <div style="max-width:1200px;margin:56px auto 0;position:relative;z-index:2">
+    <p class="lbl gold" style="text-align:center;margin-bottom:8px">O que o scanner resolve para você</p>
+    <div class="scan-srv-grid">
+      <div class="scan-srv">
+        <div class="scan-srv-ico">🔩</div>
+        <div class="scan-srv-title">Engenharia Reversa</div>
+        <div class="scan-srv-desc">Peça quebrada, fora de linha ou sem projeto original? Escaneamos, remodelamos e imprimimos a réplica funcional. Ideal para serralherias, vidraçarias e manutenção industrial.</div>
+      </div>
+      <div class="scan-srv">
+        <div class="scan-srv-ico">🎨</div>
+        <div class="scan-srv-title">Reprodução de Objetos</div>
+        <div class="scan-srv-desc">Medalhas, peças religiosas, objetos decorativos e personagens com geometria orgânica complexa. O scanner elimina semanas de modelagem manual.</div>
+      </div>
+      <div class="scan-srv">
+        <div class="scan-srv-ico">📐</div>
+        <div class="scan-srv-title">Captura Técnica</div>
+        <div class="scan-srv-desc">Levantamento dimensional rápido de peças existentes como base para desenvolvimento de gabaritos, calços, adaptadores e suportes sob medida.</div>
+      </div>
+      <div class="scan-srv">
+        <div class="scan-srv-ico">📁</div>
+        <div class="scan-srv-title">Digitalização Avulsa</div>
+        <div class="scan-srv-desc">Só precisa do arquivo 3D? Entregamos STL, OBJ ou PLY do objeto escaneado. Acervo digital da sua peça para uso futuro ou fabricação terceirizada.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- MÁQUINA -->
 <section class="sec" id="maquina">
   <div class="maq-grid">
     <div>
-      <p class="lbl">Equipamento</p>
-      <h2 class="h2">Tecnologia industrial<br>em Praia Grande</h2>
-      <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:28px;">A BBE 3D opera com a Creality K2 Pro Combo — uma das impressoras 3D profissionais mais avançadas do mercado, com sistema CFS para múltiplos materiais e cores em uma só impressão.</p>
+      <p class="lbl">Equipamento principal</p>
+      <h2 class="h2">Creality K2 Pro + CFS<br>Impressão industrial local</h2>
+      <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:28px;">Operamos com a Creality K2 Pro Combo — uma das impressoras 3D profissionais mais avançadas do mercado, com sistema CFS para múltiplos materiais e cores em uma só impressão. Combinada ao CR-Scan Otter, formamos o conjunto mais completo de fabricação digital local da Baixada Santista.</p>
       <div class="feat-list">
         <div class="feat"><div class="feat-ico">🎨</div><div><h4>Multi-material com CFS</h4><p>Até 4 filamentos em uma única peça. Cores e materiais combinados com precisão.</p></div></div>
         <div class="feat"><div class="feat-ico">⚡</div><div><h4>Alta Velocidade</h4><p>Impressão até 600mm/s mantendo qualidade premium. Entregas mais rápidas.</p></div></div>
@@ -262,31 +370,15 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
   <div class="mat-grid">
     <div class="mat-card">
       <img src="filamento2.png" alt="Hyper PETG Creality">
-      <div class="mat-info"><h3>Hyper PETG — Peças Finais</h3><p>Material principal para peças de cliente. Resistente ao sol e à maresia da Baixada Santista, flexível e com excelente acabamento. Ideal para chaveiros, expositores e brindes.</p></div>
+      <div class="mat-info"><h3>Hyper PETG — Peças Finais</h3><p>Material principal para peças de cliente. Resistente ao sol e à maresia da Baixada Santista, flexível e com excelente acabamento.</p></div>
     </div>
     <div class="mat-card">
       <img src="filamento.png" alt="Hyper PLA Creality">
-      <div class="mat-info"><h3>Hyper PLA — Maquetes</h3><p>Para plantas humanizadas, maquetes e validações visuais. Impressão veloz com detalhe excepcional — perfeito para apresentações de projetos arquitetônicos.</p></div>
+      <div class="mat-info"><h3>Hyper PLA — Maquetes e Protótipos</h3><p>Para plantas humanizadas, maquetes e validações visuais. Impressão veloz com detalhe excepcional.</p></div>
     </div>
     <div class="mat-card">
       <img src="armazenamento.png" alt="Armazenamento controlado">
-      <div class="mat-info"><h3>Armazenamento Controlado</h3><p>Filamentos em caixas herméticas com controle de umidade. Garantia de qualidade constante em cada impressão — sem variação de peça para peça.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- EQUIPAMENTOS -->
-<section class="sec">
-  <p class="lbl">Infraestrutura</p>
-  <h2 class="h2">Equipamentos de apoio</h2>
-  <div class="mat-grid" style="margin-top:44px">
-    <div class="mat-card">
-      <img src="secadora-x4.png" alt="Creality SpacePi X4" style="object-fit:contain;background:#f9f9f9;padding:16px;">
-      <div class="mat-info"><h3>Secadora Creality SpacePi X4</h3><p>Secagem profissional de filamentos antes de impressões críticas. Elimina umidade que causa bolhas e falhas — garantindo peças perfeitas para o cliente.</p></div>
-    </div>
-    <div class="mat-card">
-      <img src="armazenamento.png" alt="Sistema hermético">
-      <div class="mat-info"><h3>Sistema de Armazenamento</h3><p>Caixas herméticas com higrômetros digitais para cada carretel. Filamentos sempre em condição ideal de uso.</p></div>
+      <div class="mat-info"><h3>Armazenamento Controlado</h3><p>Filamentos em caixas herméticas com controle de umidade. Garantia de qualidade constante em cada impressão.</p></div>
     </div>
   </div>
 </section>
@@ -294,15 +386,15 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 <!-- SERVIÇOS -->
 <section class="sec sec-bege" id="servicos">
   <p class="lbl">O que fazemos</p>
-  <h2 class="h2">Soluções completas<br>em impressão 3D</h2>
+  <h2 class="h2">Soluções completas<br>em impressão e digitalização 3D</h2>
   <p class="desc">Atendemos pessoas físicas, comércios, pousadas, vidraçarias, serralherias e pequenas empresas de toda a Baixada Santista.</p>
   <div class="srv-grid">
+    <div class="srv-card"><div class="srv-ico">🔬</div><div class="srv-title">Scanner 3D + Engenharia Reversa</div><div class="srv-desc">Capturamos peças existentes com 0,02mm de precisão, remodelamos no Fusion 360 e imprimimos. Do original à réplica funcional.</div></div>
     <div class="srv-card"><div class="srv-ico">🔑</div><div class="srv-title">Chaveiros Personalizados</div><div class="srv-desc">Com logo, QR code, NFC, personagens e religiosos. Acabamento premium em PETG. Ideal para brindes corporativos e eventos.</div></div>
     <div class="srv-card"><div class="srv-ico">🏪</div><div class="srv-title">Expositores e Displays</div><div class="srv-desc">Expositores de balcão, displays e organizadores para lojas, tabacarias, pousadas e comércios da região.</div></div>
     <div class="srv-card"><div class="srv-ico">⚙️</div><div class="srv-title">Peças Técnicas</div><div class="srv-desc">Gabaritos, calços, adaptadores e reposições para vidraçarias, serralherias e instaladores. Sem mínimo de quantidade.</div></div>
-    <div class="srv-card"><div class="srv-ico">🎁</div><div class="srv-title">Brindes Corporativos</div><div class="srv-desc">Brindes com logo da empresa, datas comemorativas e produtos promocionais com qualidade de apresentação.</div></div>
-    <div class="srv-card"><div class="srv-ico">✝️</div><div class="srv-title">Produtos Religiosos</div><div class="srv-desc">Medalhas e chaveiros de Nossa Senhora Aparecida, São Pedro e outros. Acabamento detalhado e caprichado.</div></div>
-    <div class="srv-card"><div class="srv-ico">📐</div><div class="srv-title">Sob Medida</div><div class="srv-desc">Tem uma ideia? Desenvolvemos do zero. Modelagem 3D + impressão com material e acabamento ideais.</div></div>
+    <div class="srv-card"><div class="srv-ico">🏗️</div><div class="srv-title">Maquetes e Plantas</div><div class="srv-desc">Plantas humanizadas em escala para apresentação de projetos arquitetônicos. Ideal para construtoras e arquitetos.</div></div>
+    <div class="srv-card"><div class="srv-ico">📐</div><div class="srv-title">Sob Medida</div><div class="srv-desc">Tem uma ideia ou foto? Desenvolvemos do zero com IA, Fusion 360 e impressão com material adequado.</div></div>
   </div>
 </section>
 
@@ -312,10 +404,10 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
   <h2 class="h2 light">Como funciona?</h2>
   <p class="desc light">Simples e sem burocracia. Você fala pelo WhatsApp e cuidamos de tudo.</p>
   <div class="steps">
-    <div class="step"><div class="step-num">1</div><div class="step-t">Você fala comigo</div><div class="step-d">Manda mensagem com foto, referência ou só a ideia. Sem formulário complicado.</div></div>
+    <div class="step"><div class="step-num">1</div><div class="step-t">Você fala comigo</div><div class="step-d">Manda mensagem com foto, peça de referência ou só a ideia. Sem formulário.</div></div>
     <div class="step"><div class="step-num">2</div><div class="step-t">Orçamento rápido</div><div class="step-d">Analiso e mando o orçamento com prazo e material. Resposta no mesmo dia.</div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-t">Produção</div><div class="step-d">Você aprova, eu produzo. Acompanhe pela foto da peça saindo da máquina.</div></div>
-    <div class="step"><div class="step-num">4</div><div class="step-t">Entrega local</div><div class="step-d">Retirada em Praia Grande ou entrega combinada. Qualidade garantida.</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-t">Captura e Modelagem</div><div class="step-d">Se necessário, escaneamos. Depois modelamos ou ajustamos no Fusion 360.</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-t">Impressão e Entrega</div><div class="step-d">Produzimos localmente em Praia Grande e entregamos com qualidade garantida.</div></div>
   </div>
 </section>
 
@@ -324,66 +416,41 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
   <p class="lbl">Por que a BBE 3D?</p>
   <h2 class="h2">Fabricação local com<br>qualidade profissional</h2>
   <div class="dif-grid">
-    <div class="dif"><div class="dif-ico">🏭</div><div><h4>Equipamento Industrial</h4><p>Creality K2 Pro com CFS — máquina profissional com múltiplos materiais e alta precisão.</p></div></div>
-    <div class="dif"><div class="dif-ico">📍</div><div><h4>100% Local</h4><p>Produção em Praia Grande/SP. Você fala direto com quem faz.</p></div></div>
-    <div class="dif"><div class="dif-ico">💎</div><div><h4>Material Premium</h4><p>Hyper PETG — resistência ao sol, maresia, flexibilidade e brilho superior.</p></div></div>
-    <div class="dif"><div class="dif-ico">📋</div><div><h4>Orçamento Formal</h4><p>Documento PDF com detalhamento completo para empresas e comércios.</p></div></div>
+    <div class="dif"><div class="dif-ico">🔬</div><div><h4>Scanner 3D Profissional</h4><p>CR-Scan Otter com 0,02mm de precisão — únicos em SP com scanner + impressão integrados.</p></div></div>
+    <div class="dif"><div class="dif-ico">📍</div><div><h4>100% Local</h4><p>Produção em Praia Grande/SP. Você fala direto com quem faz. Sem intermediários.</p></div></div>
+    <div class="dif"><div class="dif-ico">💎</div><div><h4>Material Premium</h4><p>Hyper PETG para peças finais — resistência ao sol, maresia, flexibilidade e brilho superior.</p></div></div>
+    <div class="dif"><div class="dif-ico">🤖</div><div><h4>IA + Fusion 360</h4><p>IA paga para gerar modelos a partir de imagens. Modelagem paramétrica própria para precisão real.</p></div></div>
     <div class="dif"><div class="dif-ico">🔢</div><div><h4>Sem Mínimo</h4><p>Uma peça, dez ou cem — atendemos qualquer quantidade com o mesmo cuidado.</p></div></div>
-    <div class="dif"><div class="dif-ico">⚡</div><div><h4>Resposta Rápida</h4><p>Orçamento no mesmo dia. Para peças urgentes, priorizamos o atendimento.</p></div></div>
+    <div class="dif"><div class="dif-ico">⚡</div><div><h4>Resposta Rápida</h4><p>Orçamento no mesmo dia. Para peças técnicas urgentes, priorizamos o atendimento.</p></div></div>
   </div>
 </section>
 
-<!-- PESQUISA DE MERCADO -->
+<!-- PESQUISA -->
 <section class="sec" id="pesquisa">
-  <div class="pesq-header">
-    <p class="lbl" style="text-align:center">Pesquisa Local</p>
-    <h2 class="h2" style="text-align:center">Queremos ouvir você!</h2>
-    <p class="desc" style="text-align:center;max-width:620px;margin:0 auto 0">Estamos mapeando as necessidades reais de negócios em Praia Grande e região. Responda nossa pesquisa rápida e ganhe benefícios exclusivos.</p>
+  <div style="text-align:center;margin-bottom:44px">
+    <p class="lbl">Pesquisa Local</p>
+    <h2 class="h2">Queremos ouvir você!</h2>
+    <p style="font-size:16px;color:#555;line-height:1.7;max-width:580px;margin:0 auto">Estamos mapeando necessidades reais de negócios em Praia Grande. Responda em 2 minutos e ganhe benefícios exclusivos.</p>
   </div>
-
-  <div class="pesq-destaque">
-    <img src="pesquisa-local.png" alt="Pesquisa BBE 3D — 30% OFF">
-    <div class="pesq-destaque-text">
-      <h3>🎁 Participe e ganhe 30% OFF nos 3 primeiros pedidos + 1 Amostra Grátis!</h3>
-      <p>Escolha o QR code do seu perfil abaixo, escaneie com o celular e responda em menos de 2 minutos. Em troca, desenvolvemos uma amostra personalizada sem custo e garantimos desconto nos seus primeiros pedidos conosco.</p>
+  <div style="background:var(--azul);border-radius:16px;padding:32px;display:flex;align-items:center;gap:28px;margin-bottom:40px;flex-wrap:wrap">
+    <img src="pesquisa-local.png" alt="Pesquisa BBE 3D" style="width:120px;height:120px;object-fit:contain;border-radius:12px;background:white;padding:8px;flex-shrink:0">
+    <div>
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#fff;margin-bottom:10px">🎁 Participe e ganhe 30% OFF nos 3 primeiros pedidos + 1 Amostra Grátis!</h3>
+      <p style="font-size:15px;color:rgba(255,255,255,0.85);line-height:1.6">Escolha o QR code do seu perfil abaixo, escaneie com o celular e responda. Em troca, desenvolvemos uma amostra personalizada sem custo.</p>
     </div>
   </div>
-
   <div class="pesq-grid">
     <div class="pesq-card">
-      <div class="pesq-qr">
-        <img src="qr-codepesquisa-serralheria.svg" alt="QR Code Pesquisa Serralherias e Vidraçarias">
-      </div>
-      <div class="pesq-info">
-        <div class="pesq-tag">⚙️ Técnico / Industrial</div>
-        <h3>Serralherias, Vidraçarias e Obras</h3>
-        <p>Sua obra vive travando por falta de uma peça pequena? Focamos em gabaritos, calços, adaptadores e reposições rápidas em PETG — 100% resistentes à corrosão da maresia.</p>
-        <a href="https://wa.me/5513991455673?text=Olá!%20Sou%20de%20serralheria%20e%20quero%20participar%20da%20pesquisa." class="pesq-btn" target="_blank">Escanear ou Participar →</a>
-      </div>
+      <div class="pesq-qr"><img src="qr-codepesquisa-serralheria.svg" alt="QR Pesquisa Serralherias"></div>
+      <div class="pesq-info"><div class="pesq-tag">⚙️ Técnico / Industrial</div><h3>Serralherias, Vidraçarias e Obras</h3><p>Gabaritos, calços e reposições em PETG 100% resistentes à corrosão. Conte o que quebra mais e ganhe amostra + 30% OFF.</p><a href="https://wa.me/5513991455673?text=Olá!%20Sou%20de%20serralheria%20e%20quero%20participar%20da%20pesquisa." class="pesq-btn" target="_blank">Escanear ou Participar →</a></div>
     </div>
-
     <div class="pesq-card">
-      <div class="pesq-qr">
-        <img src="qr-code-pesquisa-varejo.svg" alt="QR Code Pesquisa Varejo e Comércio">
-      </div>
-      <div class="pesq-info">
-        <div class="pesq-tag">🏪 Varejo / Comércio</div>
-        <h3>Varejo, Pousadas e Comércios</h3>
-        <p>Destaque sua marca com itens personalizados. De chaveiros exclusivos a expositores e tags de identificação — peças que não ressecam com o sol e o salitre da Baixada.</p>
-        <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20um%20comércio%20e%20quero%20participar%20da%20pesquisa." class="pesq-btn" target="_blank">Escanear ou Participar →</a>
-      </div>
+      <div class="pesq-qr"><img src="qr-code-pesquisa-varejo.svg" alt="QR Pesquisa Varejo"></div>
+      <div class="pesq-info"><div class="pesq-tag">🏪 Varejo / Comércio</div><h3>Varejo, Pousadas e Comércios</h3><p>Chaveiros exclusivos, expositores e tags personalizadas que não ressecam com o sol e salitre da Baixada. Responda e ganhe 30% OFF.</p><a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20um%20comércio%20e%20quero%20participar%20da%20pesquisa." class="pesq-btn" target="_blank">Escanear ou Participar →</a></div>
     </div>
-
     <div class="pesq-card">
-      <div class="pesq-qr">
-        <img src="qr-code-pesquisa-oportunidades.svg" alt="QR Code Pesquisa Oportunidades">
-      </div>
-      <div class="pesq-info">
-        <div class="pesq-tag">💡 Projetos / Ideias</div>
-        <h3>Oportunidades e Necessidades</h3>
-        <p>Tem uma ideia no papel, projeto técnico ou precisa repor uma peça fora de linha? Avaliamos a viabilidade e, se fizer sentido, desenhamos a solução com 30% de desconto garantido.</p>
-        <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20ideia%20e%20quero%20participar%20da%20pesquisa." class="pesq-btn" target="_blank">Escanear ou Participar →</a>
-      </div>
+      <div class="pesq-qr"><img src="qr-code-pesquisa-oportunidades.svg" alt="QR Pesquisa Oportunidades"></div>
+      <div class="pesq-info"><div class="pesq-tag">💡 Projetos / Ideias</div><h3>Oportunidades e Necessidades</h3><p>Tem uma ideia ou precisa repor uma peça fora de linha? Avaliamos e desenvolvemos com 30% OFF garantido.</p><a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20ideia%20e%20quero%20participar%20da%20pesquisa." class="pesq-btn" target="_blank">Escanear ou Participar →</a></div>
     </div>
   </div>
 </section>
@@ -394,7 +461,7 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
     <div class="ctt-info">
       <p class="lbl light">Fale conosco</p>
       <h2>Pronto pra pedir<br>seu orçamento?</h2>
-      <p>Atendimento direto via WhatsApp — sem formulário, sem espera. Estamos em Praia Grande/SP e atendemos toda a Baixada Santista.</p>
+      <p>Atendimento direto via WhatsApp — sem formulário, sem espera. Estamos em Praia Grande/SP e atendemos toda a Baixada Santista com scanner 3D, impressão e engenharia reversa.</p>
       <div class="ctt-links">
         <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." class="ctt-link" target="_blank">
           <div class="ctt-link-ico">💬</div><div><span class="ctt-lbl">WhatsApp</span><span class="ctt-val">(13) 99145-5673 — Clique para conversar</span></div>
@@ -404,6 +471,9 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
         </a>
         <a href="mailto:bbe3dmanufatura@gmail.com" class="ctt-link">
           <div class="ctt-link-ico">📧</div><div><span class="ctt-lbl">E-mail</span><span class="ctt-val">bbe3dmanufatura@gmail.com</span></div>
+        </a>
+        <a href="https://bbe3d.com.br" class="ctt-link">
+          <div class="ctt-link-ico">🌐</div><div><span class="ctt-lbl">Site</span><span class="ctt-val">bbe3d.com.br</span></div>
         </a>
         <div class="ctt-link">
           <div class="ctt-link-ico">📍</div><div><span class="ctt-lbl">Localização</span><span class="ctt-val">Solemar, Praia Grande — SP</span></div>
@@ -417,14 +487,9 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
         <button class="qr-tab active" onclick="showQR('wa',this)">WhatsApp</button>
         <button class="qr-tab" onclick="showQR('ig',this)">Instagram</button>
       </div>
-      <div id="qr-wa" class="qr-img-wrap">
-        <img src="qr-code-whatsapp.svg" alt="QR Code WhatsApp BBE 3D">
-      </div>
-      <div id="qr-ig" class="qr-img-wrap" style="display:none">
-        <img src="qr-code-instagram.svg" alt="QR Code Instagram BBE 3D">
-      </div>
-      <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank"
-        style="display:block;margin-top:18px;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:15px;">
+      <div id="qr-wa" class="qr-img-wrap"><img src="qr-code-whatsapp.svg" alt="QR WhatsApp BBE 3D"></div>
+      <div id="qr-ig" class="qr-img-wrap" style="display:none"><img src="qr-code-instagram.svg" alt="QR Instagram BBE 3D"></div>
+      <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" style="display:block;margin-top:18px;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:15px;">
         💬 Mandar Mensagem Agora
       </a>
     </div>
@@ -433,7 +498,7 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 
 <footer>
   <span class="footer-brand">BBE 3D Manufatura</span>
-  <p class="footer-txt">© 2026 · Peças, Brindes e Soluções Sob Medida · Praia Grande/SP</p>
+  <p class="footer-txt">© 2026 · Scanner 3D + Impressão 3D · Praia Grande/SP</p>
   <div class="footer-links">
     <a href="https://www.instagram.com/bbe3dmanufatura3d/" target="_blank">Instagram</a>
     <a href="https://wa.me/5513991455673" target="_blank">WhatsApp</a>
@@ -452,8 +517,8 @@ function showQR(t,btn){
   document.getElementById('qr-wa').style.display=t==='wa'?'flex':'none';
   document.getElementById('qr-ig').style.display=t==='ig'?'flex':'none';
 }
-const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='translateY(0)'}}),{threshold:0.1});
-document.querySelectorAll('.srv-card,.mat-card,.dif,.step,.pesq-card').forEach(el=>{
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='translateY(0)'}}),{threshold:0.08});
+document.querySelectorAll('.srv-card,.mat-card,.dif,.step,.pesq-card,.scan-srv,.scanner-spec').forEach(el=>{
   el.style.opacity='0';el.style.transform='translateY(20px)';
   el.style.transition='opacity .5s ease,transform .5s ease';
   obs.observe(el);
