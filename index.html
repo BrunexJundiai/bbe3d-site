@@ -101,6 +101,20 @@ nav {
 .scanner-img-sm { border-radius: 10px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
 .scanner-img-sm img { width: 100%; height: 140px; object-fit: cover; }
 
+/* CARROSSEL SCANNER */
+.scanner-carousel-wrap { position: relative; width: 100%; max-width: 540px; margin: 0 auto; }
+.scanner-carousel { position: relative; width: 100%; height: 360px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.45); background: #0a2540; }
+.scan-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity .5s ease; }
+.scan-slide.active { opacity: 1; }
+.scan-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.scan-prev, .scan-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.2); color: white; font-size: 28px; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s; z-index: 10; line-height: 1; }
+.scan-prev { left: 12px; }
+.scan-next { right: 12px; }
+.scan-prev:hover, .scan-next:hover { background: rgba(255,255,255,0.3); }
+.scan-dots { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+.scan-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background .2s, transform .2s; border: none; }
+.scan-dot.active { background: #ffd700; transform: scale(1.3); }
+
 /* FLUXO */
 .fluxo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 0; margin-top: 44px; position: relative; }
 .fluxo-step { text-align: center; padding: 28px 16px; position: relative; }
@@ -202,6 +216,8 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 .wa-float svg { width: 30px; height: 30px; fill: white; }
 @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
 
+.scanner-imgs { display: none; } /* substituído pelo carrossel */
+
 @media(max-width:768px){
   .nav-links{display:none}
   .hero-grid,.maq-grid,.ctt-wrap,.scanner-grid{grid-template-columns:1fr}
@@ -289,16 +305,37 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
       </a>
     </div>
 
-    <div class="scanner-imgs">
-      <div class="scanner-img-main">
-        <img src="imagens/CR-Scan_Otter_1_7b7e47be-32c2-447d-87e3-a252c32311a4.webp" alt="Creality CR-Scan Otter — BBE 3D Manufatura" onerror="this.src='creality-pro.png'">
+    <!-- CARROSSEL DO SCANNER -->
+    <div class="scanner-carousel-wrap">
+      <div class="scanner-carousel" id="scanCarousel">
+        <div class="scan-slide active">
+          <img src="CR-Scan_Otter_1_7b7e47be-32c2-447d-87e3-a252c32311a4.webp" alt="Creality CR-Scan Otter — Scanner 3D BBE 3D">
+        </div>
+        <div class="scan-slide">
+          <img src="1---key-features.webp" alt="CR-Scan Otter — Key Features">
+        </div>
+        <div class="scan-slide">
+          <img src="5daf4ea99dcca9794abcc0eea978231e.webp" alt="CR-Scan Otter — Anti-shake Scanning">
+        </div>
+        <div class="scan-slide">
+          <img src="7dc25f7a5d10523f53aba117de3bc5bd.webp" alt="CR-Scan Otter — Captura pequenos e grandes objetos">
+        </div>
+        <div class="scan-slide">
+          <img src="a3b433513aa634191bcdeabf1ce261a9.webp" alt="CR-Scan Otter — Scan metal sem spray">
+        </div>
+        <div class="scan-slide">
+          <img src="12405de5c8885066a3c5bf5a4241ea38d.webp" alt="CR-Scan Otter — Scan colorido full color">
+        </div>
+        <div class="scan-slide">
+          <img src="6a626cd73dfa4ed47d21d19317b209da.webp" alt="CR-Scan Otter — Face e body scanning">
+        </div>
+        <div class="scan-slide">
+          <img src="transferir.jfif" alt="CR-Scan Otter — Scanner profissional">
+        </div>
       </div>
-      <div class="scanner-img-sm">
-        <img src="imagens/1---key-features.webp" alt="CR-Scan Otter Key Features" onerror="this.style.display='none'">
-      </div>
-      <div class="scanner-img-sm">
-        <img src="imagens/7dc25f7a5d10523f53aba117de3bc5bd.webp" alt="Scanner capturando peça pequena e grande" onerror="this.style.display='none'">
-      </div>
+      <button class="scan-prev" onclick="moveCarousel(-1)" aria-label="Anterior">&#8249;</button>
+      <button class="scan-next" onclick="moveCarousel(1)" aria-label="Próximo">&#8250;</button>
+      <div class="scan-dots" id="scanDots"></div>
     </div>
   </div>
 
@@ -517,6 +554,30 @@ function showQR(t,btn){
   document.getElementById('qr-wa').style.display=t==='wa'?'flex':'none';
   document.getElementById('qr-ig').style.display=t==='ig'?'flex':'none';
 }
+// Carrossel Scanner
+let scanIdx = 0;
+const scanSlides = document.querySelectorAll('.scan-slide');
+const dotsWrap = document.getElementById('scanDots');
+if(scanSlides.length && dotsWrap) {
+  scanSlides.forEach((_,i) => {
+    const d = document.createElement('button');
+    d.className = 'scan-dot' + (i===0?' active':'');
+    d.setAttribute('aria-label', 'Slide '+(i+1));
+    d.onclick = () => goScan(i);
+    dotsWrap.appendChild(d);
+  });
+}
+function goScan(n) {
+  scanSlides[scanIdx].classList.remove('active');
+  dotsWrap.querySelectorAll('.scan-dot')[scanIdx].classList.remove('active');
+  scanIdx = (n + scanSlides.length) % scanSlides.length;
+  scanSlides[scanIdx].classList.add('active');
+  dotsWrap.querySelectorAll('.scan-dot')[scanIdx].classList.add('active');
+}
+function moveCarousel(dir) { goScan(scanIdx + dir); }
+// Auto-play a cada 4 segundos
+setInterval(() => moveCarousel(1), 4000);
+
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='translateY(0)'}}),{threshold:0.08});
 document.querySelectorAll('.srv-card,.mat-card,.dif,.step,.pesq-card,.scan-srv,.scanner-spec').forEach(el=>{
   el.style.opacity='0';el.style.transform='translateY(20px)';
