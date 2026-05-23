@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BBE 3D Manufatura — Captura Técnica, Remodelagem e Impressão 3D | Praia Grande/SP</title>
 <meta name="description" content="Única operação em SP com Scanner 3D + Impressão 3D integrados. Capturamos, remodelamos e imprimimos localmente em Praia Grande. Peças técnicas, brindes, maquetes e engenharia reversa.">
+<!-- Google Ads Conversion Tag — AW-18180058403 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18180058403"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18180058403');
+</script>
+<!-- Fim Google Ads Tag -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -539,6 +549,21 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 </a>
 
 <script>
+// Google Ads — rastrear cliques no WhatsApp como conversão
+function trackWhatsApp() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18180058403',
+    'event_category': 'contato',
+    'event_label': 'whatsapp_clique'
+  });
+}
+// Adicionar tracking em todos os links do WhatsApp
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(el) {
+    el.addEventListener('click', trackWhatsApp);
+  });
+});
+
 function showQR(t,btn){
   document.querySelectorAll('.qr-tab').forEach(x=>x.classList.remove('active'));
   btn.classList.add('active');
