@@ -85,6 +85,38 @@ nav {
 
 .faixa { background: var(--bege); padding: 18px 5vw; display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; border-top: 3px solid var(--azul); border-bottom: 3px solid var(--azul); }
 .faixa-item { display: flex; align-items: center; gap: 8px; font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; color: var(--azul); }
+.sazonal-sec { background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 100%); }
+.sazonal-wrap { max-width: 1200px; margin: 0 auto; }
+.sazonal-head { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: 28px; align-items: start; margin-bottom: 38px; }
+.sazonal-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: 28px; align-items: stretch; }
+.sazonal-carousel-wrap { background: #0f3d6e; border-radius: 8px; overflow: hidden; box-shadow: 0 16px 40px rgba(15,61,110,0.18); position: relative; min-height: 460px; }
+.sazonal-carousel { position: relative; width: 100%; min-height: 460px; }
+.sazonal-slide { position: absolute; inset: 0; opacity: 0; pointer-events: none; transition: opacity .45s ease; display: flex; align-items: flex-end; }
+.sazonal-slide.active { opacity: 1; pointer-events: auto; }
+.sazonal-slide-visual { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,37,64,0.18) 0%, rgba(10,37,64,0.82) 100%), var(--slide-img, linear-gradient(135deg, #17579B 0%, #1e6bbf 45%, #ffd166 100%)); background-size: cover; background-position: center; }
+.sazonal-slide-content { position: relative; z-index: 2; padding: 26px; width: 100%; color: #fff; }
+.sazonal-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 16px; }
+.sazonal-date { font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 600; margin-bottom: 10px; }
+.sazonal-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(28px,3vw,42px); line-height: 1.0; margin-bottom: 12px; }
+.sazonal-copy { font-size: 15px; line-height: 1.65; color: rgba(255,255,255,0.88); max-width: 520px; margin-bottom: 18px; }
+.sazonal-items { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.sazonal-chip { display: inline-flex; align-items: center; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.18); color: #fff; font-size: 12px; font-weight: 600; }
+.sazonal-cta { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #fff; text-decoration: none; font-weight: 700; padding: 13px 18px; border-radius: 6px; box-shadow: 0 10px 28px rgba(37,211,102,0.28); }
+.sazonal-nav { position: absolute; top: 18px; right: 18px; display: flex; gap: 8px; z-index: 3; }
+.sazonal-nav button { width: 38px; height: 38px; border: 0; border-radius: 999px; cursor: pointer; background: rgba(255,255,255,0.16); color: #fff; font-size: 18px; font-weight: 700; backdrop-filter: blur(6px); }
+.sazonal-dots { position: absolute; left: 26px; bottom: 18px; z-index: 3; display: flex; gap: 8px; }
+.sazonal-dot { width: 11px; height: 11px; border-radius: 999px; border: 0; background: rgba(255,255,255,0.35); cursor: pointer; }
+.sazonal-dot.active { background: #fff; }
+.sazonal-cards { display: grid; gap: 14px; }
+.sazonal-card { background: #fff; border: 1px solid rgba(23,87,155,0.1); border-radius: 8px; box-shadow: var(--sombra); padding: 18px; }
+.sazonal-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.sazonal-card-tag { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: rgba(23,87,155,0.08); color: var(--azul); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.sazonal-card-date { font-size: 12px; color: #6c7b88; font-weight: 600; }
+.sazonal-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; color: var(--azul-escuro); margin-bottom: 8px; line-height: 1.0; }
+.sazonal-card p { font-size: 14px; line-height: 1.65; color: #556270; margin-bottom: 14px; }
+.sazonal-card-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.sazonal-card-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--azul); text-decoration: none; font-size: 14px; font-weight: 700; }
+.sazonal-card-btn:hover { color: var(--azul-claro); }
 
 .sec { padding: 80px 5vw; }
 .sec-bege { background: var(--bege); }
@@ -224,6 +256,10 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
   .fluxo-step::after{display:none}
   footer{flex-direction:column;text-align:center}
   .footer-links{justify-content:center}
+  .sazonal-head,.sazonal-grid{grid-template-columns:1fr}
+  .sazonal-carousel-wrap,.sazonal-carousel{min-height:500px}
+  .sazonal-slide-content{padding:22px}
+  .sazonal-title{font-size:34px}
 }
 </style>
 </head>
@@ -237,6 +273,7 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
   <div class="nav-links">
     <a href="#scanner">Scanner 3D</a>
     <a href="#maquina">Infraestrutura</a>
+    <a href="#datas">Datas Sazonais</a>
     <a href="#servicos">Serviços</a>
     <a href="#pesquisa">Pesquisa</a>
     <a href="#contato" class="nav-cta">📲 Orçamento</a>
@@ -367,6 +404,136 @@ footer { background: var(--azul-escuro); padding: 28px 5vw; display: flex; align
 </section>
 
 <!-- SERVIÇOS -->
+<!-- DATAS SAZONAIS | Edicao mensal
+1. Atualizar datas ativas do mes
+2. Trocar nomes e descricoes das campanhas
+3. Trocar imagens do carrossel:
+   - copa-2026-3d.png
+   - dia-dos-namorados-3d.png
+   - sao-joao-3d.png
+4. Atualizar links do WhatsApp conforme a campanha
+-->
+<section class="sec sazonal-sec" id="datas">
+  <div class="sazonal-wrap">
+    <div class="sazonal-head">
+      <div>
+        <p class="lbl">Datas sazonais</p>
+        <h2 class="h2">Itens 3D sob encomenda<br>para campanhas do mes</h2>
+        <p class="desc">Criamos lembrancas, brindes, decoracoes e itens promocionais em 3D para datas sazonais. Nao trabalhamos com estoque fixo: produzimos sob encomenda conforme o tema, quantidade e prazo da sua acao.</p>
+      </div>
+    </div>
+
+    <div class="sazonal-grid">
+      <div class="sazonal-carousel-wrap">
+        <div class="sazonal-nav">
+          <button type="button" aria-label="Slide anterior" onclick="moveSeasonal(-1)">&#8249;</button>
+          <button type="button" aria-label="Proximo slide" onclick="moveSeasonal(1)">&#8250;</button>
+        </div>
+
+        <div class="sazonal-carousel">
+          <article class="sazonal-slide active" style="--slide-img:url('copa-2026-3d.png')">
+            <div class="sazonal-slide-visual"></div>
+            <div class="sazonal-slide-content">
+              <div class="sazonal-badge">Tema ativo do mes</div>
+              <div class="sazonal-date">Copa do Mundo 2026 | 11/06 a 19/07</div>
+              <h3 class="sazonal-title">Brindes 3D para torcida, bares e campanhas tematicas</h3>
+              <p class="sazonal-copy">Produzimos itens personalizados para a Copa 2026 sob encomenda: pecas para vitrines, brindes promocionais, chaveiros, kits para clientes e itens para pontos de venda.</p>
+              <div class="sazonal-items">
+                <span class="sazonal-chip">Chaveiros de selecoes</span>
+                <span class="sazonal-chip">Topos e tags</span>
+                <span class="sazonal-chip">Brindes para bares</span>
+                <span class="sazonal-chip">Itens para vitrines</span>
+              </div>
+              <a href="https://wa.me/5513991455673?text=Ol%C3%A1!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20a%20Copa%20do%20Mundo%202026." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-copa')">Consultar itens da Copa</a>
+            </div>
+          </article>
+
+          <article class="sazonal-slide" style="--slide-img:url('dia-dos-namorados-3d.png')">
+            <div class="sazonal-slide-visual"></div>
+            <div class="sazonal-slide-content">
+              <div class="sazonal-badge">Tema ativo do mes</div>
+              <div class="sazonal-date">Dia dos Namorados | 12/06</div>
+              <h3 class="sazonal-title">Presentes e lembrancas personalizadas em 3D</h3>
+              <p class="sazonal-copy">Criamos pequenos presentes e itens afetivos com producao local sob encomenda, ideais para lojas, acoes promocionais, brindes e pedidos personalizados para casais.</p>
+              <div class="sazonal-items">
+                <span class="sazonal-chip">Chaveiros para casal</span>
+                <span class="sazonal-chip">Mini placas com nomes</span>
+                <span class="sazonal-chip">Tags para presentes</span>
+                <span class="sazonal-chip">Suportes personalizados</span>
+              </div>
+              <a href="https://wa.me/5513991455673?text=Ol%C3%A1!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20o%20Dia%20dos%20Namorados." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-namorados')">Consultar itens de Namorados</a>
+            </div>
+          </article>
+
+          <article class="sazonal-slide" style="--slide-img:url('sao-joao-3d.png')">
+            <div class="sazonal-slide-visual"></div>
+            <div class="sazonal-slide-content">
+              <div class="sazonal-badge">Tema ativo do mes</div>
+              <div class="sazonal-date">Sao Joao e Festa Junina | 24/06</div>
+              <h3 class="sazonal-title">Decoracoes e brindes 3D para festas juninas e campanhas locais</h3>
+              <p class="sazonal-copy">Desenvolvemos pecas sob encomenda para escolas, comercios, eventos e lembrancas tematicas, com foco em pequenas tiragens, personalizacao e entrega local.</p>
+              <div class="sazonal-items">
+                <span class="sazonal-chip">Topos juninos</span>
+                <span class="sazonal-chip">Tags e lembrancas</span>
+                <span class="sazonal-chip">Porta-doces</span>
+                <span class="sazonal-chip">Decoracoes tematicas</span>
+              </div>
+              <a href="https://wa.me/5513991455673?text=Ol%C3%A1!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20S%C3%A3o%20Jo%C3%A3o%20e%20Festa%20Junina." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-sao-joao')">Consultar itens juninos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="sazonal-dots" id="seasonalDots"></div>
+      </div>
+
+      <div class="sazonal-cards">
+        <article class="sazonal-card">
+          <div class="sazonal-card-top">
+            <span class="sazonal-card-tag">Campanha ativa</span>
+            <span class="sazonal-card-date">11/06 a 19/07</span>
+          </div>
+          <h3>Copa do Mundo 2026</h3>
+          <p>Atendemos pedidos sob encomenda para bares, lojas, empresas e campanhas promocionais com itens tematicos em 3D para torcida, brindes e ponto de venda.</p>
+          <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Sob encomenda</span>
+            <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Pequenas tiragens</span>
+          </div>
+          <a href="https://wa.me/5513991455673?text=Ol%C3%A1!%20Quero%20or%C3%A7ar%20itens%20da%20Copa%202026%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-copa')">Solicitar orcamento da Copa -&gt;</a>
+        </article>
+
+        <article class="sazonal-card">
+          <div class="sazonal-card-top">
+            <span class="sazonal-card-tag">Campanha ativa</span>
+            <span class="sazonal-card-date">12/06</span>
+          </div>
+          <h3>Dia dos Namorados</h3>
+          <p>Produzimos presentes personalizados, chaveiros para casal, pequenas placas e itens afetivos em 3D para pedidos pontuais, kits e acao comercial sazonal.</p>
+          <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#fff3f6;border-color:#ffd9e4;color:#b3416b;">Personalizado</span>
+            <span class="sazonal-chip" style="background:#fff3f6;border-color:#ffd9e4;color:#b3416b;">Ideal para presentes</span>
+          </div>
+          <a href="https://wa.me/5513991455673?text=Ol%C3%A1!%20Quero%20or%C3%A7ar%20itens%20do%20Dia%20dos%20Namorados%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-namorados')">Solicitar orcamento de Namorados -&gt;</a>
+        </article>
+
+        <article class="sazonal-card">
+          <div class="sazonal-card-top">
+            <span class="sazonal-card-tag">Campanha ativa</span>
+            <span class="sazonal-card-date">24/06</span>
+          </div>
+          <h3>Sao Joao e Festa Junina</h3>
+          <p>Criamos lembrancas e decoracoes juninas em 3D para escolas, lojas, eventos e kits de campanha, sempre sob encomenda e com alinhamento previo de prazo e tema.</p>
+          <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#fff8ea;border-color:#ffe0a3;color:#8f5c00;">Decorativo</span>
+            <span class="sazonal-chip" style="background:#fff8ea;border-color:#ffe0a3;color:#8f5c00;">Campanhas locais</span>
+          </div>
+          <a href="https://wa.me/5513991455673?text=Ol%C3%A1!%20Quero%20or%C3%A7ar%20itens%20de%20S%C3%A3o%20Jo%C3%A3o%20e%20Festa%20Junina%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-sao-joao')">Solicitar orcamento junino -&gt;</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÃ‡OS -->
 <section class="sec sec-bege" id="servicos">
   <p class="lbl">O que fazemos</p>
   <h2 class="h2">Soluções completas<br>em impressão e digitalização 3D</h2>
@@ -555,9 +722,33 @@ function goScan(n) {
 function moveCarousel(dir) { goScan(scanIdx + dir); }
 setInterval(() => moveCarousel(1), 4000);
 
+// Carrossel sazonal
+let seasonalIdx = 0;
+const seasonalSlides = document.querySelectorAll('.sazonal-slide');
+const seasonalDotsWrap = document.getElementById('seasonalDots');
+if(seasonalSlides.length && seasonalDotsWrap) {
+  seasonalSlides.forEach((_,i) => {
+    const d = document.createElement('button');
+    d.className = 'sazonal-dot' + (i===0?' active':'');
+    d.setAttribute('aria-label', 'Slide sazonal ' + (i+1));
+    d.onclick = () => goSeasonal(i);
+    seasonalDotsWrap.appendChild(d);
+  });
+}
+function goSeasonal(n) {
+  if(!seasonalSlides.length || !seasonalDotsWrap) return;
+  seasonalSlides[seasonalIdx].classList.remove('active');
+  seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.remove('active');
+  seasonalIdx = (n + seasonalSlides.length) % seasonalSlides.length;
+  seasonalSlides[seasonalIdx].classList.add('active');
+  seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.add('active');
+}
+function moveSeasonal(dir) { goSeasonal(seasonalIdx + dir); }
+if(seasonalSlides.length) setInterval(() => moveSeasonal(1), 4500);
+
 // Animações de entrada
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='translateY(0)'}}),{threshold:0.08});
-document.querySelectorAll('.srv-card,.mat-card,.dif,.step,.pesq-card,.scan-srv,.scanner-spec').forEach(el=>{
+document.querySelectorAll('.srv-card,.mat-card,.dif,.step,.pesq-card,.scan-srv,.scanner-spec,.sazonal-card,.sazonal-carousel-wrap').forEach(el=>{
   el.style.opacity='0';el.style.transform='translateY(20px)';
   el.style.transition='opacity .5s ease,transform .5s ease';
   obs.observe(el);
