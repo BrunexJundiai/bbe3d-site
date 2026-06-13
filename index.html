@@ -269,7 +269,13 @@ nav{
 }
 .srv-card:hover{transform:translateY(-5px)}
 .srv-thumb{height:180px;background:#e9f1f9}
-.srv-thumb img{width:100%;height:100%;object-fit:cover}
+.srv-thumb img,.srv-thumb video{width:100%;height:100%;object-fit:cover;display:block}
+.srv-mini-carousel{
+  display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;
+}
+.srv-mini-carousel img,.srv-mini-carousel video{min-width:100%;scroll-snap-align:start}
+.srv-mini-carousel::-webkit-scrollbar{height:6px}
+.srv-mini-carousel::-webkit-scrollbar-thumb{background:rgba(23,87,155,.45);border-radius:999px}
 .srv-body{padding:22px}
 .srv-ico{font-size:30px;margin-bottom:10px}
 .srv-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--azul);margin-bottom:8px;line-height:1.0}
@@ -396,20 +402,20 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 </nav>
 
 <!-- IMAGENS SUGERIDAS PARA ESTA VERSAO
-hero-peca-tecnica-bbe.jpg
-prova-amostras-tecnicas-bbe.jpg
-segmento-scanner-3d-bbe.jpg
-segmento-serralheria-vidracaria-bbe.jpg
-segmento-projeto-tecnico-bbe.jpg
+imagens/cases/hero-peca-tecnica-bbe.jpg
+imagens/cases/prova-amostras-tecnicas-bbe.jpg
+imagens/segmentos/segmento-scanner-3d-bbe.jpg
+imagens/segmentos/segmento-serralheria-vidracaria-bbe.jpg
+imagens/segmentos/segmento-projeto-tecnico-bbe.jpg
 segmento-nautico-maritimo-bbe.jpg
-segmento-maquetes-bbe.jpg
-segmento-souvenirs-bbe.jpg
-segmento-cases-eletronica-bbe.jpg
-case-peca-tecnica-bbe.jpg
-case-maquete-bbe.jpg
-case-chaveiro-nfc-bbe.jpg
-case-nautico-bbe.jpg
-case-eletronica-bbe.jpg
+imagens/segmentos/segmento-maquetes-bbe.jpg
+imagens/segmentos/segmento-souvenirs-bbe.jpg
+imagens/segmentos/segmento-cases-eletronica-bbe.jpg
+imagens/cases/case-peca-tecnica-bbe.jpg
+imagens/cases/case-maquete-bbe.jpg
+imagens/cases/case-chaveiro-nfc-bbe.jpg
+imagens/cases/case-nautico-bbe.jpg
+imagens/cases/case-eletronica-bbe.jpg
 -->
 
 <section class="hero">
@@ -562,11 +568,21 @@ case-eletronica-bbe.jpg
 
     <div class="srv-grid">
       <article class="srv-card">
-        <div class="srv-thumb"><img src="imagens/segmentos/segmento-scanner-3d-bbe.jpg" alt="Scanner 3D e captura técnica"></div>
+        <div class="srv-thumb">
+          <div class="srv-mini-carousel" aria-label="Processo real de scanner 3D e captura técnica">
+            <img src="imagens/scanner3D/scanner em bancada.jpeg" alt="Scanner 3D em bancada com peça técnica">
+            <img src="imagens/scanner3D/peca original com avaria.jpeg" alt="Peça original com avaria preparada para captura 3D">
+            <img src="imagens/scanner3D/rastreamento pontos scanner.jpeg" alt="Rastreamento de pontos no software do scanner 3D">
+            <img src="imagens/scanner3D/malha-ponto-scanner.png" alt="Malha capturada e processada no scanner 3D">
+            <video muted autoplay loop playsinline preload="metadata" poster="imagens/scanner3D/malha-ponto-scanner.png">
+              <source src="imagens/scanner3D/video malha capturada e tratada.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
         <div class="srv-body">
           <div class="srv-ico">🔬</div>
           <h3 class="srv-title">Scanner 3D e Captura Técnica</h3>
-          <p class="srv-desc">Captura de peças, objetos e referências físicas para remodelagem, engenharia reversa, validação dimensional e criação de base digital utilizável.</p>
+          <p class="srv-desc">Captura de peças, objetos e referências físicas com scanner 3D, marcadores e tratamento de malha para engenharia reversa, validação dimensional e base digital utilizável.</p>
           <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20interesse%20em%20scanner%203D%20e%20captura%20técnica." target="_blank" onclick="trackWA('segmento-scanner')">Quero orçar este tipo →</a>
         </div>
       </article>
@@ -592,11 +608,17 @@ case-eletronica-bbe.jpg
       </article>
 
       <article class="srv-card">
-        <div class="srv-thumb"><img src="imagens/segmentos/segmento-nautico-maritimo-bbe.jpg" alt="Soluções náuticas e marítimas"></div>
+        <div class="srv-thumb">
+          <div class="srv-mini-carousel" aria-label="Projeto real de peça náutica para caiaque">
+            <img src="imagens/segmentos/caiaque-aplicacao-original.jpeg" alt="Acionador original instalado em caiaque de pesca">
+            <img src="imagens/segmentos/caiaque-aplicacao-original-problema.jpeg" alt="Ponto de avaria no acionador do caiaque">
+            <img src="imagens/segmentos/caiaque-aplicacao-original2.jpeg" alt="Conjunto de acionamento e mangueiras do caiaque">
+          </div>
+        </div>
         <div class="srv-body">
           <div class="srv-ico">🌊</div>
           <h3 class="srv-title">Soluções Náuticas e Marítimas</h3>
-          <p class="srv-desc">Peças e adaptações técnicas para ambiente náutico, com foco em resistência ao sol, umidade e maresia para manutenção e reposição.</p>
+          <p class="srv-desc">Peças, adaptações e reposições para caiaques, embarcações e uso em ambiente náutico, com foco em sol, umidade, maresia e esforço funcional.</p>
           <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20náutica%20ou%20marítima%20para%20orçar." target="_blank" onclick="trackWA('segmento-nautico')">Quero orçar este tipo →</a>
         </div>
       </article>
@@ -660,7 +682,7 @@ case-eletronica-bbe.jpg
         </div>
 
         <div class="sazonal-carousel">
-          <article class="sazonal-slide active" style="--slide-img:url('imagens/sazonais/copa-2026-3d.png')">
+          <article class="sazonal-slide active" style="--slide-img:url('copa-2026-3d.png')">
             <div class="sazonal-slide-visual"></div>
             <div class="sazonal-slide-content">
               <div class="sazonal-badge">Tema ativo do mês</div>
@@ -677,7 +699,7 @@ case-eletronica-bbe.jpg
             </div>
           </article>
 
-          <article class="sazonal-slide" style="--slide-img:url('imagens/sazonais/sao-joao-3d.png')">
+          <article class="sazonal-slide" style="--slide-img:url('sao-joao-3d.png')">
             <div class="sazonal-slide-visual"></div>
             <div class="sazonal-slide-content">
               <div class="sazonal-badge">Tema ativo do mês</div>
