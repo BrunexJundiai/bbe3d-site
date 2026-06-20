@@ -1043,5 +1043,241 @@ function goSeasonal(n) {
 function moveSeasonal(dir) { goSeasonal(seasonalIdx + dir); }
 setInterval(function(){ moveSeasonal(1); }, 5000);
 </script>
+<!-- Atualizacao BBE 2026-06-20: capa automotiva, sazonais e carrosseis de casos reais -->
+<style id="bbe-producao-atualizacao-20260620">
+  .bbe-mini-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 250px;
+    background: #0f3d6e;
+  }
+  .bbe-mini-carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform .35s ease;
+  }
+  .bbe-mini-carousel-slide {
+    flex: 0 0 100%;
+    min-height: 250px;
+  }
+  .bbe-mini-carousel-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .bbe-mini-carousel button {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(15, 61, 110, .82);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  .bbe-mini-carousel .bbe-prev { left: 10px; }
+  .bbe-mini-carousel .bbe-next { right: 10px; }
+  .bbe-mini-carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    gap: 6px;
+    transform: translateX(-50%);
+  }
+  .bbe-mini-carousel-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bbe-mini-carousel-dot.active { background: #fff; }
+  .bbe-sazonal-imagem {
+    position: relative;
+    overflow: hidden;
+    background-color: #0f3d6e !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  .bbe-sazonal-imagem h1,
+  .bbe-sazonal-imagem h2,
+  .bbe-sazonal-imagem h3,
+  .bbe-sazonal-imagem h4,
+  .bbe-sazonal-imagem p,
+  .bbe-sazonal-imagem span,
+  .bbe-sazonal-imagem a { position: relative; z-index: 1; }
+  .bbe-sazonal-imagem h1,
+  .bbe-sazonal-imagem h2,
+  .bbe-sazonal-imagem h3,
+  .bbe-sazonal-imagem h4,
+  .bbe-sazonal-imagem p { color: #fff !important; }
+  .bbe-sazonal-imagem .sazonal-card-tag,
+  .bbe-sazonal-imagem .sazonal-card-date { color: #f5e4ce !important; }
+</style>
+
+<script id="bbe-producao-atualizacao-script-20260620">
+  (function () {
+    function bbeInitAtualizacao() {
+      function clean(value) {
+        return (value || '').replace(/\s+/g, ' ').trim();
+      }
+
+      function findTitle(needle) {
+        var wanted = needle.toLowerCase();
+        return Array.prototype.find.call(
+          document.querySelectorAll('h1,h2,h3,h4'),
+          function (element) { return clean(element.textContent).toLowerCase().indexOf(wanted) !== -1; }
+        );
+      }
+
+      function findCard(needle) {
+        var title = findTitle(needle);
+        if (!title) return null;
+        return title.closest('article') ||
+          title.closest('.segment-card,.srv-card,.case-card,.sazonal-card,.card') ||
+          title.parentElement;
+      }
+
+      function createCarousel(card, label, images) {
+        if (!card || card.querySelector('.bbe-mini-carousel')) return;
+
+        var carousel = document.createElement('div');
+        carousel.className = 'bbe-mini-carousel';
+        carousel.setAttribute('aria-label', label);
+
+        var track = document.createElement('div');
+        track.className = 'bbe-mini-carousel-track';
+
+        images.forEach(function (source, index) {
+          var slide = document.createElement('div');
+          slide.className = 'bbe-mini-carousel-slide';
+          var image = document.createElement('img');
+          image.src = source;
+          image.alt = label + ' - imagem ' + (index + 1);
+          image.loading = 'lazy';
+          slide.appendChild(image);
+          track.appendChild(slide);
+        });
+
+        var previous = document.createElement('button');
+        previous.type = 'button';
+        previous.className = 'bbe-prev';
+        previous.setAttribute('aria-label', 'Imagem anterior');
+        previous.textContent = '<';
+
+        var next = document.createElement('button');
+        next.type = 'button';
+        next.className = 'bbe-next';
+        next.setAttribute('aria-label', 'Proxima imagem');
+        next.textContent = '>';
+
+        var dots = document.createElement('div');
+        dots.className = 'bbe-mini-carousel-dots';
+        var current = 0;
+
+        function show(index) {
+          current = (index + images.length) % images.length;
+          track.style.transform = 'translateX(-' + (current * 100) + '%)';
+          Array.prototype.forEach.call(dots.children, function (dot, dotIndex) {
+            dot.classList.toggle('active', dotIndex === current);
+          });
+        }
+
+        images.forEach(function (_, index) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'bbe-mini-carousel-dot' + (index === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Mostrar imagem ' + (index + 1));
+          dot.addEventListener('click', function () { show(index); });
+          dots.appendChild(dot);
+        });
+
+        previous.addEventListener('click', function () { show(current - 1); });
+        next.addEventListener('click', function () { show(current + 1); });
+
+        carousel.appendChild(track);
+        carousel.appendChild(previous);
+        carousel.appendChild(next);
+        carousel.appendChild(dots);
+
+        var existingImage = card.querySelector('img');
+        if (existingImage && existingImage.parentElement) {
+          existingImage.parentElement.replaceChild(carousel, existingImage);
+        } else {
+          card.insertBefore(carousel, card.firstChild);
+        }
+      }
+
+      var hero = document.querySelector('.hero');
+      if (hero) {
+        var heroImage = hero.querySelector('.hero-img-wrap img, img');
+        if (heroImage) {
+          heroImage.src = 'imagens/infraestrutura/WhatsApp Image 2026-06-20 at 06.38.04.jpeg';
+          heroImage.alt = 'Escaneamento 3D de componente automotivo na bancada BBE';
+        }
+
+        var heroSubtitle = hero.querySelector('.hero-sub');
+        if (heroSubtitle) {
+          heroSubtitle.textContent = 'Para itens automotivos, nautica, eletronica, maquetes e itens personalizados';
+        }
+
+        var heroParagraphs = Array.prototype.filter.call(hero.querySelectorAll('p'), function (paragraph) {
+          return !paragraph.classList.contains('hero-sub') && !paragraph.classList.contains('hero-badge');
+        });
+        if (heroParagraphs.length) {
+          heroParagraphs[0].textContent = 'A BBE 3D Manufatura transforma peça automotiva quebrada, referência física, foto, ideia ou projeto em solução real. Capturamos, remodelamos e produzimos localmente com foco em aplicação prática, acabamento e prazo.';
+        }
+      }
+
+      var namorados = findCard('Dia dos Namorados');
+      if (namorados) namorados.remove();
+
+      var copa = findCard('Copa do Mundo 2026');
+      if (copa) {
+        copa.classList.add('bbe-sazonal-imagem');
+        copa.style.backgroundImage = 'linear-gradient(90deg, rgba(15, 61, 110, .92), rgba(15, 61, 110, .55)), url("imagens/sazonais/copa-2026-3d.png")';
+      }
+
+      var junina = findCard('São João');
+      if (junina) {
+        junina.classList.add('bbe-sazonal-imagem');
+        junina.style.backgroundImage = 'linear-gradient(90deg, rgba(15, 61, 110, .92), rgba(15, 61, 110, .55)), url("imagens/sazonais/sao-joao-3d.png")';
+      }
+
+      createCarousel(findCard('Scanner 3D e Captura Técnica'), 'Scanner 3D e captura tecnica BBE', [
+        'imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg',
+        'imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg',
+        'imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg'
+      ]);
+
+      var nauticaImages = [
+        'imagens/cases/WhatsApp Image 2026-06-17 at 09.48.17 (1).jpeg',
+        'imagens/cases/WhatsApp Image 2026-06-17 at 09.48.20.jpeg',
+        'imagens/cases/WhatsApp Image 2026-06-17 at 09.48.22.jpeg'
+      ];
+      createCarousel(findCard('Soluções Náuticas'), 'Caso tecnico nautico BBE', nauticaImages);
+      createCarousel(findCard('Componentes sob encomenda'), 'Componentes nauticos sob encomenda BBE', nauticaImages);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', bbeInitAtualizacao);
+    } else {
+      bbeInitAtualizacao();
+    }
+  }());
+</script>
 </body>
 </html>
