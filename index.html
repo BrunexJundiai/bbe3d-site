@@ -270,10 +270,12 @@ nav{
 .srv-card:hover{transform:translateY(-5px)}
 .srv-thumb{height:180px;background:#e9f1f9}
 .srv-thumb img,.srv-thumb video{width:100%;height:100%;object-fit:cover;display:block}
-.srv-mini-carousel,.work-mini-carousel{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;background:#e9f1f9}
-.srv-mini-carousel img,.srv-mini-carousel video,.work-mini-carousel img,.work-mini-carousel video{min-width:100%;scroll-snap-align:start;object-fit:cover}
-.srv-mini-carousel::-webkit-scrollbar,.work-mini-carousel::-webkit-scrollbar{height:6px}
-.srv-mini-carousel::-webkit-scrollbar-thumb,.work-mini-carousel::-webkit-scrollbar-thumb{background:rgba(23,87,155,.45);border-radius:999px}
+.srv-mini-carousel{
+  display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;
+}
+.srv-mini-carousel img,.srv-mini-carousel video{min-width:100%;scroll-snap-align:start}
+.srv-mini-carousel::-webkit-scrollbar{height:6px}
+.srv-mini-carousel::-webkit-scrollbar-thumb{background:rgba(23,87,155,.45);border-radius:999px}
 .srv-body{padding:22px}
 .srv-ico{font-size:30px;margin-bottom:10px}
 .srv-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--azul);margin-bottom:8px;line-height:1.0}
@@ -284,9 +286,7 @@ nav{
 
 .work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:44px}
 .work-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--sombra)}
-.work-card > img{width:100%;height:220px;object-fit:cover}
-.work-media{width:100%;height:220px;background:#e9f1f9;overflow:hidden}
-.work-media img,.work-media video{width:100%;height:100%;object-fit:cover;display:block}
+.work-card img{width:100%;height:220px;object-fit:cover}
 .work-info{padding:18px 20px 22px}
 .work-tag{
   display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(23,87,155,0.08);
@@ -402,20 +402,20 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 </nav>
 
 <!-- IMAGENS SUGERIDAS PARA ESTA VERSAO
-hero-peca-tecnica-bbe.jpg
-prova-amostras-tecnicas-bbe.jpg
-segmento-scanner-3d-bbe.jpg
-segmento-serralheria-vidracaria-bbe.jpg
-segmento-projeto-tecnico-bbe.jpg
+imagens/cases/hero-peca-tecnica-bbe.jpg
+imagens/cases/prova-amostras-tecnicas-bbe.jpg
+imagens/segmentos/segmento-scanner-3d-bbe.jpg
+imagens/segmentos/segmento-serralheria-vidracaria-bbe.jpg
+imagens/segmentos/segmento-projeto-tecnico-bbe.jpg
 segmento-nautico-maritimo-bbe.jpg
-segmento-maquetes-bbe.jpg
-segmento-souvenirs-bbe.jpg
-segmento-cases-eletronica-bbe.jpg
-case-peca-tecnica-bbe.jpg
-case-maquete-bbe.jpg
-case-chaveiro-nfc-bbe.jpg
-case-nautico-bbe.jpg
-case-eletronica-bbe.jpg
+imagens/segmentos/segmento-maquetes-bbe.jpg
+imagens/segmentos/segmento-souvenirs-bbe.jpg
+imagens/segmentos/segmento-cases-eletronica-bbe.jpg
+imagens/cases/case-peca-tecnica-bbe.jpg
+imagens/cases/case-maquete-bbe.jpg
+imagens/cases/case-chaveiro-nfc-bbe.jpg
+imagens/cases/case-nautico-bbe.jpg
+imagens/cases/case-eletronica-bbe.jpg
 -->
 
 <section class="hero">
@@ -540,20 +540,20 @@ case-eletronica-bbe.jpg
     <div class="maq-grid">
       <div>
         <p class="lbl">Infraestrutura principal</p>
-        <h2 class="h2">Scanner, impressora e materiais<br>para uso real</h2>
-        <p class="desc">A BBE trabalha com fluxo técnico completo: captura, modelagem, produção e escolha de material conforme ambiente de uso, exposição ao tempo, flexibilidade e objetivo da peça.</p>
+        <h2 class="h2">Creality K2 Pro Combo,<br>scanner e materiais certos</h2>
+        <p class="desc">A BBE trabalha com fluxo técnico completo: captura, modelagem, produção e escolha de material conforme ambiente de uso, exposição ao tempo, flexibilidade e objetivo da peça. Nossa K2 Pro Combo é a principal ferramenta de produção local da operação. Ao lado imagens de amostras técnicas para serralherias.</p>
         <div class="feat-list">
-          <div class="feat"><div class="feat-ico">🏭</div><div><h4>Creality K2 Pro + CFS</h4><p>Produção local com alta velocidade, estabilidade e capacidade para lotes pequenos ou peças especiais.</p></div></div>
-          <div class="feat"><div class="feat-ico">🌡️</div><div><h4>Secagem e armazenamento</h4><p>SpacePi X4 e caixas herméticas para reduzir umidade, falhas, bolhas e perda de acabamento.</p></div></div>
+          <div class="feat"><div class="feat-ico">🏭</div><div><h4>Creality K2 Pro + CFS</h4><p>Impressora 3D profissional com produção local de alta velocidade, estabilidade, múltiplos materiais e excelente padrão para peças finais, protótipos e pequenos lotes.</p></div></div>
+          <div class="feat"><div class="feat-ico">🌡️</div><div><h4>Secagem e armazenamento</h4><p>SpacePi X4 e caixas herméticas para reduzir umidade, falhas, bolhas e perda de acabamento, especialmente no clima litorâneo.</p></div></div>
           <div class="feat"><div class="feat-ico">🧱</div><div><h4>Materiais por aplicação</h4><p>Hyper PETG para uso final, PLA para apresentação visual, PETG-CF para esforço técnico e TPU para flexibilidade.</p></div></div>
         </div>
       </div>
-      <div class="maq-img"><img src="imagens/cases/prova-amostras-tecnicas-bbe.jpg" alt="Amostras técnicas BBE 3D"></div>
+      <div class="maq-img"><img src="imagens/cases/prova-amostras-tecnicas-bbe.jpg" alt="Creality K2 Pro Combo da BBE 3D"></div>
     </div>
 
     <div class="mat-grid">
+      <div class="mat-card"><img src="imagens/infraestrutura/creality-pro.png" alt="Creality K2 Pro Combo"><div class="mat-info"><h3>Creality K2 Pro Combo</h3><p>Nossa principal máquina de produção local. Impressora 3D profissional com alta velocidade, estabilidade, câmara fechada e sistema CFS para múltiplos materiais e cores.</p></div></div>
       <div class="mat-card"><img src="imagens/infraestrutura/filamento2.png" alt="Hyper PETG Creality"><div class="mat-info"><h3>Hyper PETG — peças finais</h3><p>Para itens de uso real, exposição ao sol, maresia, peças promocionais duráveis e boa estabilidade dimensional.</p></div></div>
-      <div class="mat-card"><img src="imagens/infraestrutura/filamento.png" alt="Hyper PLA Creality"><div class="mat-info"><h3>Hyper PLA — maquetes e protótipos</h3><p>Foco em apresentação visual, plantas humanizadas, testes rápidos e prototipagem de leitura limpa.</p></div></div>
       <div class="mat-card"><img src="imagens/infraestrutura/armazenamento.png" alt="Armazenamento controlado"><div class="mat-info"><h3>Armazenamento controlado</h3><p>Filamentos em caixas herméticas com controle de umidade para garantir repetibilidade e padrão de produção.</p></div></div>
       <div class="mat-card"><img src="imagens/infraestrutura/secadora-x4.png" alt="Secadora profissional de filamentos"><div class="mat-info"><h3>Secagem profissional</h3><p>Secadora dedicada para manter o material em condição ideal de impressão, especialmente em clima litorâneo.</p></div></div>
     </div>
@@ -591,8 +591,8 @@ case-eletronica-bbe.jpg
         <div class="srv-thumb"><img src="imagens/segmentos/segmento-serralheria-vidracaria-bbe.jpg" alt="Peças técnicas para serralheria e vidraçaria"></div>
         <div class="srv-body">
           <div class="srv-ico">⚙️</div>
-          <h3 class="srv-title">Peças Técnicas para Serralheria e Vidraçaria</h3>
-          <p class="srv-desc">Reposições, gabaritos, calços, conectores, adaptadores e itens funcionais sob medida para manutenção, montagem e uso técnico recorrente.</p>
+          <h3 class="srv-title">Peças Técnicas para Serralheria e Vidraçaria - Linhas: Suprema, Gold, Integrada</h3>
+          <p class="srv-desc">Reposições, gabaritos, calços, conectores, adaptadores e itens funcionais sob medida para manutenção, montagem e uso técnico recorrente comum de mercado.</p>
           <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Preciso%20de%20peça%20técnica%20para%20serralheria%20ou%20vidraçaria." target="_blank" onclick="trackWA('segmento-serralheria')">Quero orçar este tipo →</a>
         </div>
       </article>
@@ -682,7 +682,7 @@ case-eletronica-bbe.jpg
         </div>
 
         <div class="sazonal-carousel">
-          <article class="sazonal-slide active" style="--slide-img:url('imagens/sazonais/copa-2026-3d.png')">
+          <article class="sazonal-slide active" style="--slide-img:url('copa-2026-3d.png')">
             <div class="sazonal-slide-visual"></div>
             <div class="sazonal-slide-content">
               <div class="sazonal-badge">Tema ativo do mês</div>
@@ -699,7 +699,7 @@ case-eletronica-bbe.jpg
             </div>
           </article>
 
-          <article class="sazonal-slide" style="--slide-img:url('imagens/sazonais/sao-joao-3d.png')">
+          <article class="sazonal-slide" style="--slide-img:url('sao-joao-3d.png')">
             <div class="sazonal-slide-visual"></div>
             <div class="sazonal-slide-content">
               <div class="sazonal-badge">Tema ativo do mês</div>
@@ -761,13 +761,7 @@ case-eletronica-bbe.jpg
 
     <div class="work-grid">
       <article class="work-card">
-        <div class="work-media">
-          <div class="work-mini-carousel" aria-label="Exemplos reais de peça técnica capturada pela BBE">
-            <img src="imagens/scanner3D/peca original com avaria.jpeg" alt="Peça técnica original com avaria">
-            <img src="imagens/scanner3D/scanner em bancada.jpeg" alt="Peça técnica em bancada de scanner 3D">
-            <img src="imagens/scanner3D/malha-ponto-scanner.png" alt="Malha técnica capturada por scanner 3D">
-          </div>
-        </div>
+        <img src="imagens/cases/case-peca-tecnica-bbe.jpg" alt="Peça técnica para serralheria e vidraçaria">
         <div class="work-info">
           <span class="work-tag">Peças técnicas</span>
           <h3>Reposição e adaptação funcional</h3>
@@ -797,13 +791,7 @@ case-eletronica-bbe.jpg
       </article>
 
       <article class="work-card">
-        <div class="work-media">
-          <div class="work-mini-carousel" aria-label="Exemplo real de componente náutico em desenvolvimento">
-            <img src="imagens/segmentos/caiaque-aplicacao-original-problema.jpeg" alt="Avaria em acionador de caiaque">
-            <img src="imagens/segmentos/caiaque-aplicacao-original.jpeg" alt="Acionador original instalado em caiaque">
-            <img src="imagens/segmentos/caiaque-aplicacao-original2.jpeg" alt="Conjunto náutico original para referência técnica">
-          </div>
-        </div>
+        <img src="imagens/cases/case-nautico-bbe.jpg" alt="Peça para ambiente náutico e marítimo">
         <div class="work-info">
           <span class="work-tag">Náutico</span>
           <h3>Componentes sob encomenda para maresia</h3>
