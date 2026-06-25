@@ -112,18 +112,19 @@ nav{
   background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:18px;
   padding:18px;box-shadow:0 20px 60px rgba(0,0,0,0.28);
 }
+.hero-visual video {width:100%;height:100%;max-height:470px;object-fit:cover;border-radius:14px;}
 .hero-visual-note{
   margin-top:14px;background:var(--bege);color:var(--azul-profundo);font-family:'Barlow Condensed',sans-serif;
   font-size:14px;font-weight:700;padding:10px 14px;border-radius:8px;text-align:center;
 }
 
-/* CARROSSEL CUSTOMIZADO PARA OS CARDS DE SERVIÇOS */
+/* CSS SEGURO PARA OS NOVOS CARROSSEIS DOS CARDS */
 .bbe-mini-carousel {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 200px;
-  background: #f0f4f8;
+  height: 200px;
+  background: #e9f1f9;
 }
 .bbe-mini-carousel-track {
   display: flex;
@@ -132,13 +133,16 @@ nav{
 }
 .bbe-mini-carousel-slide {
   flex: 0 0 100%;
-  min-height: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9f1f9;
 }
 .bbe-mini-carousel-slide img,
 .bbe-mini-carousel-slide video {
   width: 100%;
   height: 100%;
-  min-height: 200px;
   object-fit: cover;
   display: block;
 }
@@ -160,27 +164,6 @@ nav{
 }
 .bbe-mini-carousel .bbe-prev { left: 10px; }
 .bbe-mini-carousel .bbe-next { right: 10px; }
-.bbe-mini-carousel-dots {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 6px;
-  z-index: 10;
-}
-.bbe-mini-carousel-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-.bbe-mini-carousel-dot.active {
-  background: #fff;
-}
 
 .faixa{
   background:var(--bege);padding:18px 5vw;border-top:3px solid var(--azul);border-bottom:3px solid var(--azul);
@@ -327,7 +310,7 @@ nav{
   transition:transform .25s;
 }
 .srv-card:hover{transform:translateY(-5px)}
-.srv-thumb{height:200px;background:#e9f1f9} /* Altura ajustada para os carrosseis */
+.srv-thumb{height:200px;background:#e9f1f9}
 .srv-thumb img,.srv-thumb video{width:100%;height:100%;object-fit:cover;display:block}
 .srv-body{padding:22px}
 .srv-ico{font-size:30px;margin-bottom:10px}
@@ -462,7 +445,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
     </div>
 
     <div class="hero-visual">
-      <img src="imagens/banners/banner-principal-site.png" alt="Produção local BBE 3D" style="width:100%; height:100%; max-height:470px; object-fit:cover; border-radius:14px;">
+      <video autoplay muted loop playsinline src="imagens/cases/video-obra-rodim.mp4"></video>
       <div class="hero-visual-note">Peças técnicas, amostras, maquetes e itens sob medida produzidos pela BBE</div>
     </div>
   </div>
@@ -560,6 +543,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
           <div class="feat"><div class="feat-ico">🧱</div><div><h4>Materiais por aplicação</h4><p>Hyper PETG para uso final, PLA para apresentação visual, PETG-CF para esforço técnico e TPU para flexibilidade.</p></div></div>
         </div>
       </div>
+      
       <div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
         <video autoplay muted loop playsinline style="width:100%; max-height:480px; object-fit:cover; border-radius:16px; box-shadow:var(--sombra);" src="imagens/cases/video-obra-rodim.mp4"></video>
       </div>
@@ -584,25 +568,17 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       
       <article class="srv-card">
         <div class="srv-thumb">
-          <div class="bbe-mini-carousel" aria-label="Scanner 3D e Captura Técnica">
-            <div class="bbe-mini-carousel-track">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-scanner-bbe.jpg" alt="Scanner 3D original"></div>
+          <div class="bbe-mini-carousel">
+            <div class="bbe-mini-carousel-track" data-current="0">
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-scanner-bbe.jpg" alt="" onerror="this.style.display='none'"></div>
               <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4"></video></div>
               <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4"></video></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg" alt="Fusca scanner"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg" alt="Fusca scanner 2"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg" alt="Fusca scanner 3"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg" alt=""></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg" alt=""></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg" alt=""></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
-            <div class="bbe-mini-carousel-dots">
-              <button type="button" class="bbe-mini-carousel-dot active" onclick="goMini(this, 0)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 1)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 2)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 3)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 4)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 5)"></button>
-            </div>
           </div>
         </div>
         <div class="srv-body">
@@ -635,21 +611,15 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 
       <article class="srv-card">
         <div class="srv-thumb">
-          <div class="bbe-mini-carousel" aria-label="Soluções Náuticas e Marítimas">
-            <div class="bbe-mini-carousel-track">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-nautica-bbe.jpg" alt="Náutica original"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.17 (1).jpeg" alt="Peça náutica 1"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.20.jpeg" alt="Peça náutica 2"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.22.jpeg" alt="Peça náutica 3"></div>
+          <div class="bbe-mini-carousel">
+            <div class="bbe-mini-carousel-track" data-current="0">
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-nautica-bbe.jpg" alt="" onerror="this.style.display='none'"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.17 (1).jpeg" alt=""></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.20.jpeg" alt=""></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.22.jpeg" alt=""></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
-            <div class="bbe-mini-carousel-dots">
-              <button type="button" class="bbe-mini-carousel-dot active" onclick="goMini(this, 0)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 1)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 2)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 3)"></button>
-            </div>
           </div>
         </div>
         <div class="srv-body">
@@ -672,19 +642,14 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 
       <article class="srv-card">
         <div class="srv-thumb">
-          <div class="bbe-mini-carousel" aria-label="Souvenirs e Chaveiros">
-            <div class="bbe-mini-carousel-track">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-souvenirs-bbe.jpg" alt="Souvenirs originais"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/obra-rodin-com-miniatura.jpeg" alt="Obra Rodin com miniatura"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/case-chaveiro-nfc-bbe.jpg" alt="Chaveiro NFC"></div>
+          <div class="bbe-mini-carousel">
+            <div class="bbe-mini-carousel-track" data-current="0">
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-souvenirs-bbe.jpg" alt="" onerror="this.style.display='none'"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/obra-rodin-com-miniatura.jpeg" alt=""></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/case-chaveiro-nfc-bbe.jpg" alt=""></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
-            <div class="bbe-mini-carousel-dots">
-              <button type="button" class="bbe-mini-carousel-dot active" onclick="goMini(this, 0)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 1)"></button>
-              <button type="button" class="bbe-mini-carousel-dot" onclick="goMini(this, 2)"></button>
-            </div>
           </div>
         </div>
         <div class="srv-body">
@@ -883,37 +848,19 @@ function goScan(n) {
 function moveCarousel(dir) { goScan(scanIdx + dir); }
 setInterval(function(){ moveCarousel(1); }, 4000);
 
-// CONTROLE DOS NOVOS CARROSSEIS MENORES DOS SEGMENTOS
+// CONTROLE SEGURO DOS NOVOS CARROSSEIS
 function getMiniData(btn) {
   var carousel = btn.closest('.bbe-mini-carousel');
   var track = carousel.querySelector('.bbe-mini-carousel-track');
   var slides = track.querySelectorAll('.bbe-mini-carousel-slide');
-  var dots = carousel.querySelectorAll('.bbe-mini-carousel-dot');
-  var activeDot = carousel.querySelector('.bbe-mini-carousel-dot.active');
-  var current = 0;
-  for (var i = 0; i < dots.length; i++) {
-    if (dots[i] === activeDot) { current = i; break; }
-  }
-  return { track: track, slides: slides, dots: dots, current: current };
-}
-function showMini(data, index) {
-  var target = (index + data.slides.length) % data.slides.length;
-  data.track.style.transform = 'translateX(-' + (target * 100) + '%)';
-  for (var i = 0; i < data.dots.length; i++) {
-    if(i === target) {
-      data.dots[i].classList.add('active');
-    } else {
-      data.dots[i].classList.remove('active');
-    }
-  }
+  var current = parseInt(track.getAttribute('data-current') || '0', 10);
+  return { track: track, slides: slides, current: current };
 }
 function moveMini(btn, dir) {
   var data = getMiniData(btn);
-  showMini(data, data.current + dir);
-}
-function goMini(btn, target) {
-  var data = getMiniData(btn);
-  showMini(data, target);
+  var target = (data.current + dir + data.slides.length) % data.slides.length;
+  data.track.style.transform = 'translateX(-' + (target * 100) + '%)';
+  data.track.setAttribute('data-current', target);
 }
 </script>
 </body>
