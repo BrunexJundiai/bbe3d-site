@@ -468,7 +468,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
   <div class="wrap">
     <p class="lbl">Por que a BBE resolve melhor sua demanda</p>
     <h2 class="h2">Você entende rápido<br>o que a BBE resolve</h2>
-    <p class="desc">Aqui mostramos estrutura real, foco técnico e exemplos práticos para reduzir dúvida e facilitar o primeiro contato. A ideia é simples: você bate o olho, se reconhece no problema e chama no WhatsApp.</p>
+    <p class="desc">A BBE transforma peça física, foto, amostra, ideia ou necessidade técnica em solução real com scanner 3D, modelagem CAD e impressão sob medida. Veja os principais caminhos de atendimento e chame no WhatsApp para uma análise inicial.</p>
     <div class="proof-grid">
       <div class="proof-card"><div class="proof-title">Peça quebrada ou fora de linha</div><div class="proof-copy">Analisamos peça física, foto ou amostra para engenharia reversa, remodelagem e produção local.</div></div>
       <div class="proof-card"><div class="proof-title">Projeto técnico sob medida</div><div class="proof-copy">Desenvolvemos do zero com CAD, tolerâncias, ajuste funcional e material conforme a aplicação real.</div></div>
@@ -565,7 +565,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
   <div class="wrap">
     <p class="lbl">Segmentos de atendimento</p>
     <h2 class="h2">Os 7 focos atuais<br>da BBE 3D</h2>
-    <p class="desc">Cada frente abaixo já está organizada para facilitar catálogo, site, portfólio e anúncios. Além de entender o segmento, o visitante já consegue clicar no tipo de demanda e iniciar a conversa no WhatsApp.</p>
+    <p class="desc">Atendemos demandas técnicas, comerciais e personalizadas em frentes bem definidas. Escolha o segmento mais próximo da sua necessidade e fale direto com a BBE pelo WhatsApp para iniciar seu orçamento.</p>
 
     <div class="srv-grid">
       
@@ -708,6 +708,96 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
   </div>
 </section>
 
+<section class="sec sazonal-sec" id="datas">
+  <div class="sazonal-wrap">
+    <div class="sazonal-head">
+      <div>
+        <p class="lbl">Datas sazonais</p>
+        <h2 class="h2">Itens 3D sob encomenda<br>para campanhas do mês</h2>
+        <p class="desc">Criamos lembranças, brindes, decorações e itens promocionais em 3D para datas sazonais. Não trabalhamos com estoque fixo: produzimos sob encomenda conforme tema, quantidade e prazo da ação.</p>
+      </div>
+    </div>
+
+    <div class="sazonal-grid">
+      <div class="sazonal-carousel-wrap">
+        <div class="sazonal-nav">
+          <button type="button" aria-label="Slide anterior" onclick="moveSeasonal(-1)">&#8249;</button>
+          <button type="button" aria-label="Próximo slide" onclick="moveSeasonal(1)">&#8250;</button>
+        </div>
+
+        <div class="sazonal-carousel">
+          <article class="sazonal-slide active" style="--slide-img:url('copa-2026-3d.png')">
+            <div class="sazonal-slide-visual"></div>
+            <div class="sazonal-slide-content">
+              <div class="sazonal-badge">Tema ativo do mês</div>
+              <div class="sazonal-date">Copa do Mundo 2026 | 11/06 a 19/07</div>
+              <h3 class="sazonal-title">Brindes 3D para torcida, bares e campanhas temáticas</h3>
+              <p class="sazonal-copy">Produzimos itens personalizados para a Copa 2026 sob encomenda: peças para vitrines, brindes promocionais, chaveiros, kits para clientes e itens para ponto de venda.</p>
+              <div class="sazonal-items">
+                <span class="sazonal-chip">Chaveiros de seleções</span>
+                <span class="sazonal-chip">Topos e tags</span>
+                <span class="sazonal-chip">Brindes para bares</span>
+                <span class="sazonal-chip">Itens para vitrines</span>
+              </div>
+              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20a%20Copa%20do%20Mundo%202026." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-copa')">Consultar itens da Copa</a>
+            </div>
+          </article>
+
+          <article class="sazonal-slide" style="--slide-img:url('sao-joao-3d.png')">
+            <div class="sazonal-slide-visual"></div>
+            <div class="sazonal-slide-content">
+              <div class="sazonal-badge">Tema ativo do mês</div>
+              <div class="sazonal-date">São João e Festa Junina | 24/06</div>
+              <h3 class="sazonal-title">Decorações e brindes 3D para festas juninas</h3>
+              <p class="sazonal-copy">Desenvolvemos peças sob encomenda para escolas, comércios, eventos e lembranças temáticas, com foco em pequenas tiragens, personalização e entrega local.</p>
+              <div class="sazonal-items">
+                <span class="sazonal-chip">Topos juninos</span>
+                <span class="sazonal-chip">Tags e lembranças</span>
+                <span class="sazonal-chip">Porta-doces</span>
+                <span class="sazonal-chip">Decoração temática</span>
+              </div>
+              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20São%20João%20e%20Festa%20Junina." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-sao-joao')">Consultar itens juninos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="sazonal-dots" id="seasonalDots"></div>
+      </div>
+
+      <div class="sazonal-cards">
+        <article class="sazonal-card">
+          <div class="sazonal-card-top">
+            <span class="sazonal-card-tag">Campanha ativa</span>
+            <span class="sazonal-card-date">11/06 a 19/07</span>
+          </div>
+          <h3>Copa do Mundo 2026</h3>
+          <p>Pedidos sob encomenda para bares, lojas, empresas e campanhas promocionais com itens temáticos em 3D para torcida, brindes e ponto de venda.</p>
+          <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Sob encomenda</span>
+            <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Pequenas tiragens</span>
+          </div>
+          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20itens%20da%20Copa%202026%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-copa')">Solicitar orçamento da Copa →</a>
+        </article>
+
+        <article class="sazonal-card">
+          <div class="sazonal-card-top">
+            <span class="sazonal-card-tag">Campanha ativa</span>
+            <span class="sazonal-card-date">24/06</span>
+          </div>
+          <h3>São João e Festa Junina</h3>
+          <p>Lembranças e decorações juninas em 3D para escolas, lojas, eventos e kits de campanha, sempre sob encomenda e com alinhamento prévio de prazo.</p>
+          <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#fff8ea;border-color:#ffe0a3;color:#8f5c00;">Decorativo</span>
+            <span class="sazonal-chip" style="background:#fff8ea;border-color:#ffe0a3;color:#8f5c00;">Campanhas locais</span>
+          </div>
+          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20itens%20de%20São%20João%20e%20Festa%20Junina%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-sao-joao')">Solicitar orçamento junino →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="sec sec-azul">
   <div class="wrap">
     <p class="lbl light">Processo</p>
@@ -740,8 +830,8 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 <section class="sec" id="faq">
   <div class="wrap">
     <p class="lbl">FAQ</p>
-    <h2 class="h2">Dúvidas que normalmente<br>travariam o lead</h2>
-    <p class="desc">Estas respostas ajudam o visitante a agir mais rápido. O ideal é manter simples, direto e com foco em destravar contato.</p>
+    <h2 class="h2">Dúvidas frequentes antes<br>de pedir orçamento</h2>
+    <p class="desc">Reunimos as principais dúvidas de quem procura scanner 3D, modelagem CAD e impressão 3D sob medida. Confira os pontos básicos antes de enviar sua solicitação.</p>
     <div class="faq-grid">
       <details class="faq-item" open>
         <summary>Vocês fazem peça única?</summary>
@@ -878,6 +968,30 @@ function goScan(n) {
 }
 function moveCarousel(dir) { goScan(scanIdx + dir); }
 setInterval(function(){ moveCarousel(1); }, 4000);
+
+
+let seasonalIdx = 0;
+const seasonalSlides = document.querySelectorAll('.sazonal-slide');
+const seasonalDotsWrap = document.getElementById('seasonalDots');
+if (seasonalSlides.length && seasonalDotsWrap) {
+  seasonalSlides.forEach(function(_, i) {
+    const d = document.createElement('button');
+    d.className = 'sazonal-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Tema sazonal ' + (i + 1));
+    d.onclick = function(){ goSeasonal(i); };
+    seasonalDotsWrap.appendChild(d);
+  });
+}
+function goSeasonal(n) {
+  if (!seasonalSlides.length || !seasonalDotsWrap) return;
+  seasonalSlides[seasonalIdx].classList.remove('active');
+  seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.remove('active');
+  seasonalIdx = (n + seasonalSlides.length) % seasonalSlides.length;
+  seasonalSlides[seasonalIdx].classList.add('active');
+  seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.add('active');
+}
+function moveSeasonal(dir) { goSeasonal(seasonalIdx + dir); }
+setInterval(function(){ moveSeasonal(1); }, 5000);
 
 // CONTROLE SEGURO DOS NOVOS CARROSSEIS
 function hideBrokenSlide(el) {
