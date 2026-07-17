@@ -548,7 +548,18 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       </div>
       
       <div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
-        <video autoplay muted loop playsinline style="width:100%; max-height:480px; object-fit:cover; border-radius:16px; box-shadow:var(--sombra);" src="imagens/cases/video-obra-rodim.mp4"></video>
+        <div class="bbe-mini-carousel" style="height:480px; border-radius:16px; box-shadow:var(--sombra);">
+          <div class="bbe-mini-carousel-track" data-current="0">
+            <div class="bbe-mini-carousel-slide">
+              <video autoplay muted loop playsinline src="imagens/cases/video-obra-rodim.mp4" aria-label="Vídeo de produção e acabamento BBE 3D" style="object-fit:cover;"></video>
+            </div>
+            <div class="bbe-mini-carousel-slide">
+              <video autoplay muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Vídeo de impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit:cover;"></video>
+            </div>
+          </div>
+          <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
+          <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
+        </div>
       </div>
     </div>
 
@@ -611,6 +622,11 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
               <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-caravan-original.jpeg" alt="Apoio de braço Caravan original recebido para engenharia reversa" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
               <div class="bbe-mini-carousel-slide"><img src="imagens/cases/caravan-apoio-braco-02.jpeg" alt="Detalhe do apoio de braço Caravan para reprodução técnica" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
               <div class="bbe-mini-carousel-slide"><img src="imagens/cases/modelagem-caravan.png" alt="Modelagem e malha tratada do apoio de braço Caravan" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/ideia-cliente-f100.jpeg" alt="Referência enviada pelo cliente para console Ford F-100" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/modelagem-f100.jpeg" alt="Modelagem CAD do console Ford F-100 desenvolvida pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
+              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/miniatura-f100-1.jpeg" alt="Miniatura impressa do console Ford F-100 para validação" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/miniatura-f100-2.jpeg" alt="Miniatura do console Ford F-100 impressa pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
