@@ -448,7 +448,18 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
     </div>
 
     <div class="hero-visual">
-      <img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg" alt="Scanner 3D em bancada BBE 3D">
+      <div class="bbe-mini-carousel" style="height:470px; border-radius:14px; overflow:hidden; background:rgba(255,255,255,0.06);">
+        <div class="bbe-mini-carousel-track" data-current="0">
+          <div class="bbe-mini-carousel-slide">
+            <video autoplay muted loop playsinline src="imagens/cases/video-obra-rodim.mp4" aria-label="Vídeo de produção e acabamento BBE 3D" style="object-fit:cover;"></video>
+          </div>
+          <div class="bbe-mini-carousel-slide">
+            <video autoplay muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Vídeo de impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit:cover;"></video>
+          </div>
+        </div>
+        <button type="button" class="bbe-prev" onclick="moveMini(this, -1)" aria-label="Vídeo anterior">&#8249;</button>
+        <button type="button" class="bbe-next" onclick="moveMini(this, 1)" aria-label="Próximo vídeo">&#8250;</button>
+      </div>
       <div class="hero-visual-note">Peças técnicas, amostras, maquetes e itens sob medida produzidos pela BBE</div>
     </div>
   </div>
@@ -548,18 +559,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       </div>
       
       <div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
-        <div class="bbe-mini-carousel" style="height:480px; border-radius:16px; box-shadow:var(--sombra);">
-          <div class="bbe-mini-carousel-track" data-current="0">
-            <div class="bbe-mini-carousel-slide">
-              <video autoplay muted loop playsinline src="imagens/cases/video-obra-rodim.mp4" aria-label="Vídeo de produção e acabamento BBE 3D" style="object-fit:cover;"></video>
-            </div>
-            <div class="bbe-mini-carousel-slide">
-              <video autoplay muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Vídeo de impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit:cover;"></video>
-            </div>
-          </div>
-          <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
-          <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
-        </div>
+        <img src="imagens/infraestrutura/nova-estrutura.jpeg" alt="Infraestrutura principal da BBE 3D com bancada, scanner, K2 Pro Combo e materiais" style="width:100%; max-height:480px; object-fit:cover; border-radius:16px; box-shadow:var(--sombra);">
       </div>
     </div>
 
