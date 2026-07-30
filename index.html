@@ -278,10 +278,16 @@ nav{
 .sazonal-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:28px;align-items:start;margin-bottom:38px}
 .sazonal-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:28px;align-items:stretch}
 .sazonal-carousel-wrap{background:#0f3d6e;border-radius:8px;overflow:hidden;box-shadow:0 16px 40px rgba(15,61,110,0.18);position:relative;min-height:460px}
-.sazonal-carousel{position:relative;width:100%;min-height:460px}
+.sazonal-carousel{position:relative;width:100%;min-height:460px;height:100%}
 .sazonal-slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .45s ease;display:flex;align-items:flex-end}
 .sazonal-slide.active{opacity:1;pointer-events:auto}
 .sazonal-slide-visual{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.18) 0%,rgba(10,37,64,0.82) 100%), var(--slide-img, linear-gradient(135deg,#17579B 0%,#1e6bbf 45%,#ffd166 100%));background-size:cover;background-position:center}
+.sazonal-slide-visual.sazonal-mosaic{display:flex;overflow:hidden;background:#0a2540}
+.sazonal-slide-visual.sazonal-mosaic::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.08) 0%,rgba(10,37,64,0.38) 48%,rgba(10,37,64,0.94) 100%);z-index:2}
+.sazonal-bg-panel{flex:1;min-width:0;height:100%;background-size:cover;background-position:center;filter:saturate(.92) contrast(1.02);transform:scale(1.015)}
+.sazonal-slide-visual.sazonal-patriotic{overflow:hidden;background:linear-gradient(135deg,#006b3c 0%,#009c3b 48%,#005b35 100%);box-shadow:inset 0 -230px 180px rgba(10,37,64,.72)}
+.sazonal-slide-visual.sazonal-patriotic::before{content:'';position:absolute;left:17%;top:9%;width:66%;height:62%;background:#ffdf00;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);opacity:.94;transform:rotate(-3deg)}
+.sazonal-slide-visual.sazonal-patriotic::after{content:'';position:absolute;left:39%;top:24%;width:24%;aspect-ratio:1;border-radius:50%;background:#002776;box-shadow:0 0 0 12px rgba(255,255,255,.92);opacity:.96}
 .sazonal-slide-content{position:relative;z-index:2;padding:26px;width:100%;color:#fff}
 .sazonal-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px}
 .sazonal-date{font-size:13px;color:rgba(255,255,255,0.8);font-weight:600;margin-bottom:10px}
@@ -687,9 +693,12 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <div class="srv-thumb">
           <div class="bbe-mini-carousel">
             <div class="bbe-mini-carousel-track" data-current="0">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-souvenirs-bbe.jpg" alt="" onerror="this.style.display='none'"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/obra-rodin-com-miniatura.jpeg" alt=""></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/case-chaveiro-nfc-bbe.jpg" alt=""></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-souvenirs-bbe.jpg" alt="Souvenirs e itens decorativos personalizados pela BBE 3D" onerror="this.style.display='none'"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/obra-rodin-com-miniatura.jpeg" alt="Obra decorativa e miniatura produzidas pela BBE 3D"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/case-chaveiro-nfc-bbe.jpg" alt="Chaveiro personalizado com tecnologia NFC produzido pela BBE 3D"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/placa-banho-mar.jpeg" alt="Placa decorativa Banho de Mar personalizada em impressão 3D"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/micro-tubarao.jpeg" alt="Micropeça decorativa em formato de tubarão produzida pela BBE 3D"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/base-porta-copo-impressao-bbe.jpeg" alt="Base porta-copo personalizada produzida pela BBE 3D"></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
@@ -729,50 +738,74 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
     <div class="sazonal-head">
       <div>
         <p class="lbl">Datas sazonais</p>
-        <h2 class="h2">Itens 3D sob encomenda<br>para campanhas do mês</h2>
-        <p class="desc">Criamos lembranças, brindes, decorações e itens promocionais em 3D para datas sazonais. Não trabalhamos com estoque fixo: produzimos sob encomenda conforme tema, quantidade e prazo da ação.</p>
+        <h2 class="h2">Itens 3D sob encomenda<br>para as próximas campanhas</h2>
+        <p class="desc">Criamos presentes, lembranças, brindes, decorações e itens promocionais em 3D para datas sazonais. A produção é feita sob encomenda, conforme tema, quantidade, personalização e prazo de cada ação.</p>
       </div>
     </div>
 
     <div class="sazonal-grid">
       <div class="sazonal-carousel-wrap">
         <div class="sazonal-nav">
-          <button type="button" aria-label="Slide anterior" onclick="moveSeasonal(-1)">&#8249;</button>
-          <button type="button" aria-label="Próximo slide" onclick="moveSeasonal(1)">&#8250;</button>
+          <button type="button" aria-label="Campanha anterior" onclick="moveSeasonal(-1)">&#8249;</button>
+          <button type="button" aria-label="Próxima campanha" onclick="moveSeasonal(1)">&#8250;</button>
         </div>
 
         <div class="sazonal-carousel">
-          <article class="sazonal-slide active" style="--slide-img:url('copa-2026-3d.png')">
-            <div class="sazonal-slide-visual"></div>
+          <article class="sazonal-slide active">
+            <div class="sazonal-slide-visual sazonal-mosaic" aria-hidden="true">
+              <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/escultura-pai-e-filha.webp');"></span>
+              <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/estatueta-super-pai.webp');"></span>
+            </div>
             <div class="sazonal-slide-content">
-              <div class="sazonal-badge">Tema ativo do mês</div>
-              <div class="sazonal-date">Copa do Mundo 2026 | 11/06 a 19/07</div>
-              <h3 class="sazonal-title">Brindes 3D para torcida, bares e campanhas temáticas</h3>
-              <p class="sazonal-copy">Produzimos itens personalizados para a Copa 2026 sob encomenda: peças para vitrines, brindes promocionais, chaveiros, kits para clientes e itens para ponto de venda.</p>
+              <div class="sazonal-badge">Campanha aberta</div>
+              <div class="sazonal-date">Dia dos Pais | 09/08/2026</div>
+              <h3 class="sazonal-title">Presentes personalizados para celebrar histórias entre pais e filhos</h3>
+              <p class="sazonal-copy">Produzimos esculturas, estatuetas, placas e lembranças personalizadas para homenagens afetivas, presentes familiares e ações comerciais do Dia dos Pais.</p>
               <div class="sazonal-items">
-                <span class="sazonal-chip">Chaveiros de seleções</span>
-                <span class="sazonal-chip">Topos e tags</span>
-                <span class="sazonal-chip">Brindes para bares</span>
-                <span class="sazonal-chip">Itens para vitrines</span>
+                <span class="sazonal-chip">Esculturas afetivas</span>
+                <span class="sazonal-chip">Estatuetas personalizadas</span>
+                <span class="sazonal-chip">Placas e homenagens</span>
+                <span class="sazonal-chip">Produção sob encomenda</span>
               </div>
-              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20a%20Copa%20do%20Mundo%202026." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-copa')">Consultar itens da Copa</a>
+              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20um%20presente%20ou%20item%203D%20personalizado%20para%20o%20Dia%20dos%20Pais." class="sazonal-cta" target="_blank" rel="noopener" onclick="trackWA('sazonal-dia-dos-pais')">Consultar projeto para o Dia dos Pais</a>
             </div>
           </article>
 
-          <article class="sazonal-slide" style="--slide-img:url('sao-joao-3d.png')">
-            <div class="sazonal-slide-visual"></div>
+          <article class="sazonal-slide">
+            <div class="sazonal-slide-visual sazonal-patriotic" aria-hidden="true"></div>
             <div class="sazonal-slide-content">
-              <div class="sazonal-badge">Tema ativo do mês</div>
-              <div class="sazonal-date">São João e Festa Junina | 24/06</div>
-              <h3 class="sazonal-title">Decorações e brindes 3D para festas juninas</h3>
-              <p class="sazonal-copy">Desenvolvemos peças sob encomenda para escolas, comércios, eventos e lembranças temáticas, com foco em pequenas tiragens, personalização e entrega local.</p>
+              <div class="sazonal-badge">Data cívica</div>
+              <div class="sazonal-date">Independência do Brasil | 07/09/2026</div>
+              <h3 class="sazonal-title">Projetos 3D para ações de 7 de Setembro</h3>
+              <p class="sazonal-copy">A data está aberta para demandas pontuais de escolas, comércios, empresas e eventos que precisem de lembranças, brindes ou elementos temáticos personalizados.</p>
               <div class="sazonal-items">
-                <span class="sazonal-chip">Topos juninos</span>
-                <span class="sazonal-chip">Tags e lembranças</span>
-                <span class="sazonal-chip">Porta-doces</span>
-                <span class="sazonal-chip">Decoração temática</span>
+                <span class="sazonal-chip">Chaveiros e tags</span>
+                <span class="sazonal-chip">Lembranças escolares</span>
+                <span class="sazonal-chip">Brindes corporativos</span>
+                <span class="sazonal-chip">Elementos para eventos</span>
               </div>
-              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20itens%203D%20sob%20encomenda%20para%20São%20João%20e%20Festa%20Junina." class="sazonal-cta" target="_blank" onclick="trackWA('sazonal-sao-joao')">Consultar itens juninos</a>
+              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20um%20projeto%203D%20para%20uma%20ação%20de%207%20de%20Setembro." class="sazonal-cta" target="_blank" rel="noopener" onclick="trackWA('sazonal-sete-setembro')">Consultar projeto de 7 de Setembro</a>
+            </div>
+          </article>
+
+          <article class="sazonal-slide">
+            <div class="sazonal-slide-visual sazonal-mosaic" aria-hidden="true">
+              <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/homem-aranha-robo-articulado.webp');"></span>
+              <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/MARSHALL-PATRULHA-CANINA-1.webp');"></span>
+              <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/santa-rita-preto-com-escrita-branco.png');"></span>
+            </div>
+            <div class="sazonal-slide-content">
+              <div class="sazonal-badge">Duas campanhas na mesma data</div>
+              <div class="sazonal-date">Dia das Crianças + Nossa Senhora Aparecida | 12/10/2026</div>
+              <h3 class="sazonal-title">Itens infantis e religiosos para campanhas de 12 de outubro</h3>
+              <p class="sazonal-copy">Atendemos os dois temas de forma independente: brinquedos e personagens decorativos para o Dia das Crianças, além de lembranças, placas e peças religiosas personalizadas.</p>
+              <div class="sazonal-items">
+                <span class="sazonal-chip">Brinquedos articulados</span>
+                <span class="sazonal-chip">Personagens decorativos</span>
+                <span class="sazonal-chip">Lembranças religiosas</span>
+                <span class="sazonal-chip">Presentes personalizados</span>
+              </div>
+              <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20um%20item%203D%20para%20o%20Dia%20das%20Crianças%20ou%20para%20uma%20campanha%20religiosa%20de%2012%20de%20outubro." class="sazonal-cta" target="_blank" rel="noopener" onclick="trackWA('sazonal-doze-outubro')">Consultar campanha de 12 de outubro</a>
             </div>
           </article>
         </div>
@@ -783,36 +816,49 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       <div class="sazonal-cards">
         <article class="sazonal-card">
           <div class="sazonal-card-top">
-            <span class="sazonal-card-tag">Campanha ativa</span>
-            <span class="sazonal-card-date">11/06 a 19/07</span>
+            <span class="sazonal-card-tag">Campanha aberta</span>
+            <span class="sazonal-card-date">09/08</span>
           </div>
-          <h3>Copa do Mundo 2026</h3>
-          <p>Pedidos sob encomenda para bares, lojas, empresas e campanhas promocionais com itens temáticos em 3D para torcida, brindes e ponto de venda.</p>
+          <h3>Dia dos Pais</h3>
+          <p>Presentes afetivos, esculturas, estatuetas e placas personalizadas produzidas sob encomenda para famílias, empresas e ações promocionais.</p>
           <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Personalizado</span>
             <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Sob encomenda</span>
-            <span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Pequenas tiragens</span>
           </div>
-          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20itens%20da%20Copa%202026%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-copa')">Solicitar orçamento da Copa →</a>
+          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20um%20item%203D%20personalizado%20para%20o%20Dia%20dos%20Pais." class="sazonal-card-btn" target="_blank" rel="noopener" onclick="trackWA('sazonal-card-dia-dos-pais')">Solicitar orçamento para o Dia dos Pais →</a>
         </article>
 
         <article class="sazonal-card">
           <div class="sazonal-card-top">
-            <span class="sazonal-card-tag">Campanha ativa</span>
-            <span class="sazonal-card-date">24/06</span>
+            <span class="sazonal-card-tag">Agenda aberta</span>
+            <span class="sazonal-card-date">07/09</span>
           </div>
-          <h3>São João e Festa Junina</h3>
-          <p>Lembranças e decorações juninas em 3D para escolas, lojas, eventos e kits de campanha, sempre sob encomenda e com alinhamento prévio de prazo.</p>
+          <h3>7 de Setembro</h3>
+          <p>Demandas pontuais para escolas, empresas, comércios e eventos com brindes, lembranças e elementos temáticos desenvolvidos conforme cada ação.</p>
           <div class="sazonal-card-list">
-            <span class="sazonal-chip" style="background:#fff8ea;border-color:#ffe0a3;color:#8f5c00;">Decorativo</span>
-            <span class="sazonal-chip" style="background:#fff8ea;border-color:#ffe0a3;color:#8f5c00;">Campanhas locais</span>
+            <span class="sazonal-chip" style="background:#edf8f1;border-color:#ccebd7;color:#006b3c;">Data cívica</span>
+            <span class="sazonal-chip" style="background:#edf8f1;border-color:#ccebd7;color:#006b3c;">Projetos pontuais</span>
           </div>
-          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20itens%20de%20São%20João%20e%20Festa%20Junina%20em%203D." class="sazonal-card-btn" target="_blank" onclick="trackWA('sazonal-card-sao-joao')">Solicitar orçamento junino →</a>
+          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20um%20item%203D%20para%20uma%20ação%20de%207%20de%20Setembro." class="sazonal-card-btn" target="_blank" rel="noopener" onclick="trackWA('sazonal-card-sete-setembro')">Solicitar orçamento para 7 de Setembro →</a>
+        </article>
+
+        <article class="sazonal-card">
+          <div class="sazonal-card-top">
+            <span class="sazonal-card-tag">Agenda aberta</span>
+            <span class="sazonal-card-date">12/10</span>
+          </div>
+          <h3>Dia das Crianças e campanha religiosa</h3>
+          <p>Itens infantis e peças religiosas tratados como linhas independentes, com personalização, quantidade e prazo definidos conforme a necessidade do projeto.</p>
+          <div class="sazonal-card-list">
+            <span class="sazonal-chip" style="background:#fff4e8;border-color:#ffd7ad;color:#985300;">Infantil</span>
+            <span class="sazonal-chip" style="background:#f4effb;border-color:#dfd2f2;color:#674094;">Religioso</span>
+          </div>
+          <a href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20um%20item%203D%20para%20o%20Dia%20das%20Crianças%20ou%20para%20uma%20campanha%20religiosa%20de%2012%20de%20outubro." class="sazonal-card-btn" target="_blank" rel="noopener" onclick="trackWA('sazonal-card-doze-outubro')">Solicitar orçamento para 12 de outubro →</a>
         </article>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="sec sec-azul">
   <div class="wrap">
