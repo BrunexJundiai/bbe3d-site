@@ -283,11 +283,13 @@ nav{
 .sazonal-slide.active{opacity:1;pointer-events:auto}
 .sazonal-slide-visual{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.18) 0%,rgba(10,37,64,0.82) 100%), var(--slide-img, linear-gradient(135deg,#17579B 0%,#1e6bbf 45%,#ffd166 100%));background-size:cover;background-position:center}
 .sazonal-slide-visual.sazonal-mosaic{display:flex;overflow:hidden;background:#0a2540}
-.sazonal-slide-visual.sazonal-mosaic::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.08) 0%,rgba(10,37,64,0.38) 48%,rgba(10,37,64,0.94) 100%);z-index:2}
-.sazonal-bg-panel{flex:1;min-width:0;height:100%;background-size:cover;background-position:center;filter:saturate(.92) contrast(1.02);transform:scale(1.015)}
-.sazonal-slide-visual.sazonal-patriotic{overflow:hidden;background:linear-gradient(135deg,#006b3c 0%,#009c3b 48%,#005b35 100%);box-shadow:inset 0 -230px 180px rgba(10,37,64,.72)}
-.sazonal-slide-visual.sazonal-patriotic::before{content:'';position:absolute;left:17%;top:9%;width:66%;height:62%;background:#ffdf00;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);opacity:.94;transform:rotate(-3deg)}
-.sazonal-slide-visual.sazonal-patriotic::after{content:'';position:absolute;left:39%;top:24%;width:24%;aspect-ratio:1;border-radius:50%;background:#002776;box-shadow:0 0 0 12px rgba(255,255,255,.92);opacity:.96}
+.sazonal-slide-visual.sazonal-mosaic::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.04) 0%,rgba(10,37,64,0.18) 42%,rgba(10,37,64,0.94) 100%);z-index:2}
+.sazonal-bg-panel{flex:1;min-width:0;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;filter:saturate(.92) contrast(1.02)}
+.sazonal-slide-visual.sazonal-fathers{display:grid;grid-template-columns:46% 54%;gap:8px;padding:8px;background:#dce4ec}
+.sazonal-slide-visual.sazonal-fathers .sazonal-bg-panel{width:100%;height:100%;background-size:contain;background-position:center top;background-color:#dce4ec}
+.sazonal-slide-visual.sazonal-fathers .sazonal-bg-panel:first-child{background-color:#d9d4cb}
+.sazonal-slide-visual.sazonal-fathers .sazonal-bg-panel:last-child{background-color:#b7c2ca}
+.sazonal-slide-visual.sazonal-sete-setembro{background-position:center center}
 .sazonal-slide-content{position:relative;z-index:2;padding:26px;width:100%;color:#fff}
 .sazonal-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px}
 .sazonal-date{font-size:13px;color:rgba(255,255,255,0.8);font-weight:600;margin-bottom:10px}
@@ -752,7 +754,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 
         <div class="sazonal-carousel">
           <article class="sazonal-slide active">
-            <div class="sazonal-slide-visual sazonal-mosaic" aria-hidden="true">
+            <div class="sazonal-slide-visual sazonal-mosaic sazonal-fathers" aria-hidden="true">
               <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/escultura-pai-e-filha.webp');"></span>
               <span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/estatueta-super-pai.webp');"></span>
             </div>
@@ -772,7 +774,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
           </article>
 
           <article class="sazonal-slide">
-            <div class="sazonal-slide-visual sazonal-patriotic" aria-hidden="true"></div>
+            <div class="sazonal-slide-visual sazonal-sete-setembro" style="--slide-img:url('imagens/sazonais/sete-setembro.jpg');" aria-hidden="true"></div>
             <div class="sazonal-slide-content">
               <div class="sazonal-badge">Data cívica</div>
               <div class="sazonal-date">Independência do Brasil | 07/09/2026</div>
