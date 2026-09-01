@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BBE 3D Manufatura — Peças Técnicas, Scanner 3D e Impressão 3D | Praia Grande/SP</title>
 <meta name="description" content="Scanner 3D, modelagem CAD e impressão 3D sob medida em Praia Grande/SP. Peças técnicas, engenharia reversa, maquetes, cases para eletrônica e brindes personalizados.">
+<meta name="theme-color" content="#17579B">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://bbe3d.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="BBE 3D Manufatura — Scanner 3D, CAD e Impressão 3D em Praia Grande/SP">
+<meta property="og:description" content="Projetos reais de engenharia reversa, captura 3D, modelagem CAD, impressão 3D e itens personalizados produzidos pela BBE 3D.">
+<meta property="og:url" content="https://bbe3d.com.br/">
+<meta property="og:image" content="https://bbe3d.com.br/imagens/cases/hero-peca-tecnica-bbe.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="imagens/marca/logo-comercial-bbe.svg" as="image" type="image/svg+xml">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18180058403"></script>
 <script>
@@ -17,6 +28,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BBE 3D Manufatura",
+  "url": "https://bbe3d.com.br/",
+  "logo": "https://bbe3d.com.br/imagens/marca/logo-comercial-bbe.svg",
+  "image": "https://bbe3d.com.br/imagens/cases/hero-peca-tecnica-bbe.jpg",
+  "telephone": "+55 13 99145-5673",
+  "email": "bbe3dmanufatura@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Praia Grande",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/bbe3dmanufatura3d/"]
+}
+</script>
 
 <style>
 :root{
@@ -391,6 +422,117 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 .wa-float svg{width:30px;height:30px;fill:#fff}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
+
+/* ===== BBE 3D — PORTFÓLIO, AVALIAÇÕES, MOBILE E PERFORMANCE ===== */
+.nav-toggle{
+  display:none;border:1px solid rgba(245,228,206,.35);background:rgba(255,255,255,.08);color:var(--bege);
+  width:44px;height:44px;border-radius:8px;font-size:23px;cursor:pointer;align-items:center;justify-content:center;
+}
+
+.project-sec{background:linear-gradient(180deg,#ffffff 0%,#f5f8fb 100%)}
+.project-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.project-head .desc{margin-bottom:0}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.project-card{
+  background:#fff;border:1px solid rgba(23,87,155,.12);border-radius:16px;overflow:hidden;box-shadow:var(--sombra);
+  display:flex;flex-direction:column;min-width:0;
+}
+.project-card.featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr)}
+.project-media.bbe-mini-carousel{height:330px;background:#0a2540}
+.project-card.featured .project-media.bbe-mini-carousel{height:100%;min-height:430px;border-radius:0}
+.project-media .bbe-mini-carousel-slide{background:#e9f1f9}
+.project-media .media-contain img,.project-media .media-contain video{object-fit:contain;background:#eef3f8}
+.project-media .media-cover img,.project-media .media-cover video{object-fit:cover}
+.project-body{padding:24px;display:flex;flex-direction:column;gap:12px}
+.project-card.featured .project-body{justify-content:center;padding:30px}
+.project-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--azul)}
+.project-title{font-family:'Barlow Condensed',sans-serif;font-size:28px;line-height:1.02;color:var(--azul-profundo)}
+.project-copy{font-size:14px;line-height:1.7;color:var(--texto-suave)}
+.project-tags{display:flex;flex-wrap:wrap;gap:7px}
+.project-tag{font-size:11px;font-weight:700;color:var(--azul);background:#edf5fc;border:1px solid #d7e8f8;border-radius:999px;padding:6px 9px}
+.project-note{font-size:12px;line-height:1.55;color:#6a7480;border-left:3px solid var(--bege);padding-left:10px}
+.study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.study-card{background:#fff;border:1px dashed rgba(23,87,155,.28);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:180px 1fr;min-height:180px}
+.study-media{background:#e9f1f9;min-height:180px;overflow:hidden}
+.study-media img,.study-media video{width:100%;height:100%;object-fit:contain;display:block;background:#eef3f8}
+.study-body{padding:20px}
+.study-label{display:inline-flex;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#775d00;background:#fff3be;border:1px solid #f0da76;border-radius:999px;padding:5px 8px;margin-bottom:9px}
+.study-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;color:var(--azul-profundo);margin-bottom:7px}
+.study-copy{font-size:13px;line-height:1.6;color:var(--texto-suave)}
+
+.reviews-sec{background:var(--azul-profundo);overflow:hidden}
+.reviews-sec .h2{color:#fff}
+.reviews-sec .desc{color:rgba(255,255,255,.75)}
+.reviews-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.reviews-nav{display:flex;gap:8px}
+.reviews-nav button{width:42px;height:42px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(255,255,255,.08);color:#fff;font-size:22px;cursor:pointer}
+.reviews-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 14px;scrollbar-width:thin;scrollbar-color:rgba(245,228,206,.5) transparent}
+.review-shot{flex:0 0 min(560px,82vw);scroll-snap-align:start;background:#111b28;border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;box-shadow:0 16px 42px rgba(0,0,0,.25)}
+.review-shot img{width:100%;height:100%;max-height:260px;object-fit:contain;background:#111;display:block}
+.reviews-proof{margin-top:16px;font-size:12px;color:rgba(255,255,255,.58)}
+
+/* mídia só reproduz quando realmente visível e ativa */
+video{background:#0a2540}
+.media-paused::after{content:'▶';position:absolute;inset:auto 12px 12px auto;width:36px;height:36px;border-radius:50%;background:rgba(10,37,64,.76);color:#fff;display:flex;align-items:center;justify-content:center}
+
+/* melhora renderização de seções abaixo da dobra sem alterar layout */
+.project-sec,.reviews-sec,.sazonal-sec{content-visibility:auto;contain-intrinsic-size:900px}
+
+@media(max-width:1080px){
+  .nav-links{gap:13px}
+  .nav-links a{font-size:13px}
+}
+
+@media(max-width:920px){
+  .nav-toggle{display:flex}
+  nav{padding:0 4vw}
+  .nav-links{
+    display:none;position:absolute;top:68px;left:0;right:0;background:rgba(15,61,110,.99);padding:14px 5vw 20px;
+    flex-direction:column;align-items:stretch;gap:6px;border-top:1px solid rgba(255,255,255,.12);box-shadow:0 18px 30px rgba(0,0,0,.22)
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:15px;padding:11px 10px;border-radius:7px}
+  .nav-links a:hover{background:rgba(255,255,255,.08)}
+  .nav-cta{text-align:center;margin-top:4px}
+  .project-card.featured{grid-template-columns:1fr}
+  .project-card.featured .project-media.bbe-mini-carousel{height:340px;min-height:0}
+  .project-grid{grid-template-columns:1fr}
+  .study-grid{grid-template-columns:1fr}
+}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex}
+  .hero-visual{display:block!important;width:100%;max-width:none;margin-top:6px;padding:12px}
+  .hero-visual .bbe-mini-carousel{height:300px!important}
+  .hero-visual-note{font-size:12px}
+  .project-media.bbe-mini-carousel{height:280px}
+  .project-card.featured .project-media.bbe-mini-carousel{height:300px}
+  .project-body,.project-card.featured .project-body{padding:20px}
+  .project-title{font-size:25px}
+  .study-card{grid-template-columns:1fr}
+  .study-media{height:240px}
+  .review-shot{flex-basis:88vw}
+  .review-shot img{max-height:230px}
+  .reviews-nav{display:none}
+  .bbe-mini-carousel .bbe-prev,.bbe-mini-carousel .bbe-next{width:38px;height:38px;background:rgba(15,61,110,.84)}
+}
+
+@media(max-width:520px){
+  .scanner-specs{grid-template-columns:1fr}
+  .sec{padding:66px 5vw}
+  .hero-btns .btn-wa,.hero-btns .btn-out{width:100%;justify-content:center;text-align:center}
+  .hero-stats{gap:18px}
+  .project-media.bbe-mini-carousel,.project-card.featured .project-media.bbe-mini-carousel{height:250px}
+  .study-media{height:220px}
+  .wa-float{right:16px;bottom:16px;width:54px;height:54px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
 @media(max-width:920px){
   .hero-grid,.scanner-grid,.maq-grid,.ctt-wrap{grid-template-columns:1fr}
   .hero-visual{max-width:620px}
@@ -417,12 +559,15 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 
 <nav>
   <a class="nav-logo" href="#">
-    <img class="nav-logo-img" src="imagens/marca/logo-comercial-bbe.svg" alt="BBE 3D Logo">
+    <img loading="eager" decoding="async" fetchpriority="high" class="nav-logo-img" src="imagens/marca/logo-comercial-bbe.svg" alt="BBE 3D Logo">
     <div class="nav-logo-text">BBE 3D Manufatura<span class="nav-logo-sub">Praia Grande / SP</span></div>
   </a>
-  <div class="nav-links">
+  <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks" onclick="toggleNav(this)">☰</button>
+  <div class="nav-links" id="navLinks">
     <a href="#scanner">Scanner 3D</a>
     <a href="#segmentos">Segmentos</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#avaliacoes">Avaliações</a>
     <a href="/imagens/marca/portfolio-bbe3d.pdf" target="_blank" rel="noopener">Portfólio</a>
     <a href="#faq">FAQ</a>
     <a href="#contato" class="nav-cta">📲 Orçamento</a>
@@ -464,10 +609,10 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       <div class="bbe-mini-carousel" style="height:470px; border-radius:14px; overflow:hidden; background:rgba(255,255,255,0.06);">
         <div class="bbe-mini-carousel-track" data-current="0">
           <div class="bbe-mini-carousel-slide">
-            <video autoplay muted loop playsinline src="imagens/cases/video-obra-rodim.mp4" aria-label="Vídeo de produção e acabamento BBE 3D" style="object-fit:cover;"></video>
+            <video muted loop playsinline src="imagens/cases/video-obra-rodim.mp4" aria-label="Vídeo de produção e acabamento BBE 3D" style="object-fit:cover;" preload="metadata"></video>
           </div>
           <div class="bbe-mini-carousel-slide">
-            <video autoplay muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Vídeo de impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit:cover;"></video>
+            <video muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Vídeo de impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit:cover;" preload="metadata"></video>
           </div>
         </div>
         <button type="button" class="bbe-prev" onclick="moveMini(this, -1)" aria-label="Vídeo anterior">&#8249;</button>
@@ -514,7 +659,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <div class="scanner-spec"><div class="scanner-spec-val">Sem spray</div><div class="scanner-spec-lbl">Captura superfícies complexas</div></div>
         <div class="scanner-spec"><div class="scanner-spec-val">Arquivo + peça</div><div class="scanner-spec-lbl">Entrega digital ou física</div></div>
       </div>
-      <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20peça%20ou%20objeto%20para%20captura%20técnica%20e%20quero%20orçamento." class="btn-wa" target="_blank" onclick="trackWA('scanner-cta')">
+      <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20peça%20ou%20objeto%20para%20captura%20técnica%20e%20quero%20orçamento." class="btn-wa" target="_blank" onclick="trackWA('scanner-cta')" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Solicitar captura técnica
       </a>
@@ -522,11 +667,11 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
 
     <div class="scanner-carousel-wrap">
       <div class="scanner-carousel" id="scanCarousel">
-        <div class="scan-slide active"><img src="imagens/infraestrutura/exemplo1.webp" alt="Scanner 3D CR-Scan Otter"></div>
-        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo2.webp" alt="CR-Scan Otter recursos"></div>
-        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo3.webp" alt="CR-Scan Otter captura estabilizada"></div>
-        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo4.webp" alt="CR-Scan Otter faixa de captura"></div>
-        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo5.webp" alt="CR-Scan Otter alta fidelidade"></div>
+        <div class="scan-slide active"><img src="imagens/infraestrutura/exemplo1.webp" alt="Scanner 3D CR-Scan Otter" loading="lazy" decoding="async"></div>
+        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo2.webp" alt="CR-Scan Otter recursos" loading="lazy" decoding="async"></div>
+        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo3.webp" alt="CR-Scan Otter captura estabilizada" loading="lazy" decoding="async"></div>
+        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo4.webp" alt="CR-Scan Otter faixa de captura" loading="lazy" decoding="async"></div>
+        <div class="scan-slide"><img src="imagens/infraestrutura/exemplo5.webp" alt="CR-Scan Otter alta fidelidade" loading="lazy" decoding="async"></div>
       </div>
       <button class="scan-prev" onclick="moveCarousel(-1)" aria-label="Anterior">&#8249;</button>
       <button class="scan-next" onclick="moveCarousel(1)" aria-label="Próximo">&#8250;</button>
@@ -572,15 +717,15 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       </div>
       
       <div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
-        <img src="imagens/infraestrutura/nova-estrutura.jpeg" alt="Infraestrutura principal da BBE 3D com bancada, scanner, K2 Pro Combo e materiais" style="width:100%; max-height:480px; object-fit:cover; border-radius:16px; box-shadow:var(--sombra);">
+        <img src="imagens/infraestrutura/nova-estrutura.jpeg" alt="Infraestrutura principal da BBE 3D com bancada, scanner, K2 Pro Combo e materiais" style="width:100%; max-height:480px; object-fit:cover; border-radius:16px; box-shadow:var(--sombra);" loading="lazy" decoding="async">
       </div>
     </div>
 
     <div class="mat-grid">
-      <div class="mat-card"><img src="imagens/infraestrutura/creality-pro.png" alt="Creality K2 Pro Combo"><div class="mat-info"><h3>Creality K2 Pro Combo</h3><p>Nossa principal máquina de produção local. Impressora 3D profissional com alta velocidade, estabilidade, câmara fechada e sistema CFS para múltiplos materiais e cores.</p></div></div>
-      <div class="mat-card"><img src="imagens/infraestrutura/filamento2.png" alt="Hyper PETG Creality"><div class="mat-info"><h3>Hyper PETG — peças finais</h3><p>Para itens de uso real, exposição ao sol, maresia, peças promocionais duráveis e boa estabilidade dimensional.</p></div></div>
-      <div class="mat-card"><img src="imagens/infraestrutura/armazenamento.png" alt="Armazenamento controlado"><div class="mat-info"><h3>Armazenamento controlado</h3><p>Filamentos em caixas herméticas com controle de umidade para garantir repetibilidade e padrão de produção.</p></div></div>
-      <div class="mat-card"><img src="imagens/infraestrutura/secadora-x4.png" alt="Secadora profissional de filamentos"><div class="mat-info"><h3>Secagem profissional</h3><p>Secadora dedicada para manter o material em condição ideal de impressão, especialmente em clima litorâneo.</p></div></div>
+      <div class="mat-card"><img src="imagens/infraestrutura/creality-pro.png" alt="Creality K2 Pro Combo" loading="lazy" decoding="async"><div class="mat-info"><h3>Creality K2 Pro Combo</h3><p>Nossa principal máquina de produção local. Impressora 3D profissional com alta velocidade, estabilidade, câmara fechada e sistema CFS para múltiplos materiais e cores.</p></div></div>
+      <div class="mat-card"><img src="imagens/infraestrutura/filamento2.png" alt="Hyper PETG Creality" loading="lazy" decoding="async"><div class="mat-info"><h3>Hyper PETG — peças finais</h3><p>Para itens de uso real, exposição ao sol, maresia, peças promocionais duráveis e boa estabilidade dimensional.</p></div></div>
+      <div class="mat-card"><img src="imagens/infraestrutura/armazenamento.png" alt="Armazenamento controlado" loading="lazy" decoding="async"><div class="mat-info"><h3>Armazenamento controlado</h3><p>Filamentos em caixas herméticas com controle de umidade para garantir repetibilidade e padrão de produção.</p></div></div>
+      <div class="mat-card"><img src="imagens/infraestrutura/secadora-x4.png" alt="Secadora profissional de filamentos" loading="lazy" decoding="async"><div class="mat-info"><h3>Secagem profissional</h3><p>Secadora dedicada para manter o material em condição ideal de impressão, especialmente em clima litorâneo.</p></div></div>
     </div>
   </div>
 </section>
@@ -597,20 +742,20 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <div class="srv-thumb">
           <div class="bbe-mini-carousel">
             <div class="bbe-mini-carousel-track" data-current="0">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg" alt="Scanner 3D em bancada"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg" alt="Resultado de captura 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg" alt="Detalhe de captura 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/Captura de tela 2026-06-16 141456.png" alt="Tela de captura do scanner 3D"></div>
-              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4"></video></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/malha-ponto-scanner.png" alt="Malha de pontos do scanner 3D"></div>
-              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4"></video></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/peca original com avaria.jpeg" alt="Peça original com avaria"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/rastreamento pontos scanner.jpeg" alt="Rastreamento de pontos do scanner 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/scanner em bancada.jpeg" alt="Scanner 3D em bancada"></div>
-              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/video malha capturada e tratada.mp4"></video></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/imagenssegmentoscaravan-apoio-braco-01.jpeg" alt="Apoio de braço Caravan preparado para escaneamento 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/caravan-apoio-braco-02.jpeg" alt="Apoio de braço Caravan em captura técnica 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" aria-label="Vídeo da malha do apoio de braço Caravan" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg" alt="Scanner 3D em bancada" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg" alt="Resultado de captura 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg" alt="Detalhe de captura 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/Captura de tela 2026-06-16 141456.png" alt="Tela de captura do scanner 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><video muted loop playsinline src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4" preload="metadata"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/malha-ponto-scanner.png" alt="Malha de pontos do scanner 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><video muted loop playsinline src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" preload="metadata"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/peca original com avaria.jpeg" alt="Peça original com avaria" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/rastreamento pontos scanner.jpeg" alt="Rastreamento de pontos do scanner 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/scanner em bancada.jpeg" alt="Scanner 3D em bancada" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><video muted loop playsinline src="imagens/scanner3D/video malha capturada e tratada.mp4" preload="metadata"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/imagenssegmentoscaravan-apoio-braco-01.jpeg" alt="Apoio de braço Caravan preparado para escaneamento 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/scanner3D/caravan-apoio-braco-02.jpeg" alt="Apoio de braço Caravan em captura técnica 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><video muted loop playsinline src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" aria-label="Vídeo da malha do apoio de braço Caravan" style="object-fit: contain; object-position: center center; background:#e9f1f9;" preload="metadata"></video></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
@@ -620,7 +765,7 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
           <div class="srv-ico">🔬</div>
           <h3 class="srv-title">Scanner 3D e Captura Técnica</h3>
           <p class="srv-desc">Captura de peças, objetos e referências físicas com scanner 3D, marcadores e tratamento de malha para engenharia reversa, validação dimensional e base digital utilizável.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20interesse%20em%20scanner%203D%20e%20captura%20técnica." target="_blank" onclick="trackWA('segmento-scanner')">Quero orçar este tipo →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20interesse%20em%20scanner%203D%20e%20captura%20técnica." target="_blank" onclick="trackWA('segmento-scanner')" rel="noopener">Quero orçar este tipo →</a>
         </div>
       </article>
 
@@ -628,18 +773,18 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <div class="srv-thumb">
           <div class="bbe-mini-carousel">
             <div class="bbe-mini-carousel-track" data-current="0">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-20 at 06.38.08 (2).jpeg" alt="Apoio de braço Volkswagen Fusca - peça original com avaria" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-fusca-bbe.jpeg" alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-fusca-bbe2.jpeg" alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D - detalhe lateral" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" aria-label="Malha tratada do apoio de braço Volkswagen Fusca" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-caravan-original.jpeg" alt="Apoio de braço Caravan original recebido para engenharia reversa" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/caravan-apoio-braco-02.jpeg" alt="Detalhe do apoio de braço Caravan para reprodução técnica" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/modelagem-caravan.png" alt="Modelagem e malha tratada do apoio de braço Caravan" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/ideia-cliente-f100.jpeg" alt="Referência enviada pelo cliente para console Ford F-100" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/modelagem-f100.jpeg" alt="Modelagem CAD do console Ford F-100 desenvolvida pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><video autoplay muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/miniatura-f100-1.jpeg" alt="Miniatura impressa do console Ford F-100 para validação" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/miniatura-f100-2.jpeg" alt="Miniatura do console Ford F-100 impressa pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-20 at 06.38.08 (2).jpeg" alt="Apoio de braço Volkswagen Fusca - peça original com avaria" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-fusca-bbe.jpeg" alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-fusca-bbe2.jpeg" alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D - detalhe lateral" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><video muted loop playsinline src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" aria-label="Malha tratada do apoio de braço Volkswagen Fusca" style="object-fit: contain; object-position: center center; background:#e9f1f9;" preload="metadata"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/apoio-braco-caravan-original.jpeg" alt="Apoio de braço Caravan original recebido para engenharia reversa" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/caravan-apoio-braco-02.jpeg" alt="Detalhe do apoio de braço Caravan para reprodução técnica" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/modelagem-caravan.png" alt="Modelagem e malha tratada do apoio de braço Caravan" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/ideia-cliente-f100.jpeg" alt="Referência enviada pelo cliente para console Ford F-100" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/modelagem-f100.jpeg" alt="Modelagem CAD do console Ford F-100 desenvolvida pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><video muted loop playsinline src="imagens/cases/impressao-bbe-miniatura-f100.mp4" aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;" preload="metadata"></video></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/miniatura-f100-1.jpeg" alt="Miniatura impressa do console Ford F-100 para validação" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/miniatura-f100-2.jpeg" alt="Miniatura do console Ford F-100 impressa pela BBE 3D" style="object-fit: contain; object-position: center center; background:#e9f1f9;" loading="lazy" decoding="async"></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
@@ -649,17 +794,17 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
           <div class="srv-ico">🚗</div>
           <h3 class="srv-title">Peças Automotivas e Engenharia Reversa</h3>
           <p class="srv-desc">Peças internas, acabamentos, suportes, moldes e adaptações para veículos, com captura 3D, modelagem CAD e produção sob demanda.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20peça%20automotiva%20ou%20projeto%20de%20engenharia%20reversa%20para%20orçar." target="_blank" onclick="trackWA('segmento-automotivo')">Quero orçar peça automotiva →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20peça%20automotiva%20ou%20projeto%20de%20engenharia%20reversa%20para%20orçar." target="_blank" onclick="trackWA('segmento-automotivo')" rel="noopener">Quero orçar peça automotiva →</a>
         </div>
       </article>
 
       <article class="srv-card">
-        <div class="srv-thumb"><img src="imagens/segmentos/segmento-projeto-tecnico-bbe.jpg" alt="Projetos técnicos sob medida"></div>
+        <div class="srv-thumb"><img src="imagens/segmentos/segmento-projeto-tecnico-bbe.jpg" alt="Projetos técnicos sob medida" loading="lazy" decoding="async"></div>
         <div class="srv-body">
           <div class="srv-ico">📐</div>
           <h3 class="srv-title">Projetos Técnicos Sob Medida</h3>
           <p class="srv-desc">Soluções personalizadas a partir de foto, amostra, medição ou problema real, com modelagem CAD, prototipagem e refinamento técnico.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20um%20projeto%20técnico%20sob%20medida%20para%20desenvolver." target="_blank" onclick="trackWA('segmento-projeto')">Quero orçar este tipo →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20um%20projeto%20técnico%20sob%20medida%20para%20desenvolver." target="_blank" onclick="trackWA('segmento-projeto')" rel="noopener">Quero orçar este tipo →</a>
         </div>
       </article>
 
@@ -667,12 +812,12 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <div class="srv-thumb">
           <div class="bbe-mini-carousel">
             <div class="bbe-mini-carousel-track" data-current="0">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/caiaque-aplicacao-original-problema.jpeg" alt="Aplicação náutica com problema original"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/caiaque-aplicacao-original.jpeg" alt="Aplicação náutica original"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/caiaque-aplicacao-original2.jpeg" alt="Aplicação náutica original em caiaque"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.17 (1).jpeg" alt="Solução náutica sob medida"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.20.jpeg" alt="Peça para aplicação náutica"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.22.jpeg" alt="Peça náutica aplicada"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/caiaque-aplicacao-original-problema.jpeg" alt="Aplicação náutica com problema original" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/caiaque-aplicacao-original.jpeg" alt="Aplicação náutica original" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/caiaque-aplicacao-original2.jpeg" alt="Aplicação náutica original em caiaque" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.17 (1).jpeg" alt="Solução náutica sob medida" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.20.jpeg" alt="Peça para aplicação náutica" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.22.jpeg" alt="Peça náutica aplicada" loading="lazy" decoding="async"></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
@@ -682,17 +827,17 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
           <div class="srv-ico">🌊</div>
           <h3 class="srv-title">Soluções Náuticas e Marítimas</h3>
           <p class="srv-desc">Peças, adaptações e reposições para caiaques, embarcações e uso em ambiente náutico, com foco em sol, umidade, maresia e esforço funcional.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20náutica%20ou%20marítima%20para%20orçar." target="_blank" onclick="trackWA('segmento-nautico')">Quero orçar este tipo →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20náutica%20ou%20marítima%20para%20orçar." target="_blank" onclick="trackWA('segmento-nautico')" rel="noopener">Quero orçar este tipo →</a>
         </div>
       </article>
 
       <article class="srv-card">
-        <div class="srv-thumb"><img src="imagens/segmentos/segmento-maquetes-bbe.jpg" alt="Maquetes e plantas humanizadas"></div>
+        <div class="srv-thumb"><img src="imagens/segmentos/segmento-maquetes-bbe.jpg" alt="Maquetes e plantas humanizadas" loading="lazy" decoding="async"></div>
         <div class="srv-body">
           <div class="srv-ico">🏗️</div>
           <h3 class="srv-title">Maquetes e Plantas Humanizadas</h3>
           <p class="srv-desc">Maquetes físicas e plantas em 3D para construtoras, arquitetos e apresentações comerciais, com foco em leitura visual e impacto de apresentação.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20maquete%20ou%20planta%20humanizada." target="_blank" onclick="trackWA('segmento-maquete')">Quero orçar este tipo →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20maquete%20ou%20planta%20humanizada." target="_blank" onclick="trackWA('segmento-maquete')" rel="noopener">Quero orçar este tipo →</a>
         </div>
       </article>
 
@@ -700,12 +845,12 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <div class="srv-thumb">
           <div class="bbe-mini-carousel">
             <div class="bbe-mini-carousel-track" data-current="0">
-              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-souvenirs-bbe.jpg" alt="Souvenirs e itens decorativos personalizados pela BBE 3D" onerror="this.style.display='none'"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/obra-rodin-com-miniatura.jpeg" alt="Obra decorativa e miniatura produzidas pela BBE 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/case-chaveiro-nfc-bbe.jpg" alt="Chaveiro personalizado com tecnologia NFC produzido pela BBE 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/placa-banho-mar.jpeg" alt="Placa decorativa Banho de Mar personalizada em impressão 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/micro-tubarao.jpeg" alt="Micropeça decorativa em formato de tubarão produzida pela BBE 3D"></div>
-              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/base-porta-copo-impressao-bbe.jpeg" alt="Base porta-copo personalizada produzida pela BBE 3D"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/segmentos/segmento-souvenirs-bbe.jpg" alt="Souvenirs e itens decorativos personalizados pela BBE 3D" onerror="this.style.display='none'" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/obra-rodin-com-miniatura.jpeg" alt="Obra decorativa e miniatura produzidas pela BBE 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/case-chaveiro-nfc-bbe.jpg" alt="Chaveiro personalizado com tecnologia NFC produzido pela BBE 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/placa-banho-mar.jpeg" alt="Placa decorativa Banho de Mar personalizada em impressão 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/micro-tubarao.jpeg" alt="Micropeça decorativa em formato de tubarão produzida pela BBE 3D" loading="lazy" decoding="async"></div>
+              <div class="bbe-mini-carousel-slide"><img src="imagens/cases/base-porta-copo-impressao-bbe.jpeg" alt="Base porta-copo personalizada produzida pela BBE 3D" loading="lazy" decoding="async"></div>
             </div>
             <button type="button" class="bbe-prev" onclick="moveMini(this, -1)">&#8249;</button>
             <button type="button" class="bbe-next" onclick="moveMini(this, 1)">&#8250;</button>
@@ -715,17 +860,17 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
           <div class="srv-ico">🔑</div>
           <h3 class="srv-title">Souvenirs, Chaveiros e Itens Decorativos</h3>
           <p class="srv-desc">Brindes, chaveiros, lembranças e peças promocionais sob encomenda, com personalização de logo, nome, QR code, NFC, cor ou tema.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20chaveiros,%20brindes%20ou%20itens%20decorativos%20em%203D." target="_blank" onclick="trackWA('segmento-souvenir')">Quero orçar este tipo →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20chaveiros,%20brindes%20ou%20itens%20decorativos%20em%203D." target="_blank" onclick="trackWA('segmento-souvenir')" rel="noopener">Quero orçar este tipo →</a>
         </div>
       </article>
 
       <article class="srv-card">
-        <div class="srv-thumb"><img src="imagens/segmentos/segmento-cases-eletronica-bbe.jpg" alt="Cases e protótipos para eletrônica"></div>
+        <div class="srv-thumb"><img src="imagens/segmentos/segmento-cases-eletronica-bbe.jpg" alt="Cases e protótipos para eletrônica" loading="lazy" decoding="async"></div>
         <div class="srv-body">
           <div class="srv-ico">💻</div>
           <h3 class="srv-title">Cases e Protótipos para Eletrônica</h3>
           <p class="srv-desc">Cases, suportes, alojamentos e protótipos para placas, sensores, displays e conjuntos eletrônicos, inclusive para bancada e trilho DIN.</p>
-          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Preciso%20de%20case%20ou%20protótipo%20para%20eletrônica." target="_blank" onclick="trackWA('segmento-eletronica')">Quero orçar este tipo →</a>
+          <a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Preciso%20de%20case%20ou%20protótipo%20para%20eletrônica." target="_blank" onclick="trackWA('segmento-eletronica')" rel="noopener">Quero orçar este tipo →</a>
         </div>
       </article>
     </div>
@@ -735,8 +880,142 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <h3>Não sabe em qual segmento sua demanda entra?</h3>
         <p>Mande uma foto, medida ou descrição rápida no WhatsApp. A BBE analisa e direciona sua necessidade para o fluxo correto, sem você precisar entender de modelagem, material ou processo.</p>
       </div>
-      <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20e%20quero%20ajuda%20para%20entender%20a%20melhor%20solução." class="btn-wa" target="_blank" onclick="trackWA('segmentos-cta')">Falar com a BBE agora</a>
+      <a href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20e%20quero%20ajuda%20para%20entender%20a%20melhor%20solução." class="btn-wa" target="_blank" onclick="trackWA('segmentos-cta')" rel="noopener">Falar com a BBE agora</a>
     </div>
+  </div>
+</section>
+
+
+<section class="sec project-sec" id="projetos">
+  <div class="wrap">
+    <div class="project-head">
+      <div>
+        <p class="lbl">Portfólio vivo BBE 3D</p>
+        <h2 class="h2">Projetos reais, captura técnica<br>e desenvolvimento aplicado</h2>
+        <p class="desc">Aqui mostramos etapas reais do trabalho: referência recebida, scanner, malha, CAD, impressão e personalização. Os arquivos antigos do site foram mantidos; esta área adiciona os novos projetos organizados no Git.</p>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card featured">
+        <div class="project-media bbe-mini-carousel" aria-label="Galeria do projeto Ford F-100">
+          <div class="bbe-mini-carousel-track" data-current="0">
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cliente.png" alt="Referência do cliente para o console de direção Ford F-100" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe.jpeg" alt="Peça de referência do console Ford F-100 recebida pela BBE 3D" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe2.jpeg" alt="Detalhe da peça de referência do console Ford F-100" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe3.jpeg" alt="Preparação da referência Ford F-100 para captura técnica" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" alt="Malha capturada por scanner 3D do console Ford F-100" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><video muted loop playsinline src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4" aria-label="Vídeo do conjunto escaneado do console Ford F-100" preload="metadata"></video></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-01.png" alt="Modelagem CAD do console Ford F-100 - vista 1" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-02.png" alt="Modelagem CAD do console Ford F-100 - vista 2" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-03.png" alt="Modelagem CAD do console Ford F-100 - vista 3" loading="lazy" decoding="async"></div>
+          </div>
+          <button type="button" class="bbe-prev" onclick="moveMini(this,-1)" aria-label="Mídia anterior do projeto F-100">&#8249;</button>
+          <button type="button" class="bbe-next" onclick="moveMini(this,1)" aria-label="Próxima mídia do projeto F-100">&#8250;</button>
+        </div>
+        <div class="project-body">
+          <div class="project-kicker">Engenharia reversa automotiva</div>
+          <h3 class="project-title">Ford F-100 — console de direção</h3>
+          <p class="project-copy">Projeto desenvolvido a partir de referência física e malhas de captura. O fluxo passou por leitura do conjunto, reconstrução CAD e reforços estruturais para gerar uma geometria mais robusta e preparada para fabricação.</p>
+          <div class="project-tags"><span class="project-tag">Scanner 3D</span><span class="project-tag">CAD</span><span class="project-tag">Automotivo</span><span class="project-tag">Engenharia reversa</span></div>
+          <p class="project-note">Galeria técnica do desenvolvimento. A impressão final em escala definitiva será adicionada ao portfólio quando houver registro fotográfico do item concluído.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media bbe-mini-carousel" aria-label="Galeria de chaveiros Hives com NFC">
+          <div class="bbe-mini-carousel-track" data-current="0">
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-01.jpeg" alt="Chaveiro Hives personalizado em impressão 3D" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-02.jpeg" alt="Conjunto de chaveiros Hives e expositor BBE 3D" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-03.jpeg" alt="Chaveiros Hives com tags NFC durante produção" loading="lazy" decoding="async"></div>
+          </div>
+          <button type="button" class="bbe-prev" onclick="moveMini(this,-1)" aria-label="Imagem anterior dos chaveiros Hives">&#8249;</button>
+          <button type="button" class="bbe-next" onclick="moveMini(this,1)" aria-label="Próxima imagem dos chaveiros Hives">&#8250;</button>
+        </div>
+        <div class="project-body">
+          <div class="project-kicker">Personalização e pequenos lotes</div>
+          <h3 class="project-title">Hives — chaveiros personalizados com NFC</h3>
+          <p class="project-copy">Peças produzidas em lote curto com identidade visual, duas cores e integração de tag NFC, mostrando a capacidade da BBE em unir personalização, repetibilidade e apresentação comercial.</p>
+          <div class="project-tags"><span class="project-tag">NFC</span><span class="project-tag">Multicor</span><span class="project-tag">Brindes</span></div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media bbe-mini-carousel" aria-label="Galeria de engenharia reversa SMJ Elevadores">
+          <div class="bbe-mini-carousel-track" data-current="0">
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102118.png" alt="Peça técnica SMJ modelada em CAD - vista 1" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102133.png" alt="Peça técnica SMJ modelada em CAD - vista 2" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102153.png" alt="Peça técnica SMJ modelada em CAD - vista 3" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><img src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102213.png" alt="Peça técnica SMJ modelada em CAD - vista 4" loading="lazy" decoding="async"></div>
+          </div>
+          <button type="button" class="bbe-prev" onclick="moveMini(this,-1)" aria-label="Imagem anterior do projeto SMJ">&#8249;</button>
+          <button type="button" class="bbe-next" onclick="moveMini(this,1)" aria-label="Próxima imagem do projeto SMJ">&#8250;</button>
+        </div>
+        <div class="project-body">
+          <div class="project-kicker">Peça técnica / manutenção</div>
+          <h3 class="project-title">SMJ Elevadores — engenharia reversa</h3>
+          <p class="project-copy">Desenvolvimento técnico de peças a partir de referências reais, com reconstrução geométrica e preparação do arquivo para fabricação. Nesta galeria são usados somente os registros técnicos disponibilizados para este projeto.</p>
+          <div class="project-tags"><span class="project-tag">CAD</span><span class="project-tag">Reposição técnica</span><span class="project-tag">Elevadores</span></div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media bbe-mini-carousel" aria-label="Galeria de miniaturas personalizadas">
+          <div class="bbe-mini-carousel-track" data-current="0">
+            <div class="bbe-mini-carousel-slide media-cover"><img src="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" alt="Miniaturas personalizadas produzidas em impressão 3D" loading="lazy" decoding="async"></div>
+            <div class="bbe-mini-carousel-slide media-contain"><video muted loop playsinline src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4" aria-label="Vídeo de miniaturas personalizadas" preload="metadata"></video></div>
+            <div class="bbe-mini-carousel-slide media-contain"><video muted loop playsinline src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4" aria-label="Vídeo de detalhes de miniaturas personalizadas" preload="metadata"></video></div>
+            <div class="bbe-mini-carousel-slide media-contain"><video muted loop playsinline src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.58.mp4" aria-label="Vídeo de apresentação de miniaturas personalizadas" preload="metadata"></video></div>
+          </div>
+          <button type="button" class="bbe-prev" onclick="moveMini(this,-1)" aria-label="Mídia anterior das miniaturas">&#8249;</button>
+          <button type="button" class="bbe-next" onclick="moveMini(this,1)" aria-label="Próxima mídia das miniaturas">&#8250;</button>
+        </div>
+        <div class="project-body">
+          <div class="project-kicker">Impressão orgânica e personalizada</div>
+          <h3 class="project-title">Miniaturas personalizadas</h3>
+          <p class="project-copy">Exemplos de peças orgânicas produzidas para projetos personalizados. A seção mostra o potencial de impressão de formas complexas sem transformar acabamento manual em serviço padrão da BBE.</p>
+          <div class="project-tags"><span class="project-tag">Miniaturas</span><span class="project-tag">Formas orgânicas</span><span class="project-tag">PLA</span></div>
+          <p class="project-note">Os acabamentos visuais apresentados fazem parte de projetos anteriores e não representam oferta automática de pintura manual.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="study-grid" aria-label="Estudos e possibilidades desenvolvidos pela BBE 3D">
+      <article class="study-card">
+        <div class="study-media"><img src="imagens/projetos/estudo-mascara-tematica/WhatsApp Image 2026-08-24 at 11.54.43.jpeg" alt="Estudo de máscara temática para impressão 3D" loading="lazy" decoding="async"></div>
+        <div class="study-body"><span class="study-label">Estudo / conceito</span><h3 class="study-title">Máscara temática</h3><p class="study-copy">Estudo de viabilidade e preparação de referência para projeto temático. Exibido como capacidade de análise e desenvolvimento, sem caracterizar pedido concluído.</p></div>
+      </article>
+      <article class="study-card">
+        <div class="study-media"><video muted loop playsinline src="imagens/projetos/estudo-pet-personalizado/Gravando 2026-08-20 154711.mp4" aria-label="Estudo 3D de pet personalizado" preload="metadata"></video></div>
+        <div class="study-body"><span class="study-label">Estudo / conceito</span><h3 class="study-title">Pet personalizado em 3D</h3><p class="study-copy">Estudo de personalização orgânica para demonstrar possibilidades de modelagem, preparação visual e futura fabricação sob medida.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec reviews-sec" id="avaliacoes">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div>
+        <p class="lbl light">Prova social real</p>
+        <h2 class="h2">Avaliações de clientes<br>publicadas no Google</h2>
+        <p class="desc">Registros das avaliações recebidas pela BBE 3D. Mantemos os prints como evidência visual do atendimento, prazo, qualidade e acompanhamento percebidos pelos clientes.</p>
+      </div>
+      <div class="reviews-nav" aria-label="Navegação das avaliações">
+        <button type="button" onclick="scrollReviews(-1)" aria-label="Avaliação anterior">&#8249;</button>
+        <button type="button" onclick="scrollReviews(1)" aria-label="Próxima avaliação">&#8250;</button>
+      </div>
+    </div>
+    <div class="reviews-track" id="reviewsTrack" tabindex="0">
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-marcio-silva-bbe3d.png" alt="Avaliação de Márcio Silva no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-mychael-cercasin-bbe3.png" alt="Avaliação de Mychael Cercasin no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-diego-camargo-bbe3d.png" alt="Avaliação de Diego Camargo no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-marcelo-cazelato-bbe3d.png" alt="Avaliação de Marcelo Cazelato no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-robison-passarin-bbe3d.png" alt="Avaliação de Robison Passarin no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-alex-bbe3d.png" alt="Avaliação de Alex no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+      <figure class="review-shot"><img src="imagens/avaliacoes/avaliacao-google-pedro-lucas-bbe3d.png" alt="Avaliação de Pedro Lucas no Google sobre a BBE 3D" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="reviews-proof">Capturas armazenadas no repositório oficial do site para manter histórico e prova visual das avaliações.</p>
   </div>
 </section>
 
@@ -937,10 +1216,10 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
       <h2>Pronto para pedir<br>seu orçamento?</h2>
       <p>Atendimento direto via WhatsApp, sem formulário e sem intermediário. A BBE atua a partir de Praia Grande/SP com scanner 3D, modelagem CAD, impressão 3D e engenharia reversa aplicada.</p>
       <div class="ctt-links">
-        <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." class="ctt-link" target="_blank" onclick="trackWA('contato')">
+        <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." class="ctt-link" target="_blank" onclick="trackWA('contato')" rel="noopener">
           <div class="ctt-link-ico">💬</div><div><span class="ctt-lbl">WhatsApp</span><span class="ctt-val">(13) 99145-5673 — clique para conversar</span></div>
         </a>
-        <a href="https://www.instagram.com/bbe3dmanufatura3d/" class="ctt-link" target="_blank">
+        <a href="https://www.instagram.com/bbe3dmanufatura3d/" class="ctt-link" target="_blank" rel="noopener">
           <div class="ctt-link-ico">📸</div><div><span class="ctt-lbl">Instagram</span><span class="ctt-val">@bbe3dmanufatura3d</span></div>
         </a>
         <a href="mailto:bbe3dmanufatura@gmail.com" class="ctt-link">
@@ -964,9 +1243,9 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
         <button class="qr-tab active" onclick="showQR('wa',this)">WhatsApp</button>
         <button class="qr-tab" onclick="showQR('ig',this)">Instagram</button>
       </div>
-      <div id="qr-wa" class="qr-img-wrap"><img src="imagens/qr-codes/qr-code-whatsapp.svg" alt="QR WhatsApp BBE 3D"></div>
-      <div id="qr-ig" class="qr-img-wrap" style="display:none"><img src="imagens/qr-codes/qr-code-instagram.svg" alt="QR Instagram BBE 3D"></div>
-      <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" onclick="trackWA('qr-block')" style="display:block;margin-top:18px;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:15px;">
+      <div id="qr-wa" class="qr-img-wrap"><img src="imagens/qr-codes/qr-code-whatsapp.svg" alt="QR WhatsApp BBE 3D" loading="lazy" decoding="async"></div>
+      <div id="qr-ig" class="qr-img-wrap" style="display:none"><img src="imagens/qr-codes/qr-code-instagram.svg" alt="QR Instagram BBE 3D" loading="lazy" decoding="async"></div>
+      <a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." target="_blank" onclick="trackWA('qr-block')" style="display:block;margin-top:18px;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:15px;" rel="noopener">
         💬 Mandar mensagem agora
       </a>
     </div>
@@ -977,14 +1256,14 @@ footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:c
   <span class="footer-brand">BBE 3D Manufatura</span>
   <p class="footer-txt">© 2026 · Scanner 3D + Impressão 3D · Praia Grande/SP</p>
   <div class="footer-links">
-    <a href="https://www.instagram.com/bbe3dmanufatura3d/" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/bbe3dmanufatura3d/" target="_blank" rel="noopener">Instagram</a>
     <a href="/imagens/marca/portfolio-bbe3d.pdf" target="_blank" rel="noopener">Portfólio</a>
-    <a href="https://wa.me/5513991455673" target="_blank" onclick="trackWA('footer')">WhatsApp</a>
+    <a href="https://wa.me/5513991455673" target="_blank" onclick="trackWA('footer')" rel="noopener">WhatsApp</a>
     <a href="mailto:bbe3dmanufatura@gmail.com">E-mail</a>
   </div>
 </footer>
 
-<a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." class="wa-float" target="_blank" onclick="trackWA('float')">
+<a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." class="wa-float" target="_blank" onclick="trackWA('float')" rel="noopener">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
@@ -1084,13 +1363,96 @@ function getMiniData(btn) {
   return { track: track, slides: slides, current: current };
 }
 function moveMini(btn, dir) {
+  var carousel = btn.closest('.bbe-mini-carousel');
   var data = getMiniData(btn);
   if (!data.slides.length) return;
   var current = data.current >= data.slides.length ? 0 : data.current;
   var target = (current + dir + data.slides.length) % data.slides.length;
   data.track.style.transform = 'translateX(-' + (target * 100) + '%)';
   data.track.setAttribute('data-current', target);
+  syncCarouselVideos(carousel);
 }
+
+function toggleNav(btn){
+  var links = document.getElementById('navLinks');
+  if (!links) return;
+  var isOpen = links.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  btn.textContent = isOpen ? '×' : '☰';
+}
+
+document.querySelectorAll('#navLinks a').forEach(function(link){
+  link.addEventListener('click', function(){
+    var links = document.getElementById('navLinks');
+    var btn = document.querySelector('.nav-toggle');
+    if (links) links.classList.remove('open');
+    if (btn){ btn.setAttribute('aria-expanded','false'); btn.textContent='☰'; }
+  });
+});
+
+function scrollReviews(dir){
+  var track = document.getElementById('reviewsTrack');
+  if (!track) return;
+  track.scrollBy({left: dir * Math.min(track.clientWidth * 0.82, 580), behavior:'smooth'});
+}
+
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function videoIsOnActiveMiniSlide(video){
+  var carousel = video.closest('.bbe-mini-carousel');
+  if (!carousel) return true;
+  var track = carousel.querySelector('.bbe-mini-carousel-track');
+  if (!track) return true;
+  var slides = Array.prototype.slice.call(track.querySelectorAll('.bbe-mini-carousel-slide'));
+  var activeIndex = parseInt(track.getAttribute('data-current') || '0', 10);
+  return slides[activeIndex] && slides[activeIndex].contains(video);
+}
+
+function syncVideo(video){
+  var canPlay = !reduceMotion && video.dataset.inview === '1' && videoIsOnActiveMiniSlide(video);
+  if (canPlay) {
+    var promise = video.play();
+    if (promise && promise.catch) promise.catch(function(){});
+  } else {
+    video.pause();
+  }
+}
+
+function syncCarouselVideos(carousel){
+  if (!carousel) return;
+  carousel.querySelectorAll('video').forEach(syncVideo);
+}
+
+if ('IntersectionObserver' in window) {
+  var videoObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      entry.target.dataset.inview = entry.isIntersecting && entry.intersectionRatio >= 0.25 ? '1' : '0';
+      syncVideo(entry.target);
+    });
+  }, {threshold:[0,0.25,0.5]});
+  document.querySelectorAll('video').forEach(function(video){ videoObserver.observe(video); });
+} else {
+  document.querySelectorAll('video').forEach(function(video){ video.dataset.inview='1'; syncVideo(video); });
+}
+
+// Swipe horizontal para carrosséis em celular/tablet.
+document.querySelectorAll('.bbe-mini-carousel').forEach(function(carousel){
+  var startX = 0;
+  var startY = 0;
+  carousel.addEventListener('touchstart', function(e){
+    if (!e.touches || !e.touches[0]) return;
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, {passive:true});
+  carousel.addEventListener('touchend', function(e){
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    var dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+    var btn = carousel.querySelector(dx < 0 ? '.bbe-next' : '.bbe-prev');
+    if (btn) moveMini(btn, dx < 0 ? 1 : -1);
+  }, {passive:true});
+});
 </script>
 </body>
 </html>
