@@ -624,6 +624,45 @@ video{background:#0a2540}
   .case-study-unified{grid-template-columns:1fr}
   .case-study-unified>img,.case-study-unified>video{height:220px}
 }
+
+/* ===== AJUSTE PONTUAL V2.1 — ENQUADRAMENTO DE MÍDIA =====
+   Mantém todo o layout/conteúdo. Corrige somente cortes excessivos
+   nos vídeos/fotos do Hero e nos dois cases grandes. */
+.hero-case-slide{
+  background:linear-gradient(135deg,#0a2540 0%,#17579B 100%);
+}
+.hero-case-slide img,
+.hero-case-slide video{
+  width:100%;
+  height:100%;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#0f3d6e;
+}
+
+/* F-100 e Miniaturas: mostrar a peça inteira, sem cortar cabeça, base ou laterais */
+.case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide{
+  background:#eaf1f7;
+}
+.case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide img,
+.case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide video{
+  width:100%;
+  height:100%;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#eaf1f7;
+}
+
+/* Em telas estreitas, preserva o enquadramento integral e centralizado */
+@media(max-width:768px){
+  .hero-case-slide img,
+  .hero-case-slide video,
+  .case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide img,
+  .case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide video{
+    object-fit:contain!important;
+    object-position:center center!important;
+  }
+}
 </style>
 </head>
 <body><!-- BBE 3D - layout unificado set/2026: conteúdo histórico preservado + cases atuais + avaliações -->
