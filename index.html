@@ -323,6 +323,17 @@ nav{
   background-repeat:no-repeat;
   background-color:#0b5b3f;
 }
+
+/* Campanha Halloween: usa as fotos reais do item em um mosaico, sem alterar o layout sazonal existente */
+.sazonal-slide-visual.sazonal-halloween{
+  display:grid;
+  grid-template-columns:1.25fr .9fr .9fr;
+  grid-template-rows:1fr 1fr;
+  gap:3px;
+  background:#140d1a;
+}
+.sazonal-slide-visual.sazonal-halloween .sazonal-bg-panel{width:100%;height:100%;background-size:cover;background-position:center}
+.sazonal-slide-visual.sazonal-halloween .sazonal-bg-panel:first-child{grid-row:1/3}
 .sazonal-slide-content{position:relative;z-index:2;padding:26px;width:100%;color:#fff}
 .sazonal-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px}
 .sazonal-date{font-size:13px;color:rgba(255,255,255,0.8);font-weight:600;margin-bottom:10px}
@@ -665,7 +676,7 @@ video{background:#0a2540}
 }
 </style>
 </head>
-<body><!-- BBE 3D - layout unificado set/2026: conteúdo histórico preservado + cases atuais + avaliações -->
+<body><!-- BBE 3D - v2.3 set/2026: atualização pontual de cases, hero e campanhas sazonais -->
 <nav>
 <a class="nav-logo" href="#">
 <img alt="BBE 3D Logo" class="nav-logo-img" decoding="async" fetchpriority="high" loading="eager" src="imagens/marca/logo-comercial-bbe.svg"/>
@@ -737,6 +748,22 @@ video{background:#0a2540}
 <div class="hero-case-caption"><span>ACERVO BBE 3D</span><strong>Obras e formas orgânicas</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Troféu temático produzido em impressão 3D pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="metadata" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video>
+<div class="hero-case-caption"><span>PROJETO CONCLUÍDO • GRANDE FORMATO</span><strong>Troféu temático — impressão 3D e montagem</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<img alt="Troféu temático em impressão 3D produzido pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-1.jpeg"/>
+<div class="hero-case-caption"><span>PEÇA DECORATIVA • PRODUÇÃO SOB MEDIDA</span><strong>Geometria complexa transformada em peça física</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video>
+<div class="hero-case-caption"><span>IMPRESSÃO ORGÂNICA • SEM PINTURA</span><strong>Miniaturas personalizadas direto da impressão</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Peça temática de Halloween produzida pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/sazonais/cabeca-jack2.jpeg" preload="metadata" src="imagens/sazonais/video-cabeca-jack.mp4"></video>
+<div class="hero-case-caption"><span>CAMPANHA ATIVA • HALLOWEEN</span><strong>Peças temáticas sob encomenda</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
 <img alt="Modelagem final do console central Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-central/modelagem-f100.jpeg"/>
 <div class="hero-case-caption"><span>MODELAGEM FINAL • FORD F-100</span><strong>Console central — CAD final</strong></div>
 </div>
@@ -792,20 +819,28 @@ video{background:#0a2540}
 <div class="bbe-mini-carousel-slide media-contain"><img alt="CAD final do console Ford F-100 - vista 1" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-01.png"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="CAD final do console Ford F-100 - vista 2" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-02.png"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="CAD final do console Ford F-100 - vista 3" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-03.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Console de direção Ford F-100 finalizado em impressão 3D - vista frontal" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Console de direção Ford F-100 finalizado em impressão 3D - vista interna" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Console de direção Ford F-100 instalado no veículo" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg"/></div>
 </div>
 <button aria-label="Mídia anterior Ford F-100" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
 <button aria-label="Próxima mídia Ford F-100" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
 </div>
 <div class="case-body-unified">
-<div class="case-status">CASE ATUAL • ENGENHARIA REVERSA AUTOMOTIVA</div>
+<div class="case-status">CASE CONCLUÍDO • ENGENHARIA REVERSA AUTOMOTIVA</div>
 <h3>Ford F-100 — console de direção</h3>
-<p>Captura das referências físicas, reconstrução CAD e refinamento estrutural do conjunto. O projeto digital foi concluído com geometria mais robusta e preparado para fabricação; as fotos da impressão final serão incorporadas ao case quando estiverem disponíveis.</p>
+<p>Captura das referências físicas, reconstrução CAD, refinamento estrutural e fabricação final do conjunto. O projeto saiu da referência e do scanner para a peça impressa e instalada no veículo, validando o fluxo completo da BBE 3D.</p>
 <div class="case-tags"><span>Scanner 3D</span><span>CAD</span><span>Automotivo</span><span>Engenharia reversa</span></div>
 </div>
 </article>
 <article class="case-card-unified case-featured case-miniaturas">
 <div aria-label="Miniaturas personalizadas entregues" class="case-media-unified bbe-mini-carousel">
 <div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Conjunto de miniaturas personalizadas sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe de miniatura feminina personalizada sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe de miniatura masculina personalizada sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Miniatura masculina personalizada com guitarra" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao4.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada finalizada" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-cover"><img alt="Miniaturas personalizadas produzidas pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg"/></div>
@@ -817,9 +852,65 @@ video{background:#0a2540}
 <div class="case-body-unified">
 <div class="case-status">PROJETOS ENTREGUES • FORMAS ORGÂNICAS</div>
 <h3>Miniaturas personalizadas em destaque</h3>
-<p>Impressões orgânicas com alto nível de detalhe e projetos personalizados. Algumas peças do acervo receberam acabamento artístico manual após a impressão, mostrando o potencial da base impressa para trabalhos de apresentação e coleção.</p>
-<div class="case-tags"><span>Miniaturas</span><span>PLA</span><span>Detalhamento</span><span>Personalização</span></div>
+<p>Impressões orgânicas com alto nível de detalhe e projetos personalizados. O case agora mostra também peças sem pintura, destacando o resultado direto da impressão; exemplos anteriores com acabamento artístico permanecem como referência do potencial de apresentação.</p>
+<div class="case-tags"><span>Miniaturas</span><span>PLA</span><span>Detalhamento</span><span>Sem pintura</span><span>Personalização</span></div>
 <small>A pintura manual exibida pertence a projetos anteriores e não é apresentada como serviço padrão atual da BBE.</small>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Troféu temático produzido em impressão 3D" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo do troféu temático finalizado" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="metadata" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático finalizado - vista com escala humana" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático finalizado - vista frontal" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático montado no interior da K2 Pro" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático e estrutura de produção BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-4.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe do troféu temático impresso e montado" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-5.jpeg"/></div>
+</div>
+<button aria-label="Mídia anterior do troféu temático" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima mídia do troféu temático" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">PROJETO CONCLUÍDO • PEÇA DECORATIVA</div>
+<h3>Troféu temático em impressão 3D</h3>
+<p>Produção em múltiplas peças, com base, estrutura curva e esfera separada para montagem. O projeto demonstra a viabilidade de peças decorativas de maior porte e geometrias complexas produzidas sob medida.</p>
+<div class="case-tags"><span>Grande formato</span><span>Montagem</span><span>PLA</span><span>Personalizado</span></div>
+<small>Peça decorativa inspirada em referência esportiva, apresentada como case de fabricação da BBE 3D, sem vínculo oficial com marcas ou entidades.</small>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Organizador de cabos personalizado" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Organizador de cabos P com embalagem e etiqueta personalizada" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Organizadores de cabos funcionais aplicados em cabos reais" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Organizadores de cabos personalizados em lote" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo3.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior do organizador de cabos" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem do organizador de cabos" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">BRINDE FUNCIONAL • PEQUENOS LOTES</div>
+<h3>Organizador de cabos personalizado</h3>
+<p>Brinde útil para o dia a dia, produzido em impressão 3D e apresentado em embalagem simples com etiqueta personalizada. O modelo P pode receber logo, texto, QR code ou imagem simples na identificação.</p>
+<div class="case-tags"><span>P, M e G</span><span>Brindes</span><span>Personalização</span><span>Lote mínimo 10</span></div>
+<small>Oferta atual do modelo P no padrão laranja: R$ 7,00 por unidade, com mínimo de 10 peças, embalagem simples e etiqueta personalizada inclusas.</small>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Chaveiros personalizados em formato de ar-condicionado split" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Lote de chaveiros em formato de ar-condicionado split" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Chaveiros personalizados de mini split - detalhe" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Produção em lote dos chaveiros em formato de split" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split3.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior dos chaveiros de climatização" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem dos chaveiros de climatização" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">BRINDES PERSONALIZADOS • PRODUÇÃO EM LOTE</div>
+<h3>Chaveiro mini split / ar-condicionado</h3>
+<p>Miniatura de equipamento transformada em chaveiro promocional, uma solução de brinde para instaladores, empresas de climatização, equipes técnicas e ações comerciais do setor.</p>
+<div class="case-tags"><span>Chaveiro</span><span>Climatização</span><span>Brinde</span><span>Personalizado</span></div>
 </div>
 </article>
 <article class="case-card-unified">
@@ -1127,38 +1218,25 @@ video{background:#0a2540}
 </div>
 <div class="sazonal-carousel">
 <article class="sazonal-slide active">
-<div aria-hidden="true" class="sazonal-slide-visual sazonal-mosaic sazonal-fathers">
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/escultura-pai-e-filha.webp');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/estatueta-super-pai.webp');"></span>
+<div aria-hidden="true" class="sazonal-slide-visual sazonal-mosaic sazonal-halloween">
+<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack2.jpeg');"></span>
+<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack1.jpeg');"></span>
+<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack3.jpeg');"></span>
+<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack4.jpeg');"></span>
+<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack5.jpeg');"></span>
 </div>
 <div class="sazonal-slide-content">
-<div class="sazonal-badge">Campanha aberta</div>
-<div class="sazonal-date">Dia dos Pais | 09/08/2026</div>
-<h3 class="sazonal-title">Presentes personalizados para celebrar histórias entre pais e filhos</h3>
-<p class="sazonal-copy">Produzimos esculturas, estatuetas, placas e lembranças personalizadas para homenagens afetivas, presentes familiares e ações comerciais do Dia dos Pais.</p>
+<div class="sazonal-badge">Campanha ativa</div>
+<div class="sazonal-date">Halloween | 31/10/2026</div>
+<h3 class="sazonal-title">Peças temáticas em 3D para Halloween</h3>
+<p class="sazonal-copy">Decoração, personagens, brindes e peças personalizadas para festas, vitrines, eventos e ações promocionais. O item exibido foi produzido pela BBE 3D como demonstração real da campanha.</p>
 <div class="sazonal-items">
-<span class="sazonal-chip">Esculturas afetivas</span>
-<span class="sazonal-chip">Estatuetas personalizadas</span>
-<span class="sazonal-chip">Placas e homenagens</span>
+<span class="sazonal-chip">Decoração temática</span>
+<span class="sazonal-chip">Personagens</span>
+<span class="sazonal-chip">Brindes</span>
 <span class="sazonal-chip">Produção sob encomenda</span>
 </div>
-<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20um%20presente%20ou%20item%203D%20personalizado%20para%20o%20Dia%20dos%20Pais." onclick="trackWA('sazonal-dia-dos-pais')" rel="noopener" target="_blank">Consultar projeto para o Dia dos Pais</a>
-</div>
-</article>
-<article class="sazonal-slide">
-<div aria-hidden="true" class="sazonal-slide-visual sazonal-sete-setembro" style="--slide-img:url('imagens/sazonais/sete-setembro.jpg');"></div>
-<div class="sazonal-slide-content">
-<div class="sazonal-badge">Data cívica</div>
-<div class="sazonal-date">Independência do Brasil | 07/09/2026</div>
-<h3 class="sazonal-title">Projetos 3D para ações de 7 de Setembro</h3>
-<p class="sazonal-copy">A data está aberta para demandas pontuais de escolas, comércios, empresas e eventos que precisem de lembranças, brindes ou elementos temáticos personalizados.</p>
-<div class="sazonal-items">
-<span class="sazonal-chip">Chaveiros e tags</span>
-<span class="sazonal-chip">Lembranças escolares</span>
-<span class="sazonal-chip">Brindes corporativos</span>
-<span class="sazonal-chip">Elementos para eventos</span>
-</div>
-<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20um%20projeto%203D%20para%20uma%20ação%20de%207%20de%20Setembro." onclick="trackWA('sazonal-sete-setembro')" rel="noopener" target="_blank">Consultar projeto de 7 de Setembro</a>
+<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20uma%20peça%20ou%20decoração%203D%20para%20Halloween." onclick="trackWA('sazonal-halloween')" rel="noopener" target="_blank">Consultar projeto para Halloween</a>
 </div>
 </article>
 <article class="sazonal-slide">
@@ -1187,29 +1265,16 @@ video{background:#0a2540}
 <div class="sazonal-cards">
 <article class="sazonal-card">
 <div class="sazonal-card-top">
-<span class="sazonal-card-tag">Campanha aberta</span>
-<span class="sazonal-card-date">09/08</span>
+<span class="sazonal-card-tag">Campanha ativa</span>
+<span class="sazonal-card-date">31/10</span>
 </div>
-<h3>Dia dos Pais</h3>
-<p>Presentes afetivos, esculturas, estatuetas e placas personalizadas produzidas sob encomenda para famílias, empresas e ações promocionais.</p>
+<h3>Halloween</h3>
+<p>Peças decorativas, personagens, lembranças e brindes temáticos produzidos sob encomenda para festas, eventos, vitrines e campanhas comerciais.</p>
 <div class="sazonal-card-list">
-<span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Personalizado</span>
-<span class="sazonal-chip" style="background:#eef5fb;border-color:#d8e8f8;color:#17579B;">Sob encomenda</span>
+<span class="sazonal-chip" style="background:#fff0e8;border-color:#ffc9a8;color:#9c4315;">Temático</span>
+<span class="sazonal-chip" style="background:#f5eefb;border-color:#dfcff0;color:#674094;">Personalizado</span>
 </div>
-<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20um%20item%203D%20personalizado%20para%20o%20Dia%20dos%20Pais." onclick="trackWA('sazonal-card-dia-dos-pais')" rel="noopener" target="_blank">Solicitar orçamento para o Dia dos Pais →</a>
-</article>
-<article class="sazonal-card">
-<div class="sazonal-card-top">
-<span class="sazonal-card-tag">Agenda aberta</span>
-<span class="sazonal-card-date">07/09</span>
-</div>
-<h3>7 de Setembro</h3>
-<p>Demandas pontuais para escolas, empresas, comércios e eventos com brindes, lembranças e elementos temáticos desenvolvidos conforme cada ação.</p>
-<div class="sazonal-card-list">
-<span class="sazonal-chip" style="background:#edf8f1;border-color:#ccebd7;color:#006b3c;">Data cívica</span>
-<span class="sazonal-chip" style="background:#edf8f1;border-color:#ccebd7;color:#006b3c;">Projetos pontuais</span>
-</div>
-<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20um%20item%203D%20para%20uma%20ação%20de%207%20de%20Setembro." onclick="trackWA('sazonal-card-sete-setembro')" rel="noopener" target="_blank">Solicitar orçamento para 7 de Setembro →</a>
+<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20uma%20peça%20ou%20decoração%203D%20para%20Halloween." onclick="trackWA('sazonal-card-halloween')" rel="noopener" target="_blank">Solicitar orçamento para Halloween →</a>
 </article>
 <article class="sazonal-card">
 <div class="sazonal-card-top">
