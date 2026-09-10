@@ -3,7 +3,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>BBE 3D Manufatura — Peças Técnicas, Scanner 3D e Impressão 3D | Praia Grande/SP</title>
 <meta content="Scanner 3D, modelagem CAD e impressão 3D sob medida em Praia Grande/SP. Peças técnicas, engenharia reversa, maquetes, cases para eletrônica e brindes personalizados." name="description"/>
 <meta content="#17579B" name="theme-color"/>
@@ -674,6 +674,101 @@ video{background:#0a2540}
     object-position:center center!important;
   }
 }
+
+
+/* ===== BBE 3D — V2.3.1 MOBILE SAFE / MÍDIA RESPONSIVA =====
+   Prioridade: preservar o enquadramento integral de fotos e vídeos em celular,
+   evitar corte de conteúdo, melhorar toque e reduzir risco de overflow horizontal. */
+html, body{max-width:100%;overflow-x:hidden}
+img, video{max-width:100%}
+.bbe-mini-carousel{touch-action:pan-y;overscroll-behavior-inline:contain}
+.ctt-val,.project-copy,.case-body-unified p,.srv-desc,.sazonal-copy{overflow-wrap:anywhere}
+
+@media(max-width:920px){
+  .hero-grid,.scanner-grid,.maq-grid,.ctt-wrap,.sazonal-head,.sazonal-grid,
+  .case-grid-unified,.project-grid,.srv-grid,.mat-grid{min-width:0}
+  .hero-visual,.case-card-unified,.project-card,.srv-card,.mat-card,.sazonal-carousel-wrap{min-width:0;max-width:100%}
+}
+
+@media(max-width:768px){
+  /* Hero: preserva o quadro inteiro de qualquer proporção de foto/vídeo */
+  .hero-case-carousel{height:clamp(300px,84vw,380px)!important}
+  .hero-case-slide img,.hero-case-slide video{
+    object-fit:contain!important;
+    object-position:center center!important;
+  }
+
+  /* Cases: no mobile nenhuma mídia é cortada, mesmo quando o slide original usa media-cover */
+  .case-featured .case-media-unified,.case-media-unified{
+    height:clamp(280px,78vw,360px)!important;
+  }
+  .case-media-unified img,.case-media-unified video,
+  .case-media-unified .media-cover img,.case-media-unified .media-cover video,
+  .case-media-unified .media-contain img,.case-media-unified .media-contain video{
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#edf3f8;
+  }
+
+  /* Cards de serviços/materiais também passam a mostrar a imagem inteira no celular */
+  .srv-thumb{height:clamp(220px,68vw,300px)}
+  .srv-thumb img,.srv-thumb video,.mat-card img{
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#edf3f8;
+  }
+  .mat-card img{height:clamp(220px,68vw,300px)}
+
+  /* Campanhas sazonais: separa visual e texto para a imagem não ficar escondida atrás da legenda */
+  .sazonal-carousel-wrap,.sazonal-carousel{min-height:700px!important}
+  .sazonal-slide{align-items:stretch}
+  .sazonal-slide-visual{
+    top:0!important;left:0!important;right:0!important;bottom:auto!important;
+    height:270px!important;
+    background-size:contain!important;
+    background-position:center center!important;
+    background-repeat:no-repeat!important;
+  }
+  .sazonal-slide-content{
+    position:absolute!important;
+    top:245px;left:0;right:0;bottom:0;
+    padding:38px 20px 54px;
+    background:linear-gradient(180deg,rgba(10,37,64,.88) 0%,#0a2540 18%,#0a2540 100%);
+  }
+  .sazonal-bg-panel{
+    background-size:contain!important;
+    background-position:center center!important;
+    background-repeat:no-repeat!important;
+    background-color:#140d1a;
+  }
+  .sazonal-slide-visual.sazonal-halloween{
+    grid-template-columns:1fr 1fr!important;
+    grid-template-rows:repeat(3,1fr)!important;
+    gap:2px;
+  }
+  .sazonal-slide-visual.sazonal-halloween .sazonal-bg-panel:first-child{
+    grid-column:1 / -1!important;
+    grid-row:auto!important;
+  }
+  .sazonal-cta{width:100%;justify-content:center;text-align:center;min-height:44px}
+  .sazonal-nav button,
+  .bbe-mini-carousel .bbe-prev,.bbe-mini-carousel .bbe-next{width:44px!important;height:44px!important}
+  .sazonal-dot{width:12px;height:12px}
+
+  /* Touch e áreas seguras de aparelhos com barra inferior/notch */
+  .wa-float{right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}
+}
+
+@media(max-width:520px){
+  .hero-case-carousel{height:clamp(300px,92vw,350px)!important}
+  .case-featured .case-media-unified,.case-media-unified{height:clamp(280px,88vw,340px)!important}
+  .sazonal-carousel-wrap,.sazonal-carousel{min-height:740px!important}
+  .sazonal-slide-visual{height:250px!important}
+  .sazonal-slide-content{top:228px;padding:36px 18px 56px}
+  .sazonal-title{font-size:30px}
+  .sazonal-copy{font-size:14px;line-height:1.6}
+}
+
 </style>
 </head>
 <body><!-- BBE 3D - v2.3 set/2026: atualização pontual de cases, hero e campanhas sazonais -->
@@ -724,15 +819,15 @@ video{background:#0a2540}
 <div class="bbe-mini-carousel hero-case-carousel" data-auto="true" style="height:470px; border-radius:14px; overflow:hidden; background:rgba(255,255,255,0.06);">
 <div class="bbe-mini-carousel-track" data-current="0">
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
-<video aria-label="Ford F-100 - captura 3D do console de direção" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="metadata" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4"></video>
+<video aria-label="Ford F-100 - captura 3D do console de direção" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="none" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4"></video>
 <div class="hero-case-caption"><span>CASE ATUAL • ENGENHARIA REVERSA</span><strong>Ford F-100 — Scanner 3D + CAD</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-cover">
-<video aria-label="Miniatura personalizada produzida em impressão 3D com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video>
+<video aria-label="Miniatura personalizada produzida em impressão 3D com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video>
 <div class="hero-case-caption"><span>PROJETO ENTREGUE • PERSONALIZAÇÃO</span><strong>Miniaturas personalizadas</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-cover">
-<video aria-label="Detalhes de miniatura personalizada produzida pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video>
+<video aria-label="Detalhes de miniatura personalizada produzida pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video>
 <div class="hero-case-caption"><span>IMPRESSÃO ORGÂNICA</span><strong>Detalhamento em peças personalizadas</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-cover">
@@ -748,7 +843,7 @@ video{background:#0a2540}
 <div class="hero-case-caption"><span>ACERVO BBE 3D</span><strong>Obras e formas orgânicas</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
-<video aria-label="Troféu temático produzido em impressão 3D pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="metadata" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video>
+<video aria-label="Troféu temático produzido em impressão 3D pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="none" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video>
 <div class="hero-case-caption"><span>PROJETO CONCLUÍDO • GRANDE FORMATO</span><strong>Troféu temático — impressão 3D e montagem</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
@@ -756,7 +851,7 @@ video{background:#0a2540}
 <div class="hero-case-caption"><span>PEÇA DECORATIVA • PRODUÇÃO SOB MEDIDA</span><strong>Geometria complexa transformada em peça física</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
-<video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video>
+<video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video>
 <div class="hero-case-caption"><span>IMPRESSÃO ORGÂNICA • SEM PINTURA</span><strong>Miniaturas personalizadas direto da impressão</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
@@ -768,7 +863,7 @@ video{background:#0a2540}
 <div class="hero-case-caption"><span>MODELAGEM FINAL • FORD F-100</span><strong>Console central — CAD final</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-cover">
-<video aria-label="Miniatura de validação do console Ford F-100 em impressão 3D" loop="" muted="" playsinline="" preload="metadata" src="imagens/cases/impressao-bbe-miniatura-f100.mp4"></video>
+<video aria-label="Miniatura de validação do console Ford F-100 em impressão 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4"></video>
 <div class="hero-case-caption"><span>VALIDAÇÃO DE PROJETO</span><strong>Protótipo em escala — Ford F-100</strong></div>
 </div>
 </div>
@@ -810,7 +905,7 @@ video{background:#0a2540}
 <article class="case-card-unified case-featured">
 <div aria-label="Ford F-100 - desenvolvimento do console de direção" class="case-media-unified bbe-mini-carousel">
 <div class="bbe-mini-carousel-track" data-current="0">
-<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo da malha capturada do console Ford F-100" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="metadata" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo da malha capturada do console Ford F-100" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="none" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Referência enviada pelo cliente para o console Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cliente.png"/></div>
 <div class="bbe-mini-carousel-slide media-cover"><img alt="Peça física usada como referência no projeto Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-cover"><img alt="Detalhe da referência do console Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe2.jpeg"/></div>
@@ -836,15 +931,15 @@ video{background:#0a2540}
 <article class="case-card-unified case-featured case-miniaturas">
 <div aria-label="Miniaturas personalizadas entregues" class="case-media-unified bbe-mini-carousel">
 <div class="bbe-mini-carousel-track" data-current="0">
-<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Conjunto de miniaturas personalizadas sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe de miniatura feminina personalizada sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao2.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe de miniatura masculina personalizada sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao3.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Miniatura masculina personalizada com guitarra" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao4.jpeg"/></div>
-<div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada finalizada" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video></div>
-<div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada finalizada" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-cover"><img alt="Miniaturas personalizadas produzidas pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg"/></div>
-<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Apresentação de miniaturas personalizadas" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.58.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Apresentação de miniaturas personalizadas" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.58.mp4"></video></div>
 </div>
 <button aria-label="Mídia anterior das miniaturas" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
 <button aria-label="Próxima mídia das miniaturas" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
@@ -860,7 +955,7 @@ video{background:#0a2540}
 <article class="case-card-unified">
 <div aria-label="Troféu temático produzido em impressão 3D" class="case-media-unified bbe-mini-carousel">
 <div class="bbe-mini-carousel-track" data-current="0">
-<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo do troféu temático finalizado" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="metadata" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo do troféu temático finalizado" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="none" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático finalizado - vista com escala humana" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-1.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático finalizado - vista frontal" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-2.jpeg"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático montado no interior da K2 Pro" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-3.jpeg"/></div>
@@ -957,7 +1052,7 @@ video{background:#0a2540}
 <div><span>ESTUDO / CONCEITO</span><strong>Máscara temática</strong><p>Estudo de viabilidade e preparação digital para demonstrar possibilidades de fabricação.</p></div>
 </div>
 <div class="case-study-unified">
-<video aria-label="Estudo 3D de pet personalizado" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/estudo-pet-personalizado/Gravando 2026-08-20 154711.mp4"></video>
+<video aria-label="Estudo 3D de pet personalizado" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/estudo-pet-personalizado/Gravando 2026-08-20 154711.mp4"></video>
 <div><span>ESTUDO / CONCEITO</span><strong>Pet personalizado em 3D</strong><p>Exploração de modelagem orgânica e personalização como demonstração de capacidade.</p></div>
 </div>
 </div>
@@ -1068,16 +1163,16 @@ video{background:#0a2540}
 <div class="bbe-mini-carousel-slide"><img alt="Resultado de captura 3D" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Detalhe de captura 3D" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Tela de captura do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/Captura de tela 2026-06-16 141456.png"/></div>
-<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="metadata" src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4"></video></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Malha de pontos do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/malha-ponto-scanner.png"/></div>
-<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="metadata" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4"></video></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Peça original com avaria" decoding="async" loading="lazy" src="imagens/scanner3D/peca original com avaria.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Rastreamento de pontos do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/rastreamento pontos scanner.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Scanner 3D em bancada" decoding="async" loading="lazy" src="imagens/scanner3D/scanner em bancada.jpeg"/></div>
-<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="metadata" src="imagens/scanner3D/video malha capturada e tratada.mp4"></video></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/video malha capturada e tratada.mp4"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan preparado para escaneamento 3D" decoding="async" loading="lazy" src="imagens/scanner3D/imagenssegmentoscaravan-apoio-braco-01.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan em captura técnica 3D" decoding="async" loading="lazy" src="imagens/scanner3D/caravan-apoio-braco-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
-<div class="bbe-mini-carousel-slide"><video aria-label="Vídeo da malha do apoio de braço Caravan" loop="" muted="" playsinline="" preload="metadata" src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Vídeo da malha do apoio de braço Caravan" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
 </div>
 <button class="bbe-prev" onclick="moveMini(this, -1)" type="button">‹</button>
 <button class="bbe-next" onclick="moveMini(this, 1)" type="button">›</button>
@@ -1097,13 +1192,13 @@ video{background:#0a2540}
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca - peça original com avaria" decoding="async" loading="lazy" src="imagens/cases/WhatsApp Image 2026-06-20 at 06.38.08 (2).jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-fusca-bbe.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D - detalhe lateral" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-fusca-bbe2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
-<div class="bbe-mini-carousel-slide"><video aria-label="Malha tratada do apoio de braço Volkswagen Fusca" loop="" muted="" playsinline="" preload="metadata" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Malha tratada do apoio de braço Volkswagen Fusca" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan original recebido para engenharia reversa" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-caravan-original.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Detalhe do apoio de braço Caravan para reprodução técnica" decoding="async" loading="lazy" src="imagens/cases/caravan-apoio-braco-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Modelagem e malha tratada do apoio de braço Caravan" decoding="async" loading="lazy" src="imagens/cases/modelagem-caravan.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Referência enviada pelo cliente para console Ford F-100" decoding="async" loading="lazy" src="imagens/cases/ideia-cliente-f100.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD do console Ford F-100 desenvolvida pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/modelagem-f100.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
-<div class="bbe-mini-carousel-slide"><video aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" loop="" muted="" playsinline="" preload="metadata" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Miniatura impressa do console Ford F-100 para validação" decoding="async" loading="lazy" src="imagens/cases/miniatura-f100-1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Miniatura do console Ford F-100 impressa pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/miniatura-f100-2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 </div>
@@ -1594,6 +1689,27 @@ document.querySelectorAll('.bbe-mini-carousel').forEach(function(carousel){
     if (btn) moveMini(btn, dx < 0 ? 1 : -1);
   }, {passive:true});
 });
+
+
+// Swipe horizontal também para o carrossel sazonal em celular/tablet.
+(function(){
+  var seasonal = document.querySelector('.sazonal-carousel-wrap');
+  if (!seasonal) return;
+  var sx = 0, sy = 0;
+  seasonal.addEventListener('touchstart', function(e){
+    if (!e.touches || !e.touches[0]) return;
+    sx = e.touches[0].clientX;
+    sy = e.touches[0].clientY;
+  }, {passive:true});
+  seasonal.addEventListener('touchend', function(e){
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    var dx = e.changedTouches[0].clientX - sx;
+    var dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+    moveSeasonal(dx < 0 ? 1 : -1);
+  }, {passive:true});
+})();
+
 </script>
 <script>
 // Rotação automática somente no carrossel principal; pausa ao interagir e respeita redução de movimento.
