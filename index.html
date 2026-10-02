@@ -769,6 +769,49 @@ img, video{max-width:100%}
   .sazonal-copy{font-size:14px;line-height:1.6}
 }
 
+
+/* Revisão pontual: estudos, SparkX i8 e campanhas */
+section[id]{scroll-margin-top:78px}
+.case-studies-unified{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.case-study-unified{display:flex;flex-direction:column;min-height:0}
+.case-study-unified>img,.case-study-unified>video{width:100%;height:260px;min-height:0;object-fit:contain;object-position:center;background:#e9f1f9}
+.case-study-unified>div{align-self:stretch;flex:1;padding:20px 22px}
+.case-study-unified strong{font-size:24px}
+.case-study-unified p{font-size:13px}
+.sparkxi8-carousel .bbe-mini-carousel-slide,.sparkxi8-carousel .bbe-mini-carousel-slide img{background:#f0f4f8}
+.sparkxi8-carousel .bbe-mini-carousel-slide img{object-fit:contain;object-position:center}
+.sazonal-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+.sazonal-carousel-wrap,.sazonal-carousel{height:450px;min-height:450px}
+.sazonal-slide{align-items:stretch}
+.sazonal-media-carousel{flex:0 0 52%;height:100%!important;background:#eef3f8}
+.sazonal-media-carousel .bbe-mini-carousel-slide,.sazonal-media-carousel .bbe-mini-carousel-slide img{background:#eef3f8}
+.sazonal-media-carousel .bbe-mini-carousel-slide img{object-fit:contain;object-position:center}
+.sazonal-slide-content{flex:1;min-width:0;width:auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:42px 38px;background:#0a2540}
+.sazonal-cards{display:flex;gap:14px;min-width:0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:2px 2px 14px}
+.sazonal-card{flex:0 0 clamp(250px,25vw,290px);display:flex;flex-direction:column;scroll-snap-align:start;min-height:225px}
+.sazonal-card-btn{margin-top:auto}
+@media(max-width:920px){
+  .case-studies-unified{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:768px){
+  .case-studies-unified{grid-template-columns:1fr}
+  .case-study-unified>img,.case-study-unified>video{height:280px}
+  .sparkxi8-carousel{height:clamp(220px,62vw,320px)!important}
+  .sazonal-carousel-wrap,.sazonal-carousel{height:740px!important;min-height:740px!important}
+  .sazonal-slide{flex-direction:column;align-items:stretch}
+  .sazonal-media-carousel{flex:0 0 270px;width:100%;height:270px!important}
+  .sazonal-slide-content{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;width:100%;min-height:0;flex:1;padding:28px 22px 56px!important}
+  .sazonal-nav{top:282px;right:12px}
+  .sazonal-dots{bottom:12px;left:22px}
+  .sazonal-card{flex-basis:min(290px,78vw)}
+}
+@media(max-width:520px){
+  .case-study-unified>img,.case-study-unified>video{height:250px}
+  .sazonal-carousel-wrap,.sazonal-carousel{height:790px!important;min-height:790px!important}
+  .sazonal-media-carousel{flex-basis:250px;height:250px!important}
+  .sazonal-nav{top:262px}
+  .sazonal-slide-content{padding:26px 18px 60px!important}
+}
 </style>
 </head>
 <body><!-- BBE 3D - v2.3.2 set/2026: mobile validado + abastecimento dos segmentos com cases recentes -->
@@ -841,11 +884,11 @@ img, video{max-width:100%}
 <div class="hero-case-caption"><span>LOTE PERSONALIZADO • NFC</span><strong>Hives — chaveiros multicor</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
-<video aria-label="Peça náutica para caiaque produzida em PETG-CF" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/seaflo-netuno-caiaque/WhatsApp Video 2026-09-02 at 06.33.47.mp4"></video>
+<video aria-label="Peça náutica para caiaque produzida em PETG-CF" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/seaflo-netuno-caiaque/WhatsApp Video 2026-09-02 at 06.33.47.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EPe%C3%A7a%20n%C3%A1utica%20para%20caiaque%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Eproduzida%20em%20PETG-CF%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
 <div class="hero-case-caption"><span>APLICAÇÃO NÁUTICA • PETG-CF</span><strong>Peça para caiaque — PETG-CF reforçado com fibra de carbono</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-cover">
-<video aria-label="Obra decorativa produzida pela BBE 3D" loop="" muted="" playsinline="" preload="metadata" src="imagens/cases/video-obra-rodim.mp4"></video>
+<video aria-label="Obra decorativa produzida pela BBE 3D" loop="" muted="" playsinline="" preload="metadata" src="imagens/cases/video-obra-rodim.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EObra%20decorativa%20produzida%20pela%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EBBE%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
 <div class="hero-case-caption"><span>ACERVO BBE 3D</span><strong>Obras e formas orgânicas</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-contain">
@@ -869,7 +912,7 @@ img, video{max-width:100%}
 <div class="hero-case-caption"><span>MODELAGEM FINAL • FORD F-100</span><strong>Console central — CAD final</strong></div>
 </div>
 <div class="bbe-mini-carousel-slide hero-case-slide media-cover">
-<video aria-label="Miniatura de validação do console Ford F-100 em impressão 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4"></video>
+<video aria-label="Miniatura de validação do console Ford F-100 em impressão 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMiniatura%20de%20valida%C3%A7%C3%A3o%20do%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Econsole%20Ford%20F-100%20em%20impress%C3%A3o%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
 <div class="hero-case-caption"><span>VALIDAÇÃO DE PROJETO</span><strong>Protótipo em escala — Ford F-100</strong></div>
 </div>
 </div>
@@ -954,7 +997,7 @@ img, video{max-width:100%}
 <div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada finalizada" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video></div>
 <div class="bbe-mini-carousel-slide media-cover"><img alt="Miniaturas personalizadas produzidas pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg"/></div>
-<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Apresentação de miniaturas personalizadas" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.58.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Apresentação de miniaturas personalizadas" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.58.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EApresenta%C3%A7%C3%A3o%20de%20miniaturas%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Epersonalizadas%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 </div>
 <button aria-label="Mídia anterior das miniaturas" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
 <button aria-label="Próxima mídia das miniaturas" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
@@ -1093,11 +1136,11 @@ img, video{max-width:100%}
 <div><span>ESTUDO / CONCEITO</span><strong>Máscara temática</strong><p>Estudo de viabilidade e preparação digital para demonstrar possibilidades de fabricação.</p></div>
 </div>
 <div class="case-study-unified">
-<video aria-label="Estudo 3D de pet personalizado" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/estudo-pet-personalizado/Gravando 2026-08-20 154711.mp4"></video>
+<video aria-label="Estudo 3D de pet personalizado" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/estudo-pet-personalizado/Gravando 2026-08-20 154711.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EEstudo%203D%20de%20pet%20personalizado%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
 <div><span>ESTUDO / CONCEITO</span><strong>Pet personalizado em 3D</strong><p>Exploração de modelagem orgânica e personalização como demonstração de capacidade.</p></div>
 </div>
 <div class="case-study-unified">
-<video aria-label="Estudo de conceito inspirado na artista Klessinha" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/estudosconceitos/Gravando 2026-09-16 151603.mp4"></video>
+<video aria-label="Estudo de conceito inspirado na artista Klessinha" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/estudosconceitos/Gravando 2026-09-16 151603.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EEstudo%20de%20conceito%20inspirado%20na%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Eartista%20Klessinha%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
 <div><span>ESTUDO / CONCEITO</span><strong>Artista Klessinha — peça para fãs</strong><p>Estudo de reprodução em 3D de uma artista que os fãs gostam, apresentado como conceito e demonstração de possibilidades de personalização.</p></div>
 </div>
 </div>
@@ -1195,7 +1238,7 @@ img, video{max-width:100%}
 <a class="btn-wa" href="https://wa.me/5513991455673?text=Ol%C3%A1%21%20Quero%20colocar%20meu%20item%20na%20lista%20de%20pedidos%20para%20cota%C3%A7%C3%A3o%20priorit%C3%A1ria%20com%20a%20nova%20Creality%20SparkX%20i8.%20Seguem%20foto%2C%20medidas%20e%20descri%C3%A7%C3%A3o%3A" onclick="trackWA('sparkxi8-lista-pedidos')" rel="noopener" target="_blank">Enviar item para a lista de pedidos →</a>
 </div>
 <div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
-<div aria-label="Cinco imagens da nova Creality SparkX i8" class="bbe-mini-carousel" style="height:380px; border-radius:16px; box-shadow:var(--sombra);">
+<div aria-label="Cinco imagens da nova Creality SparkX i8" class="bbe-mini-carousel sparkxi8-carousel" style="height:380px; border-radius:16px; box-shadow:var(--sombra);">
 <div class="bbe-mini-carousel-track" data-current="0">
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 1" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-1.webp"/></div>
 <div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 2" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-2.webp"/></div>
@@ -1230,16 +1273,16 @@ img, video{max-width:100%}
 <div class="bbe-mini-carousel-slide"><img alt="Resultado de captura 3D" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Detalhe de captura 3D" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Tela de captura do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/Captura de tela 2026-06-16 141456.png"/></div>
-<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4"></video></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4" aria-label="Malha bruta capturada com scanner 3D" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%20bruta%20capturada%20com%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Escanner%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Malha de pontos do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/malha-ponto-scanner.png"/></div>
-<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4"></video></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" aria-label="Malha tratada com scanner 3D" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%20tratada%20com%20scanner%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Peça original com avaria" decoding="async" loading="lazy" src="imagens/scanner3D/peca original com avaria.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Rastreamento de pontos do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/rastreamento pontos scanner.jpeg"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Scanner 3D em bancada" decoding="async" loading="lazy" src="imagens/scanner3D/scanner em bancada.jpeg"/></div>
-<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/video malha capturada e tratada.mp4"></video></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/video malha capturada e tratada.mp4" aria-label="Malha 3D capturada e tratada" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%203D%20capturada%20e%20tratada%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan preparado para escaneamento 3D" decoding="async" loading="lazy" src="imagens/scanner3D/imagenssegmentoscaravan-apoio-braco-01.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan em captura técnica 3D" decoding="async" loading="lazy" src="imagens/scanner3D/caravan-apoio-braco-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
-<div class="bbe-mini-carousel-slide"><video aria-label="Vídeo da malha do apoio de braço Caravan" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Vídeo da malha do apoio de braço Caravan" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EV%C3%ADdeo%20da%20malha%20do%20apoio%20de%20bra%C3%A7o%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3ECaravan%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 <div class="bbe-mini-carousel-slide"><video aria-label="Captura 3D recente do console de direção Ford F-100" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="none" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Malha 3D recente do console de direção Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 </div>
@@ -1261,13 +1304,13 @@ img, video{max-width:100%}
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca - peça original com avaria" decoding="async" loading="lazy" src="imagens/cases/WhatsApp Image 2026-06-20 at 06.38.08 (2).jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-fusca-bbe.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D - detalhe lateral" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-fusca-bbe2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
-<div class="bbe-mini-carousel-slide"><video aria-label="Malha tratada do apoio de braço Volkswagen Fusca" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Malha tratada do apoio de braço Volkswagen Fusca" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%20tratada%20do%20apoio%20de%20bra%C3%A7o%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EVolkswagen%20Fusca%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan original recebido para engenharia reversa" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-caravan-original.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Detalhe do apoio de braço Caravan para reprodução técnica" decoding="async" loading="lazy" src="imagens/cases/caravan-apoio-braco-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Modelagem e malha tratada do apoio de braço Caravan" decoding="async" loading="lazy" src="imagens/cases/modelagem-caravan.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Referência enviada pelo cliente para console Ford F-100" decoding="async" loading="lazy" src="imagens/cases/ideia-cliente-f100.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD do console Ford F-100 desenvolvida pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/modelagem-f100.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
-<div class="bbe-mini-carousel-slide"><video aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EImpress%C3%A3o%20da%20miniatura%20do%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Econsole%20Ford%20F-100%20pela%20BBE%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
 <div class="bbe-mini-carousel-slide"><img alt="Miniatura impressa do console Ford F-100 para validação" decoding="async" loading="lazy" src="imagens/cases/miniatura-f100-1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="Miniatura do console Ford F-100 impressa pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/miniatura-f100-2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
 <div class="bbe-mini-carousel-slide"><img alt="CAD final do console de direção Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-01.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
@@ -1436,11 +1479,16 @@ img, video{max-width:100%}
 </div>
 <div class="sazonal-carousel">
 <article class="sazonal-slide active">
-<div aria-hidden="true" class="sazonal-slide-visual sazonal-mosaic">
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.09 (1).jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.33 (1).jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.34.jpeg');"></span>
+<div aria-label="Árvore de Natal personalizada em 3D" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Árvore de Natal personalizada em 3D — imagem 1" decoding="async" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.09 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Árvore de Natal personalizada em 3D — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.33 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Árvore de Natal personalizada em 3D — imagem 3" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.34.jpeg"/></div>
 </div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
 <div class="sazonal-slide-content">
 <div class="sazonal-badge">Campanha ativa</div>
 <div class="sazonal-date">Natal | encomendas abertas</div>
@@ -1456,10 +1504,15 @@ img, video{max-width:100%}
 </div>
 </article>
 <article class="sazonal-slide">
-<div aria-hidden="true" class="sazonal-slide-visual sazonal-mosaic">
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/dia-professores1.jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/dia-professores2.png');"></span>
+<div aria-label="Vasinho personalizado para o Dia dos Professores" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Vasinho personalizado para o Dia dos Professores — imagem 1" decoding="async" src="imagens/sazonais/dia-professores1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Vasinho personalizado para o Dia dos Professores — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/dia-professores2.png"/></div>
 </div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
 <div class="sazonal-slide-content">
 <div class="sazonal-badge">Campanha ativa</div>
 <div class="sazonal-date">Dia dos Professores | 15/10/2026</div>
@@ -1475,13 +1528,18 @@ img, video{max-width:100%}
 </div>
 </article>
 <article class="sazonal-slide">
-<div aria-hidden="true" class="sazonal-slide-visual sazonal-mosaic sazonal-halloween">
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack2.jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack1.jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack3.jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack4.jpeg');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/cabeca-jack5.jpeg');"></span>
+<div aria-label="Peças temáticas de Halloween" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 1" decoding="async" src="imagens/sazonais/cabeca-jack2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 3" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 4" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack4.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 5" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack5.jpeg"/></div>
 </div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
 <div class="sazonal-slide-content">
 <div class="sazonal-badge">Campanha ativa</div>
 <div class="sazonal-date">Halloween | 31/10/2026</div>
@@ -1497,11 +1555,16 @@ img, video{max-width:100%}
 </div>
 </article>
 <article class="sazonal-slide">
-<div aria-hidden="true" class="sazonal-slide-visual sazonal-mosaic">
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/homem-aranha-robo-articulado.webp');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/MARSHALL-PATRULHA-CANINA-1.webp');"></span>
-<span class="sazonal-bg-panel" style="background-image:url('imagens/sazonais/santa-rita-preto-com-escrita-branco.png');"></span>
+<div aria-label="Campanhas de 12 de outubro" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Campanhas de 12 de outubro — imagem 1" decoding="async" src="imagens/sazonais/homem-aranha-robo-articulado.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Campanhas de 12 de outubro — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/MARSHALL-PATRULHA-CANINA-1.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Campanhas de 12 de outubro — imagem 3" decoding="async" loading="lazy" src="imagens/sazonais/santa-rita-preto-com-escrita-branco.png"/></div>
 </div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
 <div class="sazonal-slide-content">
 <div class="sazonal-badge">Duas campanhas na mesma data</div>
 <div class="sazonal-date">Dia das Crianças + Nossa Senhora Aparecida | 12/10/2026</div>
@@ -1731,7 +1794,7 @@ function goScan(n) {
   dotsWrap.querySelectorAll('.scan-dot')[scanIdx].classList.add('active');
 }
 function moveCarousel(dir) { goScan(scanIdx + dir); }
-setInterval(function(){ moveCarousel(1); }, 4000);
+setInterval(function(){ if (!document.hidden && !window.matchMedia('(max-width: 768px)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) moveCarousel(1); }, 7000);
 
 
 let seasonalIdx = 0;
@@ -1755,7 +1818,7 @@ function goSeasonal(n) {
   seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.add('active');
 }
 function moveSeasonal(dir) { goSeasonal(seasonalIdx + dir); }
-setInterval(function(){ moveSeasonal(1); }, 5000);
+setInterval(function(){ if (!document.hidden && !window.matchMedia('(max-width: 768px)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) moveSeasonal(1); }, 12000);
 
 // CONTROLE SEGURO DOS NOVOS CARROSSEIS
 function hideBrokenSlide(el) {
@@ -1814,6 +1877,14 @@ function scrollReviews(dir){
 
 var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+var mobileVideoQuery = window.matchMedia('(max-width: 768px)');
+function updateVideoControls(){
+  var showControls = mobileVideoQuery.matches || reduceMotion;
+  document.querySelectorAll('video').forEach(function(video){ video.controls = showControls; });
+}
+updateVideoControls();
+if (mobileVideoQuery.addEventListener) mobileVideoQuery.addEventListener('change', updateVideoControls);
+
 function videoIsOnActiveMiniSlide(video){
   var carousel = video.closest('.bbe-mini-carousel');
   if (!carousel) return true;
@@ -1825,13 +1896,11 @@ function videoIsOnActiveMiniSlide(video){
 }
 
 function syncVideo(video){
-  var canPlay = !reduceMotion && video.dataset.inview === '1' && videoIsOnActiveMiniSlide(video);
-  if (canPlay) {
-    var promise = video.play();
-    if (promise && promise.catch) promise.catch(function(){});
-  } else {
-    video.pause();
-  }
+  var active = video.dataset.inview === '1' && videoIsOnActiveMiniSlide(video);
+  if (!active) { video.pause(); return; }
+  if (reduceMotion) return;
+  var promise = video.play();
+  if (promise && promise.catch) promise.catch(function(){ video.controls = true; });
 }
 
 function syncCarouselVideos(carousel){
@@ -1882,6 +1951,7 @@ document.querySelectorAll('.bbe-mini-carousel').forEach(function(carousel){
     sy = e.touches[0].clientY;
   }, {passive:true});
   seasonal.addEventListener('touchend', function(e){
+    if (e.target && e.target.closest('.sazonal-media-carousel')) return;
     if (!e.changedTouches || !e.changedTouches[0]) return;
     var dx = e.changedTouches[0].clientX - sx;
     var dy = e.changedTouches[0].clientY - sy;
@@ -1897,7 +1967,7 @@ document.querySelectorAll('.bbe-mini-carousel').forEach(function(carousel){
   var heroCarousel=document.querySelector('.hero-case-carousel[data-auto="true"]');
   if(!heroCarousel || reduceMotion) return;
   var timer=null;
-  function advance(){ var next=heroCarousel.querySelector('.bbe-next'); if(next) moveMini(next,1); }
+  function advance(){ if (window.matchMedia('(max-width: 768px)').matches || document.hidden) return; var next=heroCarousel.querySelector('.bbe-next'); if(next) moveMini(next,1); }
   function start(){ if(timer) return; timer=setInterval(advance,7000); }
   function stop(){ if(timer){ clearInterval(timer); timer=null; } }
   heroCarousel.addEventListener('mouseenter',stop);
