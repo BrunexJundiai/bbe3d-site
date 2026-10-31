@@ -1,35 +1,1755 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scanner 3D, modelagem CAD e impressão 3D em Praia Grande | BBE 3D</title>
-<meta name="description" content="BBE 3D: scanner 3D, modelagem CAD, engenharia reversa e impressão 3D sob medida em Praia Grande, SP. Conheça projetos reais e peça seu orçamento.">
-<link rel="canonical" href="https://bbe3d.com.br/">
-<meta name="theme-color" content="#17579B">
-<link rel="icon" type="image/svg+xml" href="assets/brand/logo-bbe.svg">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Scanner 3D, modelagem CAD e impressão 3D em Praia Grande | BBE 3D">
-<meta property="og:description" content="BBE 3D: scanner 3D, modelagem CAD, engenharia reversa e impressão 3D sob medida em Praia Grande, SP. Conheça projetos reais e peça seu orçamento.">
-<meta property="og:url" content="https://bbe3d.com.br/">
-<meta property="og:image" content="https://bbe3d.com.br/imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "BBE 3D", "url": "https://bbe3d.com.br/", "image": "https://bbe3d.com.br/imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg", "telephone": "+55 13 99145-5673", "email": "bbe3dmanufatura@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Praia Grande", "addressRegion": "SP", "addressCountry": "BR"}}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18180058403">
-</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>BBE 3D Manufatura — Peças Técnicas, Scanner 3D e Impressão 3D | Praia Grande/SP</title>
+<meta content="Scanner 3D, modelagem CAD e impressão 3D sob medida em Praia Grande/SP. Peças técnicas, engenharia reversa, maquetes, cases para eletrônica e brindes personalizados." name="description"/>
+<meta content="#17579B" name="theme-color"/>
+<meta content="light" name="color-scheme"/>
+<link href="https://bbe3d.com.br/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="BBE 3D Manufatura — Scanner 3D, CAD e Impressão 3D em Praia Grande/SP" property="og:title"/>
+<meta content="Projetos reais de engenharia reversa, captura 3D, modelagem CAD, impressão 3D e itens personalizados produzidos pela BBE 3D." property="og:description"/>
+<meta content="https://bbe3d.com.br/" property="og:url"/>
+<meta content="https://bbe3d.com.br/imagens/cases/hero-peca-tecnica-bbe.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link as="image" href="imagens/marca/logo-comercial-bbe.svg" rel="preload" type="image/svg+xml"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-18180058403"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-18180058403');
 </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&amp;family=Barlow:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BBE 3D Manufatura",
+  "url": "https://bbe3d.com.br/",
+  "logo": "https://bbe3d.com.br/imagens/marca/logo-comercial-bbe.svg",
+  "image": "https://bbe3d.com.br/imagens/cases/hero-peca-tecnica-bbe.jpg",
+  "telephone": "+55 13 99145-5673",
+  "email": "bbe3dmanufatura@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Praia Grande",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/bbe3dmanufatura3d/"]
+}
+</script>
+<style>
+:root{
+  --azul:#17579B;
+  --azul-escuro:#0f3d6e;
+  --azul-profundo:#0a2540;
+  --azul-claro:#1e6bbf;
+  --bege:#F5E4CE;
+  --branco:#ffffff;
+  --cinza:#f7f7f7;
+  --cinza-borda:#dfe7ef;
+  --texto:#2d2d2d;
+  --texto-suave:#5f6872;
+  --verde:#25D366;
+  --sombra:0 10px 34px rgba(23,87,155,0.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;color:var(--texto);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+
+nav{
+  position:fixed;top:0;left:0;width:100%;z-index:100;
+  background:rgba(23,87,155,0.97);backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5vw;height:68px;box-shadow:0 2px 20px rgba(0,0,0,0.18);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-img{height:42px;width:42px;border-radius:8px;object-fit:contain;background:var(--bege);padding:3px}
+.nav-logo-text{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:var(--bege);line-height:1.1}
+.nav-logo-sub{display:block;font-size:11px;font-weight:400;color:rgba(245,228,206,0.75)}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{color:rgba(255,255,255,0.86);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--bege)}
+.nav-cta{background:var(--bege)!important;color:var(--azul)!important;padding:9px 18px;border-radius:4px;font-weight:700!important}
+
+.hero{
+  min-height:100vh;
+  background:linear-gradient(135deg,var(--azul-profundo) 0%,var(--azul) 55%,#2178c4 100%);
+  display:flex;align-items:center;padding:110px 5vw 70px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-18%;right:-8%;width:620px;height:620px;border-radius:50%;
+  background:radial-gradient(circle,rgba(245,228,206,0.08) 0%,transparent 70%);
+}
+.hero-grid{
+  width:100%;max-width:1200px;margin:0 auto;display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);gap:48px;align-items:center;position:relative;z-index:2;
+}
+.hero-badge-destaque{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,215,0,0.15);
+  border:1px solid rgba(255,215,0,0.38);color:#ffd700;font-size:12px;font-weight:700;
+  padding:5px 12px;border-radius:999px;margin-bottom:12px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(245,228,206,0.14);
+  border:1px solid rgba(245,228,206,0.28);color:var(--bege);font-size:13px;font-weight:600;
+  padding:6px 14px;border-radius:999px;margin-bottom:22px;
+}
+.hero h1{
+  font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,5.8vw,68px);
+  font-weight:800;line-height:.98;color:#fff;margin-bottom:14px;
+}
+.hero h1 span{color:var(--bege)}
+.hero-sub{
+  font-family:'Barlow Condensed',sans-serif;font-size:clamp(19px,2.3vw,27px);
+  color:rgba(245,228,206,0.92);font-weight:600;margin-bottom:18px;
+}
+.hero-copy{
+  font-size:16px;line-height:1.75;color:rgba(255,255,255,0.84);max-width:620px;margin-bottom:24px;
+}
+.hero-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px;margin-bottom:28px}
+.hero-point{
+  display:flex;gap:10px;align-items:flex-start;color:#fff;font-size:14px;line-height:1.5;
+}
+.hero-point strong{display:block;font-weight:700;color:var(--bege)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.btn-wa{
+  display:inline-flex;align-items:center;gap:10px;background:var(--verde);color:#fff;text-decoration:none;
+  padding:16px 28px;border-radius:6px;font-size:16px;font-weight:700;box-shadow:0 8px 24px rgba(37,211,102,0.34);
+  transition:transform .2s, box-shadow .2s;
+}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(37,211,102,0.45)}
+.btn-out{
+  display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--bege);text-decoration:none;
+  padding:14px 24px;border:2px solid rgba(245,228,206,0.5);border-radius:6px;font-size:15px;font-weight:600;
+}
+.btn-out:hover{background:rgba(245,228,206,0.08);border-color:var(--bege)}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:800;color:var(--bege);line-height:1}
+.stat-lbl{font-size:11px;color:rgba(255,255,255,0.68);margin-top:4px}
+.hero-visual{
+  background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:18px;
+  padding:18px;box-shadow:0 20px 60px rgba(0,0,0,0.28);
+}
+.hero-visual img,
+.hero-visual video {width:100%;height:100%;max-height:470px;object-fit:cover;border-radius:14px;}
+.hero-visual-note{
+  margin-top:14px;background:var(--bege);color:var(--azul-profundo);font-family:'Barlow Condensed',sans-serif;
+  font-size:14px;font-weight:700;padding:10px 14px;border-radius:8px;text-align:center;
+}
+
+/* CSS SEGURO PARA OS NOVOS CARROSSEIS DOS CARDS */
+.bbe-mini-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  background: #e9f1f9;
+}
+.bbe-mini-carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+.bbe-mini-carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9f1f9;
+}
+.bbe-mini-carousel-slide img,
+.bbe-mini-carousel-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.bbe-mini-carousel .bbe-prev,
+.bbe-mini-carousel .bbe-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(23,87,155,0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+}
+.bbe-mini-carousel .bbe-prev { left: 10px; }
+.bbe-mini-carousel .bbe-next { right: 10px; }
+
+.faixa{
+  background:var(--bege);padding:18px 5vw;border-top:3px solid var(--azul);border-bottom:3px solid var(--azul);
+}
+.faixa-wrap{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+.faixa-item{display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:var(--azul)}
+
+.sec{padding:84px 5vw}
+.sec-bege{background:var(--bege)}
+.sec-cinza{background:var(--cinza)}
+.sec-azul{background:var(--azul)}
+.sec-dark{background:var(--azul-profundo)}
+.wrap{max-width:1200px;margin:0 auto}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--azul);margin-bottom:10px}
+.lbl.light{color:var(--bege)}
+.lbl.gold{color:#ffd700}
+.h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(30px,4vw,50px);font-weight:800;line-height:1.05;color:var(--azul-profundo);margin-bottom:14px}
+.h2.light{color:#fff}
+.desc{font-size:16px;color:var(--texto-suave);line-height:1.75;max-width:720px;margin-bottom:42px}
+.desc.light{color:rgba(255,255,255,0.82)}
+
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.proof-card{
+  background:#fff;border:1px solid rgba(23,87,155,0.09);border-radius:12px;padding:22px;box-shadow:var(--sombra);
+}
+.proof-title{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:var(--azul);margin-bottom:6px}
+.proof-copy{font-size:14px;line-height:1.65;color:var(--texto-suave)}
+
+.scanner-hero{
+  background:linear-gradient(135deg,#0a2540 0%,#0f3d6e 60%,#17579B 100%);
+  position:relative;overflow:hidden;
+}
+.scanner-hero::before{
+  content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,215,0,0.06) 0%,transparent 70%);
+}
+.scanner-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:1200px;margin:0 auto;position:relative;z-index:2;
+}
+.scanner-badge-sp{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,215,0,0.15);
+  border:1.5px solid rgba(255,215,0,0.5);color:#ffd700;font-size:13px;font-weight:700;padding:6px 16px;border-radius:999px;
+  margin-bottom:20px;letter-spacing:.03em;
+}
+.scanner-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(34px,5vw,58px);font-weight:800;color:#fff;line-height:1.0;margin-bottom:12px}
+.scanner-title span{color:#ffd700}
+.scanner-sub{font-size:16px;color:rgba(255,255,255,0.82);line-height:1.75;margin-bottom:26px}
+.scanner-specs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+.scanner-spec{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:14px 16px}
+.scanner-spec-val{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:#ffd700;line-height:1}
+.scanner-spec-lbl{font-size:12px;color:rgba(255,255,255,0.66);margin-top:3px}
+.scanner-carousel-wrap{position:relative;width:100%;max-width:560px;margin:0 auto}
+.scanner-carousel{position:relative;width:100%;height:380px;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.45);background:#050e1c}
+.scan-slide{position:absolute;inset:0;opacity:0;transition:opacity .6s ease;display:flex;align-items:center;justify-content:center}
+.scan-slide.active{opacity:1}
+.scan-slide img{width:100%;height:100%;object-fit:contain;padding:8px}
+.scan-prev,.scan-next{
+  position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.45);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:32px;width:48px;height:48px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;z-index:10;line-height:1;
+}
+.scan-prev{left:10px}
+.scan-next{right:10px}
+.scan-dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
+.scan-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,0.25);cursor:pointer;border:none;padding:0}
+.scan-dot.active{background:#ffd700;transform:scale(1.35)}
+
+.fluxo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:44px;position:relative}
+.fluxo-step{text-align:center;padding:28px 16px;position:relative}
+.fluxo-step:not(:last-child)::after{content:'→';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-size:20px;color:rgba(255,255,255,0.3)}
+.fluxo-num{
+  width:52px;height:52px;border-radius:50%;border:2px solid #ffd700;display:flex;align-items:center;justify-content:center;
+  font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;color:#ffd700;margin:0 auto 14px;
+}
+.fluxo-t{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:6px}
+.fluxo-d{font-size:12px;color:rgba(255,255,255,0.62);line-height:1.5}
+.scan-srv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:44px}
+.scan-srv{
+  background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:28px;
+}
+.scan-srv-ico{font-size:32px;margin-bottom:14px}
+.scan-srv-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:8px}
+.scan-srv-desc{font-size:13px;color:rgba(255,255,255,0.72);line-height:1.65}
+
+.maq-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.maq-img{border-radius:16px;overflow:hidden;box-shadow:var(--sombra);background:#f9f9f9;padding:16px;text-align:center}
+.feat-list{display:flex;flex-direction:column;gap:18px;margin-top:28px}
+.feat{display:flex;gap:14px;align-items:flex-start}
+.feat-ico{width:44px;height:44px;min-width:44px;background:var(--azul);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.feat h4{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;color:var(--azul);margin-bottom:4px}
+.feat p{font-size:13px;color:#666;line-height:1.6}
+
+.mat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:44px}
+.mat-card{border-radius:14px;overflow:hidden;box-shadow:var(--sombra);background:#fff;transition:transform .25s}
+.mat-card:hover{transform:translateY(-5px)}
+.mat-card img{width:100%;height:210px;object-fit:cover}
+.mat-info{padding:18px 20px}
+.mat-info h3{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:700;color:var(--azul);margin-bottom:7px}
+.mat-info p{font-size:13px;color:#666;line-height:1.6}
+
+.cta-band{
+  background:linear-gradient(135deg,var(--azul-profundo) 0%,var(--azul) 100%);
+  border-radius:18px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;
+  box-shadow:0 20px 45px rgba(10,37,64,0.18);
+}
+.cta-band h3{font-family:'Barlow Condensed',sans-serif;font-size:34px;line-height:1.0;color:#fff;margin-bottom:8px}
+.cta-band p{font-size:15px;line-height:1.7;color:rgba(255,255,255,0.84);max-width:700px}
+
+.sazonal-sec{background:linear-gradient(180deg,#f6f8fb 0%,#ffffff 100%)}
+.sazonal-wrap{max-width:1200px;margin:0 auto}
+.sazonal-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:28px;align-items:start;margin-bottom:38px}
+.sazonal-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:28px;align-items:stretch}
+.sazonal-carousel-wrap{background:#0f3d6e;border-radius:8px;overflow:hidden;box-shadow:0 16px 40px rgba(15,61,110,0.18);position:relative;min-height:460px}
+.sazonal-carousel{position:relative;width:100%;min-height:460px;height:100%}
+.sazonal-slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .45s ease;display:flex;align-items:flex-end}
+.sazonal-slide.active{opacity:1;pointer-events:auto}
+.sazonal-slide-visual{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.18) 0%,rgba(10,37,64,0.82) 100%), var(--slide-img, linear-gradient(135deg,#17579B 0%,#1e6bbf 45%,#ffd166 100%));background-size:cover;background-position:center}
+.sazonal-slide-visual.sazonal-mosaic{display:flex;overflow:hidden;background:#0a2540}
+.sazonal-slide-visual.sazonal-mosaic::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,37,64,0.04) 0%,rgba(10,37,64,0.18) 42%,rgba(10,37,64,0.94) 100%);z-index:2}
+.sazonal-bg-panel{flex:1;min-width:0;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;filter:saturate(.92) contrast(1.02)}
+.sazonal-slide-visual.sazonal-fathers{display:grid;grid-template-columns:46% 54%;gap:8px;padding:8px;background:#dce4ec}
+.sazonal-slide-visual.sazonal-fathers .sazonal-bg-panel{width:100%;height:100%;background-size:contain;background-position:center top;background-color:#dce4ec}
+.sazonal-slide-visual.sazonal-fathers .sazonal-bg-panel:first-child{background-color:#d9d4cb}
+.sazonal-slide-visual.sazonal-fathers .sazonal-bg-panel:last-child{background-color:#b7c2ca}
+.sazonal-slide-visual.sazonal-sete-setembro{
+  background-size:100% 100%,100% auto;
+  background-position:center center,center top;
+  background-repeat:no-repeat;
+  background-color:#0b5b3f;
+}
+
+/* Campanha Halloween: usa as fotos reais do item em um mosaico, sem alterar o layout sazonal existente */
+.sazonal-slide-visual.sazonal-halloween{
+  display:grid;
+  grid-template-columns:1.25fr .9fr .9fr;
+  grid-template-rows:1fr 1fr;
+  gap:3px;
+  background:#140d1a;
+}
+.sazonal-slide-visual.sazonal-halloween .sazonal-bg-panel{width:100%;height:100%;background-size:cover;background-position:center}
+.sazonal-slide-visual.sazonal-halloween .sazonal-bg-panel:first-child{grid-row:1/3}
+.sazonal-slide-content{position:relative;z-index:2;padding:26px;width:100%;color:#fff}
+.sazonal-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px}
+.sazonal-date{font-size:13px;color:rgba(255,255,255,0.8);font-weight:600;margin-bottom:10px}
+.sazonal-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,3vw,42px);line-height:1.0;margin-bottom:12px}
+.sazonal-copy{font-size:15px;line-height:1.65;color:rgba(255,255,255,0.88);max-width:520px;margin-bottom:18px}
+.sazonal-items{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.sazonal-chip{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:12px;font-weight:600}
+.sazonal-cta{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;text-decoration:none;font-weight:700;padding:13px 18px;border-radius:6px;box-shadow:0 10px 28px rgba(37,211,102,0.28)}
+.sazonal-nav{position:absolute;top:18px;right:18px;display:flex;gap:8px;z-index:3}
+.sazonal-nav button{width:38px;height:38px;border:0;border-radius:999px;cursor:pointer;background:rgba(255,255,255,0.16);color:#fff;font-size:18px;font-weight:700;backdrop-filter:blur(6px)}
+.sazonal-dots{position:absolute;left:26px;bottom:18px;z-index:3;display:flex;gap:8px}
+.sazonal-dot{width:11px;height:11px;border-radius:999px;border:0;background:rgba(255,255,255,0.35);cursor:pointer}
+.sazonal-dot.active{background:#fff}
+.sazonal-cards{display:grid;gap:14px}
+.sazonal-card{background:#fff;border:1px solid rgba(23,87,155,0.1);border-radius:8px;box-shadow:var(--sombra);padding:18px}
+.sazonal-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.sazonal-card-tag{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(23,87,155,0.08);color:var(--azul);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.sazonal-card-date{font-size:12px;color:#6c7b88;font-weight:600}
+.sazonal-card h3{font-family:'Barlow Condensed',sans-serif;font-size:26px;color:var(--azul-profundo);margin-bottom:8px;line-height:1.0}
+.sazonal-card p{font-size:14px;line-height:1.65;color:#556270;margin-bottom:14px}
+.sazonal-card-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.sazonal-card-btn{display:inline-flex;align-items:center;gap:8px;color:var(--azul);text-decoration:none;font-size:14px;font-weight:700}
+
+.srv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:44px}
+.srv-card{
+  background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--sombra);border-top:4px solid var(--azul);
+  transition:transform .25s;
+}
+.srv-card:hover{transform:translateY(-5px)}
+.srv-thumb{height:200px;background:#e9f1f9}
+.srv-thumb img,.srv-thumb video{width:100%;height:100%;object-fit:cover;display:block}
+.srv-body{padding:22px}
+.srv-ico{font-size:30px;margin-bottom:10px}
+.srv-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--azul);margin-bottom:8px;line-height:1.0}
+.srv-desc{font-size:14px;line-height:1.68;color:#555;margin-bottom:16px}
+.srv-link{
+  display:inline-flex;align-items:center;gap:8px;color:var(--azul);text-decoration:none;font-size:14px;font-weight:700;
+}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:28px;margin-top:44px}
+.step{text-align:center}
+.step-num{width:58px;height:58px;background:var(--bege);border:3px solid var(--azul);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800;color:var(--azul);margin:0 auto 18px}
+.step-t{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:700;color:#fff;margin-bottom:8px}
+.step-d{font-size:13px;color:rgba(255,255,255,0.77);line-height:1.6}
+
+.dif-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:44px}
+.dif{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:10px;padding:22px;box-shadow:var(--sombra)}
+.dif-ico{width:46px;height:46px;min-width:46px;background:var(--azul);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:21px}
+.dif h4{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;color:var(--azul);margin-bottom:5px}
+.dif p{font-size:13px;color:#666;line-height:1.6}
+
+.faq-grid{display:grid;gap:14px;margin-top:42px}
+.faq-item{
+  background:#fff;border:1px solid var(--cinza-borda);border-radius:12px;box-shadow:var(--sombra);padding:0 20px;
+}
+.faq-item summary{
+  cursor:pointer;list-style:none;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:700;color:var(--azul-profundo);
+  padding:18px 0;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item p{font-size:15px;line-height:1.75;color:#59636e;padding:0 0 18px}
+
+.ctt-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.ctt-info h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,3.5vw,44px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:18px}
+.ctt-info p{font-size:15px;color:rgba(255,255,255,0.82);line-height:1.75;margin-bottom:28px}
+.ctt-links{display:flex;flex-direction:column;gap:12px}
+.ctt-link{display:flex;align-items:center;gap:14px;text-decoration:none;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:14px 18px;transition:background .2s;color:#fff}
+.ctt-link:hover{background:rgba(255,255,255,0.18)}
+.ctt-link-ico{font-size:22px;width:34px;text-align:center}
+.ctt-lbl{font-weight:600;display:block;font-size:14px}
+.ctt-val{color:rgba(255,255,255,0.72);font-size:13px}
+.qr-block{background:#fff;border-radius:16px;padding:28px;text-align:center}
+.qr-block h3{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:var(--azul);margin-bottom:6px}
+.qr-block p{font-size:13px;color:#888;margin-bottom:18px}
+.qr-tabs{display:flex;gap:8px;margin-bottom:18px;justify-content:center}
+.qr-tab{font-size:12px;font-weight:600;padding:5px 13px;border-radius:20px;cursor:pointer;border:1.5px solid var(--azul);color:var(--azul);background:transparent;transition:all .2s}
+.qr-tab.active{background:var(--azul);color:#fff}
+.qr-img-wrap{width:170px;height:170px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.qr-img-wrap img{width:100%;height:100%;object-fit:contain}
+
+footer{background:var(--azul-escuro);padding:28px 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.footer-brand{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;color:var(--bege)}
+.footer-txt{font-size:13px;color:rgba(245,228,206,0.58)}
+.footer-links{display:flex;gap:18px}
+.footer-links a{font-size:13px;color:rgba(245,228,206,0.72);text-decoration:none}
+.footer-links a:hover{color:var(--bege)}
+
+.wa-float{
+  position:fixed;bottom:26px;right:26px;z-index:200;width:58px;height:58px;background:#25D366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none;
+  animation:bounce 2s ease-in-out infinite;
+}
+.wa-float:hover{transform:scale(1.1);animation:none}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+
+/* ===== BBE 3D — PORTFÓLIO, AVALIAÇÕES, MOBILE E PERFORMANCE ===== */
+.nav-toggle{
+  display:none;border:1px solid rgba(245,228,206,.35);background:rgba(255,255,255,.08);color:var(--bege);
+  width:44px;height:44px;border-radius:8px;font-size:23px;cursor:pointer;align-items:center;justify-content:center;
+}
+
+.project-sec{background:linear-gradient(180deg,#ffffff 0%,#f5f8fb 100%)}
+.project-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.project-head .desc{margin-bottom:0}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.project-card{
+  background:#fff;border:1px solid rgba(23,87,155,.12);border-radius:16px;overflow:hidden;box-shadow:var(--sombra);
+  display:flex;flex-direction:column;min-width:0;
+}
+.project-card.featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr)}
+.project-media.bbe-mini-carousel{height:330px;background:#0a2540}
+.project-card.featured .project-media.bbe-mini-carousel{height:100%;min-height:430px;border-radius:0}
+.project-media .bbe-mini-carousel-slide{background:#e9f1f9}
+.project-media .media-contain img,.project-media .media-contain video{object-fit:contain;background:#eef3f8}
+.project-media .media-cover img,.project-media .media-cover video{object-fit:cover}
+.project-body{padding:24px;display:flex;flex-direction:column;gap:12px}
+.project-card.featured .project-body{justify-content:center;padding:30px}
+.project-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--azul)}
+.project-title{font-family:'Barlow Condensed',sans-serif;font-size:28px;line-height:1.02;color:var(--azul-profundo)}
+.project-copy{font-size:14px;line-height:1.7;color:var(--texto-suave)}
+.project-tags{display:flex;flex-wrap:wrap;gap:7px}
+.project-tag{font-size:11px;font-weight:700;color:var(--azul);background:#edf5fc;border:1px solid #d7e8f8;border-radius:999px;padding:6px 9px}
+.project-note{font-size:12px;line-height:1.55;color:#6a7480;border-left:3px solid var(--bege);padding-left:10px}
+.study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.study-card{background:#fff;border:1px dashed rgba(23,87,155,.28);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:180px 1fr;min-height:180px}
+.study-media{background:#e9f1f9;min-height:180px;overflow:hidden}
+.study-media img,.study-media video{width:100%;height:100%;object-fit:contain;display:block;background:#eef3f8}
+.study-body{padding:20px}
+.study-label{display:inline-flex;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#775d00;background:#fff3be;border:1px solid #f0da76;border-radius:999px;padding:5px 8px;margin-bottom:9px}
+.study-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;color:var(--azul-profundo);margin-bottom:7px}
+.study-copy{font-size:13px;line-height:1.6;color:var(--texto-suave)}
+
+.reviews-sec{background:var(--azul-profundo);overflow:hidden}
+.reviews-sec .h2{color:#fff}
+.reviews-sec .desc{color:rgba(255,255,255,.75)}
+.reviews-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.reviews-nav{display:flex;gap:8px}
+.reviews-nav button{width:42px;height:42px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(255,255,255,.08);color:#fff;font-size:22px;cursor:pointer}
+.reviews-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 14px;scrollbar-width:thin;scrollbar-color:rgba(245,228,206,.5) transparent}
+.review-shot{flex:0 0 min(560px,82vw);scroll-snap-align:start;background:#111b28;border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;box-shadow:0 16px 42px rgba(0,0,0,.25)}
+.review-shot img{width:100%;height:100%;max-height:260px;object-fit:contain;background:#111;display:block}
+.reviews-proof{margin-top:16px;font-size:12px;color:rgba(255,255,255,.58)}
+
+/* mídia só reproduz quando realmente visível e ativa */
+video{background:#0a2540}
+.media-paused::after{content:'▶';position:absolute;inset:auto 12px 12px auto;width:36px;height:36px;border-radius:50%;background:rgba(10,37,64,.76);color:#fff;display:flex;align-items:center;justify-content:center}
+
+/* melhora renderização de seções abaixo da dobra sem alterar layout */
+.project-sec,.reviews-sec,.sazonal-sec{content-visibility:auto;contain-intrinsic-size:900px}
+
+@media(max-width:1080px){
+  .nav-links{gap:13px}
+  .nav-links a{font-size:13px}
+}
+
+@media(max-width:920px){
+  .nav-toggle{display:flex}
+  nav{padding:0 4vw}
+  .nav-links{
+    display:none;position:absolute;top:68px;left:0;right:0;background:rgba(15,61,110,.99);padding:14px 5vw 20px;
+    flex-direction:column;align-items:stretch;gap:6px;border-top:1px solid rgba(255,255,255,.12);box-shadow:0 18px 30px rgba(0,0,0,.22)
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:15px;padding:11px 10px;border-radius:7px}
+  .nav-links a:hover{background:rgba(255,255,255,.08)}
+  .nav-cta{text-align:center;margin-top:4px}
+  .project-card.featured{grid-template-columns:1fr}
+  .project-card.featured .project-media.bbe-mini-carousel{height:340px;min-height:0}
+  .project-grid{grid-template-columns:1fr}
+  .study-grid{grid-template-columns:1fr}
+}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex}
+  .hero-visual{display:block!important;width:100%;max-width:none;margin-top:6px;padding:12px}
+  .hero-visual .bbe-mini-carousel{height:300px!important}
+  .hero-visual-note{font-size:12px}
+  .project-media.bbe-mini-carousel{height:280px}
+  .project-card.featured .project-media.bbe-mini-carousel{height:300px}
+  .project-body,.project-card.featured .project-body{padding:20px}
+  .project-title{font-size:25px}
+  .study-card{grid-template-columns:1fr}
+  .study-media{height:240px}
+  .review-shot{flex-basis:88vw}
+  .review-shot img{max-height:230px}
+  .reviews-nav{display:none}
+  .bbe-mini-carousel .bbe-prev,.bbe-mini-carousel .bbe-next{width:38px;height:38px;background:rgba(15,61,110,.84)}
+}
+
+@media(max-width:520px){
+  .scanner-specs{grid-template-columns:1fr}
+  .sec{padding:66px 5vw}
+  .hero-btns .btn-wa,.hero-btns .btn-out{width:100%;justify-content:center;text-align:center}
+  .hero-stats{gap:18px}
+  .project-media.bbe-mini-carousel,.project-card.featured .project-media.bbe-mini-carousel{height:250px}
+  .study-media{height:220px}
+  .wa-float{right:16px;bottom:16px;width:54px;height:54px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+@media(max-width:920px){
+  .hero-grid,.scanner-grid,.maq-grid,.ctt-wrap{grid-template-columns:1fr}
+  .hero-visual{max-width:620px}
+  .sazonal-head,.sazonal-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hero{padding:100px 5vw 60px}
+  .hero h1{font-size:clamp(34px,12vw,54px)}
+  .hero-points{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .faixa-wrap{justify-content:flex-start}
+  .scanner-specs{grid-template-columns:1fr 1fr}
+  .fluxo-step::after{display:none}
+  .sazonal-carousel-wrap,.sazonal-carousel{min-height:500px}
+  .sazonal-slide-content{padding:22px}
+  .sazonal-title{font-size:34px}
+  footer{flex-direction:column;text-align:center}
+  .footer-links{justify-content:center}
+}
+
+
+/* ===== BBE 3D — UNIFICAÇÃO VISUAL SET/2026 ===== */
+.hero-cases{position:relative}
+.hero-case-carousel{box-shadow:none}
+.hero-case-slide{position:relative;overflow:hidden;background:#0a2540}
+.hero-case-slide img,.hero-case-slide video{width:100%;height:100%;object-fit:cover;border-radius:0}
+.hero-case-slide.media-contain img,.hero-case-slide.media-contain video{object-fit:contain;background:#0a2540}
+.hero-case-caption{position:absolute;left:14px;right:14px;bottom:14px;padding:12px 14px;border-radius:10px;background:linear-gradient(90deg,rgba(10,37,64,.94),rgba(15,61,110,.82));border:1px solid rgba(245,228,206,.24);color:#fff;text-align:left;backdrop-filter:blur(5px)}
+.hero-case-caption span{display:block;font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--bege);margin-bottom:3px}
+.hero-case-caption strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:20px;line-height:1.05}
+
+.cases-unified{border-top:1px solid #e5ebf1;border-bottom:1px solid #e5ebf1}
+.case-grid-unified{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.case-card-unified{background:#fff;border:1px solid rgba(23,87,155,.12);border-radius:14px;overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column;min-width:0}
+.case-card-unified.case-featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr)}
+.case-card-unified.case-miniaturas{grid-template-columns:minmax(0,.95fr) minmax(340px,1.05fr)}
+.case-media-unified{height:310px;background:#eaf1f7;position:relative;overflow:hidden}
+.case-featured .case-media-unified{height:440px}
+.case-media-unified img,.case-media-unified video{width:100%;height:100%;display:block;object-fit:cover}
+.case-media-unified .media-contain img,.case-media-unified .media-contain video{object-fit:contain;background:#edf3f8}
+.case-body-unified{padding:28px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.case-body-unified.compact{padding:22px}
+.case-status{font-size:10px;font-weight:800;letter-spacing:.1em;color:var(--azul);text-transform:uppercase}
+.case-body-unified h3{font-family:'Barlow Condensed',sans-serif;font-size:30px;line-height:1.04;color:var(--azul-profundo)}
+.case-body-unified.compact h3{font-size:25px}
+.case-body-unified p{font-size:14px;line-height:1.7;color:var(--texto-suave)}
+.case-body-unified small{font-size:11px;line-height:1.5;color:#6e7781;border-left:3px solid var(--bege);padding-left:9px}
+.case-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.case-tags span{font-size:11px;font-weight:700;color:var(--azul);background:#edf5fc;border:1px solid #d7e8f8;border-radius:999px;padding:5px 9px}
+.case-studies-unified{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.case-study-unified{display:grid;grid-template-columns:155px 1fr;background:#fff;border:1px dashed rgba(23,87,155,.25);border-radius:12px;overflow:hidden;min-height:150px}
+.case-study-unified>img,.case-study-unified>video{width:100%;height:100%;min-height:150px;object-fit:contain;background:#edf3f8}
+.case-study-unified>div{padding:17px;align-self:center}
+.case-study-unified span{font-size:9px;font-weight:800;letter-spacing:.09em;color:#806700}
+.case-study-unified strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:21px;color:var(--azul-profundo);margin:4px 0}
+.case-study-unified p{font-size:12px;line-height:1.55;color:var(--texto-suave)}
+
+.bbe-reviews-unified{border-top:3px solid var(--azul);border-bottom:3px solid var(--azul)}
+.review-grid-unified{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.review-grid-unified figure{background:#fff;border:1px solid rgba(23,87,155,.12);border-radius:12px;padding:12px;box-shadow:0 8px 24px rgba(23,87,155,.08);display:flex;align-items:center;justify-content:center;min-height:180px}
+.review-grid-unified img{width:100%;max-height:245px;object-fit:contain;border-radius:7px}
+.review-grid-unified figure:first-child,.review-grid-unified figure:nth-child(2){grid-column:span 1}
+.reviews-trust-line{margin-top:20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:var(--azul-profundo)}
+.reviews-trust-line>span{font-size:22px;color:#d99d00;letter-spacing:2px}
+.reviews-trust-line strong{font-family:'Barlow Condensed',sans-serif;font-size:19px}
+.reviews-trust-line small{font-size:12px;color:#6d747d}
+
+/* Mantém identidade e melhora comportamento responsivo sem criar um segundo layout */
+@media(max-width:920px){
+  .case-card-unified.case-featured,.case-card-unified.case-miniaturas{grid-template-columns:1fr}
+  .case-featured .case-media-unified{height:360px}
+  .review-grid-unified{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:768px){
+  .hero-visual{display:block!important}
+  .hero-case-carousel{height:330px!important}
+  .hero-case-caption{left:9px;right:9px;bottom:9px;padding:10px 11px}
+  .hero-case-caption strong{font-size:18px}
+  .case-grid-unified,.case-studies-unified{grid-template-columns:1fr}
+  .case-featured .case-media-unified,.case-media-unified{height:300px}
+  .case-body-unified,.case-body-unified.compact{padding:20px}
+  .case-body-unified h3,.case-body-unified.compact h3{font-size:26px}
+  .review-grid-unified{grid-template-columns:1fr}
+  .review-grid-unified figure{min-height:140px;padding:10px}
+  .review-grid-unified img{max-height:none}
+  .case-study-unified{grid-template-columns:120px 1fr}
+}
+@media(max-width:520px){
+  .hero-case-carousel{height:285px!important}
+  .case-featured .case-media-unified,.case-media-unified{height:255px}
+  .case-study-unified{grid-template-columns:1fr}
+  .case-study-unified>img,.case-study-unified>video{height:220px}
+}
+
+/* ===== AJUSTE PONTUAL V2.1 — ENQUADRAMENTO DE MÍDIA =====
+   Mantém todo o layout/conteúdo. Corrige somente cortes excessivos
+   nos vídeos/fotos do Hero e nos dois cases grandes. */
+.hero-case-slide{
+  background:linear-gradient(135deg,#0a2540 0%,#17579B 100%);
+}
+.hero-case-slide img,
+.hero-case-slide video{
+  width:100%;
+  height:100%;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#0f3d6e;
+}
+
+/* F-100 e Miniaturas: mostrar a peça inteira, sem cortar cabeça, base ou laterais */
+.case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide{
+  background:#eaf1f7;
+}
+.case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide img,
+.case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide video{
+  width:100%;
+  height:100%;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#eaf1f7;
+}
+
+/* Em telas estreitas, preserva o enquadramento integral e centralizado */
+@media(max-width:768px){
+  .hero-case-slide img,
+  .hero-case-slide video,
+  .case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide img,
+  .case-card-unified.case-featured .case-media-unified .bbe-mini-carousel-slide video{
+    object-fit:contain!important;
+    object-position:center center!important;
+  }
+}
+
+
+/* ===== BBE 3D — V2.3.1 MOBILE SAFE / MÍDIA RESPONSIVA =====
+   Prioridade: preservar o enquadramento integral de fotos e vídeos em celular,
+   evitar corte de conteúdo, melhorar toque e reduzir risco de overflow horizontal. */
+html, body{max-width:100%;overflow-x:hidden}
+img, video{max-width:100%}
+.bbe-mini-carousel{touch-action:pan-y;overscroll-behavior-inline:contain}
+.ctt-val,.project-copy,.case-body-unified p,.srv-desc,.sazonal-copy{overflow-wrap:anywhere}
+
+@media(max-width:920px){
+  .hero-grid,.scanner-grid,.maq-grid,.ctt-wrap,.sazonal-head,.sazonal-grid,
+  .case-grid-unified,.project-grid,.srv-grid,.mat-grid{min-width:0}
+  .hero-visual,.case-card-unified,.project-card,.srv-card,.mat-card,.sazonal-carousel-wrap{min-width:0;max-width:100%}
+}
+
+@media(max-width:768px){
+  /* Hero: preserva o quadro inteiro de qualquer proporção de foto/vídeo */
+  .hero-case-carousel{height:clamp(300px,84vw,380px)!important}
+  .hero-case-slide img,.hero-case-slide video{
+    object-fit:contain!important;
+    object-position:center center!important;
+  }
+
+  /* Cases: no mobile nenhuma mídia é cortada, mesmo quando o slide original usa media-cover */
+  .case-featured .case-media-unified,.case-media-unified{
+    height:clamp(280px,78vw,360px)!important;
+  }
+  .case-media-unified img,.case-media-unified video,
+  .case-media-unified .media-cover img,.case-media-unified .media-cover video,
+  .case-media-unified .media-contain img,.case-media-unified .media-contain video{
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#edf3f8;
+  }
+
+  /* Cards de serviços/materiais também passam a mostrar a imagem inteira no celular */
+  .srv-thumb{height:clamp(220px,68vw,300px)}
+  .srv-thumb img,.srv-thumb video,.mat-card img{
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#edf3f8;
+  }
+  .mat-card img{height:clamp(220px,68vw,300px)}
+
+  /* Campanhas sazonais: separa visual e texto para a imagem não ficar escondida atrás da legenda */
+  .sazonal-carousel-wrap,.sazonal-carousel{min-height:700px!important}
+  .sazonal-slide{align-items:stretch}
+  .sazonal-slide-visual{
+    top:0!important;left:0!important;right:0!important;bottom:auto!important;
+    height:270px!important;
+    background-size:contain!important;
+    background-position:center center!important;
+    background-repeat:no-repeat!important;
+  }
+  .sazonal-slide-content{
+    position:absolute!important;
+    top:245px;left:0;right:0;bottom:0;
+    padding:38px 20px 54px;
+    background:linear-gradient(180deg,rgba(10,37,64,.88) 0%,#0a2540 18%,#0a2540 100%);
+  }
+  .sazonal-bg-panel{
+    background-size:contain!important;
+    background-position:center center!important;
+    background-repeat:no-repeat!important;
+    background-color:#140d1a;
+  }
+  .sazonal-slide-visual.sazonal-halloween{
+    grid-template-columns:1fr 1fr!important;
+    grid-template-rows:repeat(3,1fr)!important;
+    gap:2px;
+  }
+  .sazonal-slide-visual.sazonal-halloween .sazonal-bg-panel:first-child{
+    grid-column:1 / -1!important;
+    grid-row:auto!important;
+  }
+  .sazonal-cta{width:100%;justify-content:center;text-align:center;min-height:44px}
+  .sazonal-nav button,
+  .bbe-mini-carousel .bbe-prev,.bbe-mini-carousel .bbe-next{width:44px!important;height:44px!important}
+  .sazonal-dot{width:12px;height:12px}
+
+  /* Touch e áreas seguras de aparelhos com barra inferior/notch */
+  .wa-float{right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}
+}
+
+@media(max-width:520px){
+  .hero-case-carousel{height:clamp(300px,92vw,350px)!important}
+  .case-featured .case-media-unified,.case-media-unified{height:clamp(280px,88vw,340px)!important}
+  .sazonal-carousel-wrap,.sazonal-carousel{min-height:740px!important}
+  .sazonal-slide-visual{height:250px!important}
+  .sazonal-slide-content{top:228px;padding:36px 18px 56px}
+  .sazonal-title{font-size:30px}
+  .sazonal-copy{font-size:14px;line-height:1.6}
+}
+
+
+/* Revisão pontual: estudos, SparkX i8 e campanhas */
+section[id]{scroll-margin-top:78px}
+.case-studies-unified{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.case-study-unified{display:flex;flex-direction:column;min-height:0}
+.case-study-unified>img,.case-study-unified>video{width:100%;height:260px;min-height:0;object-fit:contain;object-position:center;background:#e9f1f9}
+.case-study-unified>div{align-self:stretch;flex:1;padding:20px 22px}
+.case-study-unified strong{font-size:24px}
+.case-study-unified p{font-size:13px}
+.sparkxi8-carousel .bbe-mini-carousel-slide,.sparkxi8-carousel .bbe-mini-carousel-slide img{background:#f0f4f8}
+.sparkxi8-carousel .bbe-mini-carousel-slide img{object-fit:contain;object-position:center}
+.sazonal-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+.sazonal-carousel-wrap,.sazonal-carousel{height:450px;min-height:450px}
+.sazonal-slide{align-items:stretch}
+.sazonal-media-carousel{flex:0 0 52%;height:100%!important;background:#eef3f8}
+.sazonal-media-carousel .bbe-mini-carousel-slide,.sazonal-media-carousel .bbe-mini-carousel-slide img{background:#eef3f8}
+.sazonal-media-carousel .bbe-mini-carousel-slide img{object-fit:contain;object-position:center}
+.sazonal-slide-content{flex:1;min-width:0;width:auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:42px 38px;background:#0a2540}
+.sazonal-cards{display:flex;gap:14px;min-width:0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:2px 2px 14px}
+.sazonal-card{flex:0 0 clamp(250px,25vw,290px);display:flex;flex-direction:column;scroll-snap-align:start;min-height:225px}
+.sazonal-card-btn{margin-top:auto}
+@media(max-width:920px){
+  .case-studies-unified{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:768px){
+  .case-studies-unified{grid-template-columns:1fr}
+  .case-study-unified>img,.case-study-unified>video{height:280px}
+  .sparkxi8-carousel{height:clamp(220px,62vw,320px)!important}
+  .sazonal-carousel-wrap,.sazonal-carousel{height:740px!important;min-height:740px!important}
+  .sazonal-slide{flex-direction:column;align-items:stretch}
+  .sazonal-media-carousel{flex:0 0 270px;width:100%;height:270px!important}
+  .sazonal-slide-content{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;width:100%;min-height:0;flex:1;padding:28px 22px 56px!important}
+  .sazonal-nav{top:282px;right:12px}
+  .sazonal-dots{bottom:12px;left:22px}
+  .sazonal-card{flex-basis:min(290px,78vw)}
+}
+@media(max-width:520px){
+  .case-study-unified>img,.case-study-unified>video{height:250px}
+  .sazonal-carousel-wrap,.sazonal-carousel{height:790px!important;min-height:790px!important}
+  .sazonal-media-carousel{flex-basis:250px;height:250px!important}
+  .sazonal-nav{top:262px}
+  .sazonal-slide-content{padding:26px 18px 60px!important}
+}
+</style>
+</head>
+<body><!-- BBE 3D - v2.3.2 set/2026: mobile validado + abastecimento dos segmentos com cases recentes -->
+<nav>
+<a class="nav-logo" href="#">
+<img alt="BBE 3D Logo" class="nav-logo-img" decoding="async" fetchpriority="high" loading="eager" src="imagens/marca/logo-comercial-bbe.svg"/>
+<div class="nav-logo-text">BBE 3D Manufatura<span class="nav-logo-sub">Praia Grande / SP</span></div>
+</a>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menu" class="nav-toggle" onclick="toggleNav(this)" type="button">☰</button>
+<div class="nav-links" id="navLinks">
+<a href="#scanner">Scanner 3D</a>
+<a href="#segmentos">Segmentos</a>
+<a href="#projetos">Cases reais</a>
+<a href="#avaliacoes">Avaliações</a>
+<a href="/imagens/marca/portfolio-bbe3d.pdf" rel="noopener" target="_blank">Portfólio</a>
+<a href="#faq">FAQ</a>
+<a class="nav-cta" href="#contato">📲 Orçamento</a>
+</div>
+</nav>
+<section class="hero">
+<div class="hero-grid">
+<div>
+<div class="hero-badge-destaque">⭐ Scanner 3D + modelagem CAD + impressão 3D local</div>
+<div class="hero-badge">📍 Praia Grande / SP — atendimento direto via WhatsApp</div>
+<h1>Peças técnicas,<br/>scanner 3D e<br/><span>impressão sob medida</span></h1>
+<p class="hero-sub">Para itens automotivos, náutica, eletrônica, maquetes e itens personalizados</p>
+<p class="hero-copy">A BBE 3D Manufatura transforma peça automotiva quebrada, referência física, foto, ideia ou projeto em solução real. Capturamos, remodelamos e produzimos localmente com foco em aplicação prática, acabamento e prazo.</p>
+<div class="hero-points">
+<div class="hero-point"><span>🔬</span><div><strong>Captura técnica</strong>Escaneamento 3D e levantamento de peças reais.</div></div>
+<div class="hero-point"><span>📐</span><div><strong>Modelagem CAD</strong>Ajustes, tolerâncias e desenvolvimento sob medida.</div></div>
+<div class="hero-point"><span>⚙️</span><div><strong>Produção local</strong>Impressão 3D com materiais adequados para cada uso.</div></div>
+<div class="hero-point"><span>💬</span><div><strong>Orçamento rápido</strong>Você fala direto com quem analisa e produz.</div></div>
+</div>
+<div class="hero-btns">
+<a class="btn-wa" href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20da%20BBE%203D%20e%20quero%20um%20orçamento." onclick="trackWA('hero-orcamento')" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Pedir orçamento no WhatsApp
+        </a>
+<a class="btn-out" href="/imagens/marca/portfolio-bbe3d.pdf" rel="noopener" target="_blank">📄 Ver portfólio comercial</a>
+</div>
+<div class="hero-stats">
+<div class="stat"><div class="stat-num">0,02mm</div><div class="stat-lbl">Precisão do scanner</div></div>
+<div class="stat"><div class="stat-num">7 frentes</div><div class="stat-lbl">Segmentos priorizados</div></div>
+<div class="stat"><div class="stat-num">Local</div><div class="stat-lbl">Produção em Praia Grande/SP</div></div>
+</div>
+</div>
+<div aria-label="Projetos recentes e trabalhos BBE 3D" class="hero-visual hero-cases">
+<div class="bbe-mini-carousel hero-case-carousel" data-auto="true" style="height:470px; border-radius:14px; overflow:hidden; background:rgba(255,255,255,0.06);">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain"><video aria-label="Árvore de Natal personalizada produzida pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.09 (1).jpeg" preload="metadata" src="imagens/sazonais/WhatsApp Video 2026-09-27 at 08.00.33.mp4"></video><div class="hero-case-caption"><span>CAMPANHA ATIVA • NATAL</span><strong>Árvore de Natal personalizada sob encomenda</strong></div></div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain"><video aria-label="Peça final do projeto de bobina elétrica" loop="" muted="" playsinline="" poster="imagens/projetos/bobina-eletrica/WhatsApp Image 2026-09-21 at 06.24.022.jpeg" preload="metadata" src="imagens/projetos/bobina-eletrica/peca-final.mp4"></video><div class="hero-case-caption"><span>PROJETO TÉCNICO • BOBINA ELÉTRICA</span><strong>Peça técnica desenvolvida sob medida</strong></div></div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain"><video aria-label="Desenvolvimento do projeto de bobina elétrica" loop="" muted="" playsinline="" poster="imagens/projetos/bobina-eletrica/Captura de tela 2026-09-22 162700.png" preload="metadata" src="imagens/projetos/bobina-eletrica/Gravando 2026-09-22 202545.mp4"></video><div class="hero-case-caption"><span>MODELAGEM • BOBINA ELÉTRICA</span><strong>Do modelo digital à peça técnica</strong></div></div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain"><video aria-label="Peça redonda para elevador" loop="" muted="" playsinline="" poster="imagens/projetos/smj-peca-redonda-e-retangular/WhatsApp Image 2026-09-22 at 10.38.48.jpeg" preload="metadata" src="imagens/projetos/smj-peca-redonda-e-retangular/peca redonda final.mp4"></video><div class="hero-case-caption"><span>ELEVADORES • REPOSIÇÃO TÉCNICA</span><strong>Peça redonda para elevador</strong></div></div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain"><video aria-label="Projeto Kim de miniatura orgânica personalizada" loop="" muted="" playsinline="" poster="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.29.59.jpeg" preload="metadata" src="imagens/projetos/kim/WhatsApp Video 2026-09-16 at 08.30.22.mp4"></video><div class="hero-case-caption"><span>PROJETO KIM • MINIATURA ORGÂNICA</span><strong>Miniatura personalizada em 3D</strong></div></div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain"><video aria-label="Detalhes do projeto Kim de miniatura personalizada" loop="" muted="" playsinline="" poster="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.06.jpeg" preload="metadata" src="imagens/projetos/kim/WhatsApp Video 2026-09-11 at 07.15.55.mp4"></video><div class="hero-case-caption"><span>PROJETO KIM • PERSONALIZAÇÃO</span><strong>Detalhes de uma peça exclusiva</strong></div></div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Ford F-100 - captura 3D do console de direção" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="none" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4"></video>
+<div class="hero-case-caption"><span>CASE ATUAL • ENGENHARIA REVERSA</span><strong>Ford F-100 — Scanner 3D + CAD</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-cover">
+<video aria-label="Miniatura personalizada produzida em impressão 3D com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video>
+<div class="hero-case-caption"><span>PROJETO ENTREGUE • PERSONALIZAÇÃO</span><strong>Miniaturas personalizadas</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-cover">
+<video aria-label="Detalhes de miniatura personalizada produzida pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video>
+<div class="hero-case-caption"><span>IMPRESSÃO ORGÂNICA</span><strong>Detalhamento em peças personalizadas</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-cover">
+<img alt="Chaveiros Hives personalizados com NFC produzidos pela BBE 3D" decoding="async" src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-02.jpeg"/>
+<div class="hero-case-caption"><span>LOTE PERSONALIZADO • NFC</span><strong>Hives — chaveiros multicor</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Peça náutica para caiaque produzida em PETG-CF" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/seaflo-netuno-caiaque/WhatsApp Video 2026-09-02 at 06.33.47.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EPe%C3%A7a%20n%C3%A1utica%20para%20caiaque%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Eproduzida%20em%20PETG-CF%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
+<div class="hero-case-caption"><span>APLICAÇÃO NÁUTICA • PETG-CF</span><strong>Peça para caiaque — PETG-CF reforçado com fibra de carbono</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-cover">
+<video aria-label="Obra decorativa produzida pela BBE 3D" loop="" muted="" playsinline="" preload="metadata" src="imagens/cases/video-obra-rodim.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EObra%20decorativa%20produzida%20pela%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EBBE%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
+<div class="hero-case-caption"><span>ACERVO BBE 3D</span><strong>Obras e formas orgânicas</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Troféu temático produzido em impressão 3D pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="none" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video>
+<div class="hero-case-caption"><span>PROJETO CONCLUÍDO • GRANDE FORMATO</span><strong>Troféu temático — impressão 3D e montagem</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<img alt="Troféu temático em impressão 3D produzido pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-1.jpeg"/>
+<div class="hero-case-caption"><span>PEÇA DECORATIVA • PRODUÇÃO SOB MEDIDA</span><strong>Geometria complexa transformada em peça física</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video>
+<div class="hero-case-caption"><span>IMPRESSÃO ORGÂNICA • SEM PINTURA</span><strong>Miniaturas personalizadas direto da impressão</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<video aria-label="Peça temática de Halloween produzida pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/sazonais/cabeca-jack2.jpeg" preload="metadata" src="imagens/sazonais/video-cabeca-jack.mp4"></video>
+<div class="hero-case-caption"><span>CAMPANHA ATIVA • HALLOWEEN</span><strong>Peças temáticas sob encomenda</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-contain">
+<img alt="Modelagem final do console central Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-central/modelagem-f100.jpeg"/>
+<div class="hero-case-caption"><span>MODELAGEM FINAL • FORD F-100</span><strong>Console central — CAD final</strong></div>
+</div>
+<div class="bbe-mini-carousel-slide hero-case-slide media-cover">
+<video aria-label="Miniatura de validação do console Ford F-100 em impressão 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMiniatura%20de%20valida%C3%A7%C3%A3o%20do%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Econsole%20Ford%20F-100%20em%20impress%C3%A3o%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
+<div class="hero-case-caption"><span>VALIDAÇÃO DE PROJETO</span><strong>Protótipo em escala — Ford F-100</strong></div>
+</div>
+</div>
+<button aria-label="Projeto anterior" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próximo projeto" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="hero-visual-note">Projetos reais BBE 3D • engenharia reversa • impressão • personalização</div>
+</div>
+</div>
+</section>
+<div class="faixa">
+<div class="faixa-wrap">
+<div class="faixa-item"><span>🔬</span> Scanner 3D Profissional</div>
+<div class="faixa-item"><span>📐</span> Fusion 360</div>
+<div class="faixa-item"><span>🏭</span> K2 Pro Industrial</div>
+<div class="faixa-item"><span>🌊</span> Foco em sol e maresia</div>
+<div class="faixa-item"><span>💬</span> Atendimento direto no WhatsApp</div>
+</div>
+</div>
+<section class="sec sec-cinza">
+<div class="wrap">
+<p class="lbl">Por que a BBE resolve melhor sua demanda</p>
+<h2 class="h2">Você entende rápido<br/>o que a BBE resolve</h2>
+<p class="desc">A BBE transforma peça física, foto, amostra, ideia ou necessidade técnica em solução real com scanner 3D, modelagem CAD e impressão sob medida. Veja os principais caminhos de atendimento e chame no WhatsApp para uma análise inicial.</p>
+<div class="proof-grid">
+<div class="proof-card"><div class="proof-title">Peça quebrada ou fora de linha</div><div class="proof-copy">Analisamos peça física, foto ou amostra para engenharia reversa, remodelagem e produção local.</div></div>
+<div class="proof-card"><div class="proof-title">Projeto técnico sob medida</div><div class="proof-copy">Desenvolvemos do zero com CAD, tolerâncias, ajuste funcional e material conforme a aplicação real.</div></div>
+<div class="proof-card"><div class="proof-title">Produção para apresentação e venda</div><div class="proof-copy">Maquetes, plantas humanizadas, expositores, brindes e itens promocionais sob encomenda.</div></div>
+<div class="proof-card"><div class="proof-title">Contato direto e resposta rápida</div><div class="proof-copy">Sem formulário longo. Você fala pelo WhatsApp e recebe análise com foco no que realmente importa.</div></div>
+</div>
+</div>
+</section>
+<section class="sec sec-cinza cases-unified" id="projetos">
+<div class="wrap">
+<p class="lbl">Cases reais e projetos recentes</p>
+<h2 class="h2">Do problema real ao arquivo,<br/>protótipo ou peça produzida</h2>
+<p class="desc">Uma seleção do que está acontecendo agora na BBE 3D. Mantemos os cases históricos nas áreas de segmento e acrescentamos aqui os projetos recentes com fotos, vídeos, scanner e CAD.</p>
+<div class="case-grid-unified">
+<article class="case-card-unified case-featured">
+<div aria-label="Ford F-100 - desenvolvimento do console de direção" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo da malha capturada do console Ford F-100" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="none" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Referência enviada pelo cliente para o console Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cliente.png"/></div>
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Peça física usada como referência no projeto Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Detalhe da referência do console Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Preparação da referência para captura 3D" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-bbe3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Malha 3D capturada do console Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="CAD final do console Ford F-100 - vista 1" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-01.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="CAD final do console Ford F-100 - vista 2" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-02.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="CAD final do console Ford F-100 - vista 3" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-03.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Console de direção Ford F-100 finalizado em impressão 3D - vista frontal" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Console de direção Ford F-100 finalizado em impressão 3D - vista interna" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Console de direção Ford F-100 instalado no veículo" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg"/></div>
+</div>
+<button aria-label="Mídia anterior Ford F-100" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima mídia Ford F-100" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified">
+<div class="case-status">CASE CONCLUÍDO • ENGENHARIA REVERSA AUTOMOTIVA</div>
+<h3>Ford F-100 — console de direção</h3>
+<p>Captura das referências físicas, reconstrução CAD, refinamento estrutural e fabricação final do conjunto. O projeto saiu da referência e do scanner para a peça impressa e instalada no veículo, validando o fluxo completo da BBE 3D.</p>
+<div class="case-tags"><span>Scanner 3D</span><span>CAD</span><span>Automotivo</span><span>Engenharia reversa</span></div>
+</div>
+</article>
+<article class="case-card-unified case-featured case-miniaturas">
+<div aria-label="Miniaturas personalizadas entregues" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Projeto Kim — miniatura orgânica personalizada" loop="" muted="" playsinline="" poster="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.29.59.jpeg" preload="metadata" src="imagens/projetos/kim/WhatsApp Video 2026-09-16 at 08.30.22.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Projeto Kim — miniatura orgânica personalizada" loop="" muted="" playsinline="" poster="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.29.59.jpeg" preload="metadata" src="imagens/projetos/kim/WhatsApp Video 2026-09-11 at 07.15.55.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.29.59.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.37.07 (2).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.06.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.56 - Copia.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.56 (2).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.56 (3).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Projeto Kim — etapa e detalhes da miniatura personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.58.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Conjunto de miniaturas personalizadas sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe de miniatura feminina personalizada sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe de miniatura masculina personalizada sem pintura" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Miniatura masculina personalizada com guitarra" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao4.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada finalizada" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.48.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-cover"><video aria-label="Miniatura personalizada com acabamento artístico" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.52.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Miniaturas personalizadas produzidas pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Image 2026-09-01 at 19.37.49.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Apresentação de miniaturas personalizadas" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/miniaturas-personalizadas/WhatsApp Video 2026-09-01 at 19.37.58.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EApresenta%C3%A7%C3%A3o%20de%20miniaturas%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Epersonalizadas%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+</div>
+<button aria-label="Mídia anterior das miniaturas" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima mídia das miniaturas" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified">
+<div class="case-status">PROJETOS ENTREGUES • FORMAS ORGÂNICAS</div>
+<h3>Miniaturas personalizadas em destaque</h3>
+<p>Impressões orgânicas com alto nível de detalhe e projetos personalizados. O case agora mostra também peças sem pintura, destacando o resultado direto da impressão; exemplos anteriores com acabamento artístico permanecem como referência do potencial de apresentação.</p>
+<div class="case-tags"><span>Miniaturas</span><span>PLA</span><span>Detalhamento</span><span>Sem pintura</span><span>Personalização</span></div>
+<small>A pintura manual exibida pertence a projetos anteriores e não é apresentada como serviço padrão atual da BBE.</small>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Troféu temático produzido em impressão 3D" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Vídeo do troféu temático finalizado" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="none" src="imagens/projetos/taca-fifa/video-taca-fica.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático finalizado - vista com escala humana" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático finalizado - vista frontal" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático montado no interior da K2 Pro" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Troféu temático e estrutura de produção BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-4.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Detalhe do troféu temático impresso e montado" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-5.jpeg"/></div>
+</div>
+<button aria-label="Mídia anterior do troféu temático" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima mídia do troféu temático" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">PROJETO CONCLUÍDO • PEÇA DECORATIVA</div>
+<h3>Troféu temático em impressão 3D</h3>
+<p>Produção em múltiplas peças, com base, estrutura curva e esfera separada para montagem. O projeto demonstra a viabilidade de peças decorativas de maior porte e geometrias complexas produzidas sob medida.</p>
+<div class="case-tags"><span>Grande formato</span><span>Montagem</span><span>PLA</span><span>Personalizado</span></div>
+<small>Peça decorativa inspirada em referência esportiva, apresentada como case de fabricação da BBE 3D, sem vínculo oficial com marcas ou entidades.</small>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Organizador de cabos personalizado" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Organizador de cabos P com embalagem e etiqueta personalizada" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Organizadores de cabos funcionais aplicados em cabos reais" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Organizadores de cabos personalizados em lote" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo3.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior do organizador de cabos" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem do organizador de cabos" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">BRINDE FUNCIONAL • PEQUENOS LOTES</div>
+<h3>Organizador de cabos personalizado</h3>
+<p>Brinde útil para o dia a dia, produzido em impressão 3D e apresentado em embalagem simples com etiqueta personalizada. O modelo P pode receber logo, texto, QR code ou imagem simples na identificação.</p>
+<div class="case-tags"><span>P, M e G</span><span>Brindes</span><span>Personalização</span><span>Lote mínimo 10</span></div>
+<small>Oferta atual do modelo P no padrão laranja: R$ 7,00 por unidade, com mínimo de 10 peças, embalagem simples e etiqueta personalizada inclusas.</small>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Chaveiros personalizados em formato de ar-condicionado split" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Lote de chaveiros em formato de ar-condicionado split" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Chaveiros personalizados de mini split - detalhe" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Produção em lote dos chaveiros em formato de split" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split3.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior dos chaveiros de climatização" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem dos chaveiros de climatização" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">BRINDES PERSONALIZADOS • PRODUÇÃO EM LOTE</div>
+<h3>Chaveiro mini split / ar-condicionado</h3>
+<p>Miniatura de equipamento transformada em chaveiro promocional, uma solução de brinde para instaladores, empresas de climatização, equipes técnicas e ações comerciais do setor.</p>
+<div class="case-tags"><span>Chaveiro</span><span>Climatização</span><span>Brinde</span><span>Personalizado</span></div>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Hives - chaveiros NFC" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Chaveiro Hives personalizado" decoding="async" loading="lazy" src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-01.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Lote de chaveiros Hives com NFC" decoding="async" loading="lazy" src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-02.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-cover"><img alt="Tags NFC incorporadas aos chaveiros Hives" decoding="async" loading="lazy" src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-03.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior Hives" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem Hives" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">PERSONALIZAÇÃO • PEQUENOS LOTES</div>
+<h3>Hives — chaveiros multicor com NFC</h3>
+<p>Customização do modelo, identidade visual em duas cores, tag NFC incorporada e produção em lote curto.</p>
+<div class="case-tags"><span>NFC</span><span>Multicor</span><span>Brindes</span></div>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Peças técnicas para elevadores - engenharia reversa" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Pequeno cilindro de elevador — modelagem 3D" decoding="async" loading="lazy" src="imagens/projetos/smj-cilindro-pequeno/Captura de tela 2026-09-23 200606.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Pequeno cilindro de elevador — corte longitudinal" decoding="async" loading="lazy" src="imagens/projetos/smj-cilindro-pequeno/06_Corte_Longitudinal.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Modelagem do pequeno cilindro de elevador" loop="" muted="" playsinline="" poster="imagens/projetos/smj-cilindro-pequeno/Captura de tela 2026-09-23 200606.png" preload="metadata" src="imagens/projetos/smj-cilindro-pequeno/Gravando 2026-09-23 200648.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peça redonda de elevador — referência física" decoding="async" loading="lazy" src="imagens/projetos/smj-peca-redonda-e-retangular/WhatsApp Image 2026-09-22 at 10.38.48.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peça redonda de elevador — desenho técnico" decoding="async" loading="lazy" src="imagens/projetos/smj-peca-redonda-e-retangular/Captura de tela 2026-09-22 132808.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Peça redonda de elevador — resultado final" loop="" muted="" playsinline="" poster="imagens/projetos/smj-peca-redonda-e-retangular/WhatsApp Image 2026-09-22 at 10.38.48.jpeg" preload="metadata" src="imagens/projetos/smj-peca-redonda-e-retangular/peca redonda final.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peça retangular de elevador — modelagem 3D" decoding="async" loading="lazy" src="imagens/projetos/smj-peca-redonda-e-retangular/Captura de tela 2026-09-22 200212.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Peça retangular de elevador — desenvolvimento" loop="" muted="" playsinline="" poster="imagens/projetos/smj-peca-redonda-e-retangular/Captura de tela 2026-09-22 200212.png" preload="metadata" src="imagens/projetos/smj-peca-redonda-e-retangular/Gravando 2026-09-22 200420.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Modelagem CAD de peça técnica para elevador - vista 1" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102118.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Modelagem CAD de peça técnica para elevador - vista 2" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102133.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Modelagem CAD de peça técnica para elevador - vista 3" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102153.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Modelagem CAD de peça técnica para elevador - vista 4" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102213.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Guia técnica para elevador - modelagem CAD 1" decoding="async" loading="lazy" src="imagens/projetos/smj-guias-elevador/Captura de tela 2026-08-07 095133.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Guia técnica para elevador - modelagem CAD 2" decoding="async" loading="lazy" src="imagens/projetos/smj-guias-elevador/Captura de tela 2026-08-07 153459.png"/></div>
+</div>
+<button aria-label="Imagem anterior do projeto de elevadores" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem do projeto de elevadores" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">ELEVADORES • PEÇAS TÉCNICAS • REPOSIÇÃO</div>
+<h3>Peças técnicas para elevadores — engenharia reversa</h3>
+<p>Reconstrução digital de peças técnicas para sistemas de elevadores a partir de referências físicas, preparando geometrias utilizáveis para reposição e fabricação.</p>
+<div class="case-tags"><span>CAD</span><span>Elevadores</span><span>Reposição técnica</span></div>
+</div>
+</article>
+<article class="case-card-unified">
+<div aria-label="Projeto de bobina elétrica" class="case-media-unified bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Peça final do projeto de bobina elétrica" loop="" muted="" playsinline="" poster="imagens/projetos/bobina-eletrica/WhatsApp Image 2026-09-21 at 06.24.022.jpeg" preload="metadata" src="imagens/projetos/bobina-eletrica/peca-final.mp4"></video></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Bobina elétrica — peça física" decoding="async" loading="lazy" src="imagens/projetos/bobina-eletrica/WhatsApp Image 2026-09-21 at 06.24.022.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Bobina elétrica — modelagem digital" decoding="async" loading="lazy" src="imagens/projetos/bobina-eletrica/Captura de tela 2026-09-22 162700.png"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><video aria-label="Bobina elétrica — desenvolvimento digital" loop="" muted="" playsinline="" poster="imagens/projetos/bobina-eletrica/Captura de tela 2026-09-22 162700.png" preload="metadata" src="imagens/projetos/bobina-eletrica/Gravando 2026-09-22 202545.mp4"></video></div>
+</div>
+<button aria-label="Mídia anterior da bobina elétrica" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima mídia da bobina elétrica" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+<div class="case-body-unified compact">
+<div class="case-status">ELETRÔNICA • PEÇA TÉCNICA • SOB MEDIDA</div>
+<h3>Bobina elétrica — projeto técnico</h3>
+<p>Imagens e vídeos do desenvolvimento digital e da peça final, mostrando uma solução produzida conforme a necessidade do projeto.</p>
+<div class="case-tags"><span>Modelagem 3D</span><span>Eletrônica</span><span>Peça sob medida</span></div>
+</div>
+</article>
+</div>
+<div class="case-studies-unified">
+<div class="case-study-unified">
+<img alt="Estudo de máscara temática" decoding="async" loading="lazy" src="imagens/projetos/estudo-mascara-tematica/WhatsApp Image 2026-08-24 at 11.54.43.jpeg"/>
+<div><span>ESTUDO / CONCEITO</span><strong>Máscara temática</strong><p>Estudo de viabilidade e preparação digital para demonstrar possibilidades de fabricação.</p></div>
+</div>
+<div class="case-study-unified">
+<video aria-label="Estudo 3D de pet personalizado" loop="" muted="" playsinline="" preload="none" src="imagens/projetos/estudo-pet-personalizado/Gravando 2026-08-20 154711.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EEstudo%203D%20de%20pet%20personalizado%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
+<div><span>ESTUDO / CONCEITO</span><strong>Pet personalizado em 3D</strong><p>Exploração de modelagem orgânica e personalização como demonstração de capacidade.</p></div>
+</div>
+<div class="case-study-unified">
+<video aria-label="Estudo de conceito inspirado na artista Klessinha" loop="" muted="" playsinline="" preload="metadata" src="imagens/projetos/estudosconceitos/Gravando 2026-09-16 151603.mp4" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EEstudo%20de%20conceito%20inspirado%20na%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Eartista%20Klessinha%3C%2Ftext%3E%3C%2Fsvg%3E"></video>
+<div><span>ESTUDO / CONCEITO</span><strong>Artista Klessinha — peça para fãs</strong><p>Estudo de reprodução em 3D de uma artista que os fãs gostam, apresentado como conceito e demonstração de possibilidades de personalização.</p></div>
+</div>
+</div>
+</div>
+</section><section class="sec sec-bege bbe-reviews-unified" id="avaliacoes">
+<div class="wrap">
+<p class="lbl">Avaliações reais no Google</p>
+<h2 class="h2">Quem já confiou na BBE 3D<br/>conta como foi a experiência</h2>
+<p class="desc">Prova social real dos projetos e atendimentos já realizados. Os registros abaixo são os próprios prints das avaliações públicas recebidas pela BBE 3D.</p>
+<div class="review-grid-unified">
+<figure><img alt="Avaliação de Márcio Silva no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-marcio-silva-bbe3d.png"/></figure>
+<figure><img alt="Avaliação de Mychael Cercasin no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-mychael-cercasin-bbe3.png"/></figure>
+<figure><img alt="Avaliação de Diego Camargo no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-diego-camargo-bbe3d.png"/></figure>
+<figure><img alt="Avaliação de Marcelo Cazelato no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-marcelo-cazelato-bbe3d.png"/></figure>
+<figure><img alt="Avaliação de Robison Passarin no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-robison-passarin-bbe3d.png"/></figure>
+<figure><img alt="Avaliação de Alex no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-alex-bbe3d.png"/></figure>
+<figure><img alt="Avaliação de Pedro Lucas no Google" decoding="async" loading="lazy" src="imagens/avaliacoes/avaliacao-google-pedro-lucas-bbe3d.png"/></figure>
+</div>
+<div class="reviews-trust-line"><span>★★★★★</span><strong>7 avaliações documentadas</strong><small>Atendimento técnico, personalização, acompanhamento e qualidade percebida pelos clientes.</small></div>
+</div>
+</section><section class="sec scanner-hero" id="scanner">
+<div class="scanner-grid">
+<div>
+<div class="scanner-badge-sp">⭐ Scanner 3D + impressão 3D integrados</div>
+<h2 class="scanner-title">Creality CR-Scan<br/><span>Otter</span> — 0,02mm</h2>
+<p class="scanner-sub">Somos uma operação local que une scanner 3D, modelagem CAD e impressão 3D em um mesmo fluxo. Isso reduz retrabalho, acelera orçamento e melhora a precisão em projetos de engenharia reversa, manutenção e prototipagem.</p>
+<div class="scanner-specs">
+<div class="scanner-spec"><div class="scanner-spec-val">0,02mm</div><div class="scanner-spec-lbl">Precisão de captura</div></div>
+<div class="scanner-spec"><div class="scanner-spec-val">10–2000mm</div><div class="scanner-spec-lbl">Faixa de objetos</div></div>
+<div class="scanner-spec"><div class="scanner-spec-val">Sem spray</div><div class="scanner-spec-lbl">Captura superfícies complexas</div></div>
+<div class="scanner-spec"><div class="scanner-spec-val">Arquivo + peça</div><div class="scanner-spec-lbl">Entrega digital ou física</div></div>
+</div>
+<a class="btn-wa" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20peça%20ou%20objeto%20para%20captura%20técnica%20e%20quero%20orçamento." onclick="trackWA('scanner-cta')" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+        Solicitar captura técnica
+      </a>
+</div>
+<div class="scanner-carousel-wrap">
+<div class="scanner-carousel" id="scanCarousel">
+<div class="scan-slide active"><img alt="Scanner 3D CR-Scan Otter" decoding="async" loading="lazy" src="imagens/infraestrutura/exemplo1.webp"/></div>
+<div class="scan-slide"><img alt="CR-Scan Otter recursos" decoding="async" loading="lazy" src="imagens/infraestrutura/exemplo2.webp"/></div>
+<div class="scan-slide"><img alt="CR-Scan Otter captura estabilizada" decoding="async" loading="lazy" src="imagens/infraestrutura/exemplo3.webp"/></div>
+<div class="scan-slide"><img alt="CR-Scan Otter faixa de captura" decoding="async" loading="lazy" src="imagens/infraestrutura/exemplo4.webp"/></div>
+<div class="scan-slide"><img alt="CR-Scan Otter alta fidelidade" decoding="async" loading="lazy" src="imagens/infraestrutura/exemplo5.webp"/></div>
+</div>
+<button aria-label="Anterior" class="scan-prev" onclick="moveCarousel(-1)">‹</button>
+<button aria-label="Próximo" class="scan-next" onclick="moveCarousel(1)">›</button>
+<div class="scan-dots" id="scanDots"></div>
+</div>
+</div>
+<div class="wrap" style="margin-top:60px;position:relative;z-index:2">
+<p class="lbl gold" style="text-align:center;margin-bottom:8px">Fluxo técnico da BBE</p>
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(24px,3vw,36px);font-weight:800;color:#fff;text-align:center">Da peça existente ao item final</h3>
+<div class="fluxo-grid">
+<div class="fluxo-step"><div class="fluxo-num">1</div><div class="fluxo-t">Você envia</div><div class="fluxo-d">Foto, peça quebrada, amostra ou projeto.</div></div>
+<div class="fluxo-step"><div class="fluxo-num">2</div><div class="fluxo-t">Capturamos</div><div class="fluxo-d">Scanner 3D, medição ou análise da referência.</div></div>
+<div class="fluxo-step"><div class="fluxo-num">3</div><div class="fluxo-t">Modelamos</div><div class="fluxo-d">Ajustes em CAD, folgas e função real.</div></div>
+<div class="fluxo-step"><div class="fluxo-num">4</div><div class="fluxo-t">Produzimos</div><div class="fluxo-d">Impressão com material adequado para o uso.</div></div>
+<div class="fluxo-step"><div class="fluxo-num">5</div><div class="fluxo-t">Validamos</div><div class="fluxo-d">Entrega local, teste e refinamento quando necessário.</div></div>
+</div>
+</div>
+<div class="wrap" style="margin-top:56px;position:relative;z-index:2">
+<p class="lbl gold" style="text-align:center;margin-bottom:8px">O que o scanner resolve</p>
+<div class="scan-srv-grid">
+<div class="scan-srv"><div class="scan-srv-ico">🔩</div><div class="scan-srv-title">Engenharia reversa</div><div class="scan-srv-desc">Peça quebrada, fora de linha ou sem desenho técnico? Escaneamos, remodelamos e transformamos em base funcional para produção.</div></div>
+<div class="scan-srv"><div class="scan-srv-ico">📏</div><div class="scan-srv-title">Captura dimensional</div><div class="scan-srv-desc">Levantamento rápido de geometria para gabaritos, suportes, conectores, travas, adaptadores e soluções técnicas sob medida.</div></div>
+<div class="scan-srv"><div class="scan-srv-ico">🧩</div><div class="scan-srv-title">Reprodução de peças</div><div class="scan-srv-desc">Objetos orgânicos, detalhes complexos e peças sem documentação podem virar arquivo utilizável e item físico validado.</div></div>
+<div class="scan-srv"><div class="scan-srv-ico">💾</div><div class="scan-srv-title">Entrega digital</div><div class="scan-srv-desc">Quando fizer sentido, entregamos também o arquivo 3D para acervo, validação, aprovação de projeto ou uso futuro.</div></div>
+</div>
+</div>
+</section>
+<section class="sec" id="infraestrutura">
+<div class="wrap">
+<div class="maq-grid">
+<div>
+<p class="lbl">Infraestrutura principal</p>
+<h2 class="h2">Creality K2 Pro Combo,<br/>scanner e materiais certos</h2>
+<p class="desc">A BBE trabalha com fluxo técnico completo: captura, modelagem, produção e escolha de material conforme ambiente de uso, exposição ao tempo, flexibilidade e objetivo da peça. Nossa K2 Pro Combo é a principal ferramenta de produção local da operação.</p>
+<div class="feat-list">
+<div class="feat"><div class="feat-ico">🏭</div><div><h4>Creality K2 Pro + CFS</h4><p>Impressora 3D profissional com produção local de alta velocidade, estabilidade, múltiplos materiais e excelente padrão para peças finais, protótipos e pequenos lotes.</p></div></div>
+<div class="feat"><div class="feat-ico">🌡️</div><div><h4>Secagem e armazenamento</h4><p>SpacePi X4 e caixas herméticas para reduzir umidade, falhas, bolhas e perda de acabamento, especialmente no clima litorâneo.</p></div></div>
+<div class="feat"><div class="feat-ico">🧱</div><div><h4>Materiais por aplicação</h4><p>Hyper PETG para uso final, PLA para apresentação visual, PETG-CF para esforço técnico e TPU para flexibilidade.</p></div></div>
+</div>
+</div>
+<div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
+<img alt="Infraestrutura principal da BBE 3D com bancada, scanner, K2 Pro Combo e materiais" decoding="async" loading="lazy" src="imagens/infraestrutura/nova-estrutura.jpeg" style="width:100%; max-height:480px; object-fit:cover; border-radius:16px; box-shadow:var(--sombra);"/>
+</div>
+</div>
+<div class="maq-grid" style="margin-top:48px;">
+<div>
+<p class="lbl">Chegada prevista • segunda quinzena de novembro</p>
+<h3 class="h2">Nova Creality SparkX i8<br/>a caminho da BBE 3D</h3>
+<p class="desc">A BBE já adquiriu a Creality SparkX i8. Com a chegada prevista para a segunda quinzena de novembro, planejamos ampliar nossa capacidade de atendimento, buscar preços mais competitivos, prazos mais curtos e manter o padrão de qualidade Creality nos projetos.</p>
+<p class="desc">Envie agora a foto, as medidas ou a descrição do seu item. Vamos colocá-lo na lista de pedidos para dar prioridade ao retorno da cotação quando a máquina chegar.</p>
+<a class="btn-wa" href="https://wa.me/5513991455673?text=Ol%C3%A1%21%20Quero%20colocar%20meu%20item%20na%20lista%20de%20pedidos%20para%20cota%C3%A7%C3%A3o%20priorit%C3%A1ria%20com%20a%20nova%20Creality%20SparkX%20i8.%20Seguem%20foto%2C%20medidas%20e%20descri%C3%A7%C3%A3o%3A" onclick="trackWA('sparkxi8-lista-pedidos')" rel="noopener" target="_blank">Enviar item para a lista de pedidos →</a>
+</div>
+<div class="maq-img" style="background:transparent; padding:0; box-shadow:none;">
+<div aria-label="Cinco imagens da nova Creality SparkX i8" class="bbe-mini-carousel sparkxi8-carousel" style="height:380px; border-radius:16px; box-shadow:var(--sombra);">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 1" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-1.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 2" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-2.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 3" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-3.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 4" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-4.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Creality SparkX i8 — imagem 5" decoding="async" loading="lazy" src="imagens/infraestrutura/sparkxi8-5.png"/></div>
+</div>
+<button aria-label="Imagem anterior da SparkX i8" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da SparkX i8" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+</div>
+</div>
+<div class="mat-grid">
+<div class="mat-card"><img alt="Creality K2 Pro Combo" decoding="async" loading="lazy" src="imagens/infraestrutura/creality-pro.png"/><div class="mat-info"><h3>Creality K2 Pro Combo</h3><p>Nossa principal máquina de produção local. Impressora 3D profissional com alta velocidade, estabilidade, câmara fechada e sistema CFS para múltiplos materiais e cores.</p></div></div>
+<div class="mat-card"><img alt="Hyper PETG Creality" decoding="async" loading="lazy" src="imagens/infraestrutura/filamento2.png"/><div class="mat-info"><h3>Hyper PETG — peças finais</h3><p>Para itens de uso real, exposição ao sol, maresia, peças promocionais duráveis e boa estabilidade dimensional.</p></div></div>
+<div class="mat-card"><img alt="Armazenamento controlado" decoding="async" loading="lazy" src="imagens/infraestrutura/armazenamento.png"/><div class="mat-info"><h3>Armazenamento controlado</h3><p>Filamentos em caixas herméticas com controle de umidade para garantir repetibilidade e padrão de produção.</p></div></div>
+<div class="mat-card"><img alt="Secadora profissional de filamentos" decoding="async" loading="lazy" src="imagens/infraestrutura/secadora-x4.png"/><div class="mat-info"><h3>Secagem profissional</h3><p>Secadora dedicada para manter o material em condição ideal de impressão, especialmente em clima litorâneo.</p></div></div>
+</div>
+</div>
+</section>
+<section class="sec sec-cinza" id="segmentos">
+<div class="wrap">
+<p class="lbl">Segmentos de atendimento</p>
+<h2 class="h2">Os 7 focos atuais<br/>da BBE 3D</h2>
+<p class="desc">Atendemos demandas técnicas, comerciais e personalizadas em frentes bem definidas. Escolha o segmento mais próximo da sua necessidade e fale direto com a BBE pelo WhatsApp para iniciar seu orçamento.</p>
+<div class="srv-grid">
+<article class="srv-card">
+<div class="srv-thumb">
+<div class="bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide"><img alt="Scanner 3D em bancada" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.04.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Resultado de captura 3D" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.05.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Detalhe de captura 3D" decoding="async" loading="lazy" src="imagens/scanner3D/WhatsApp Image 2026-06-20 at 06.38.07.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Tela de captura do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/Captura de tela 2026-06-16 141456.png"/></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-bruta-apoio-braco-fusca-v2.mp4" aria-label="Malha bruta capturada com scanner 3D" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%20bruta%20capturada%20com%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Escanner%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Malha de pontos do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/malha-ponto-scanner.png"/></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" aria-label="Malha tratada com scanner 3D" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%20tratada%20com%20scanner%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça original com avaria" decoding="async" loading="lazy" src="imagens/scanner3D/peca original com avaria.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Rastreamento de pontos do scanner 3D" decoding="async" loading="lazy" src="imagens/scanner3D/rastreamento pontos scanner.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Scanner 3D em bancada" decoding="async" loading="lazy" src="imagens/scanner3D/scanner em bancada.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><video loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/video malha capturada e tratada.mp4" aria-label="Malha 3D capturada e tratada" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%203D%20capturada%20e%20tratada%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan preparado para escaneamento 3D" decoding="async" loading="lazy" src="imagens/scanner3D/imagenssegmentoscaravan-apoio-braco-01.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan em captura técnica 3D" decoding="async" loading="lazy" src="imagens/scanner3D/caravan-apoio-braco-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Vídeo da malha do apoio de braço Caravan" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/Gravando 2026-06-30 122313.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EV%C3%ADdeo%20da%20malha%20do%20apoio%20de%20bra%C3%A7o%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3ECaravan%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Captura 3D recente do console de direção Ford F-100" loop="" muted="" playsinline="" poster="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" preload="none" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-conjunto.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Malha 3D recente do console de direção Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-scanner-01.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+</div>
+<button class="bbe-prev" onclick="moveMini(this, -1)" type="button">‹</button>
+<button class="bbe-next" onclick="moveMini(this, 1)" type="button">›</button>
+</div>
+</div>
+<div class="srv-body">
+<div class="srv-ico">🔬</div>
+<h3 class="srv-title">Scanner 3D e Captura Técnica</h3>
+<p class="srv-desc">Captura de peças, objetos e referências físicas com scanner 3D, marcadores e tratamento de malha para engenharia reversa, validação dimensional e base digital utilizável.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20interesse%20em%20scanner%203D%20e%20captura%20técnica." onclick="trackWA('segmento-scanner')" rel="noopener" target="_blank">Quero orçar este tipo →</a>
+</div>
+</article>
+<article class="srv-card">
+<div class="srv-thumb">
+<div class="bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca - peça original com avaria" decoding="async" loading="lazy" src="imagens/cases/WhatsApp Image 2026-06-20 at 06.38.08 (2).jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-fusca-bbe.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Volkswagen Fusca impresso pela BBE 3D - detalhe lateral" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-fusca-bbe2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Malha tratada do apoio de braço Volkswagen Fusca" loop="" muted="" playsinline="" preload="none" src="imagens/scanner3D/malha-tratada-apoio-braco-fusca-v2.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EMalha%20tratada%20do%20apoio%20de%20bra%C3%A7o%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EVolkswagen%20Fusca%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Apoio de braço Caravan original recebido para engenharia reversa" decoding="async" loading="lazy" src="imagens/cases/apoio-braco-caravan-original.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Detalhe do apoio de braço Caravan para reprodução técnica" decoding="async" loading="lazy" src="imagens/cases/caravan-apoio-braco-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Modelagem e malha tratada do apoio de braço Caravan" decoding="async" loading="lazy" src="imagens/cases/modelagem-caravan.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Referência enviada pelo cliente para console Ford F-100" decoding="async" loading="lazy" src="imagens/cases/ideia-cliente-f100.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD do console Ford F-100 desenvolvida pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/modelagem-f100.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Impressão da miniatura do console Ford F-100 pela BBE 3D" loop="" muted="" playsinline="" preload="none" src="imagens/cases/impressao-bbe-miniatura-f100.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;" poster="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230a2540%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%22608%22%20height%3D%22328%22%20rx%3D%2218%22%20fill%3D%22%2317579B%22%2F%3E%3Ccircle%20cx%3D%22320%22%20cy%3D%22128%22%20r%3D%2253%22%20fill%3D%22%2325D366%22%2F%3E%3Cpath%20d%3D%22M306%2099%20L306%20157%20L352%20128%20Z%22%20fill%3D%22white%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22252%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3EImpress%C3%A3o%20da%20miniatura%20do%3C%2Ftext%3E%3Ctext%20x%3D%22320%22%20y%3D%22288%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%3Econsole%20Ford%20F-100%20pela%20BBE%203D%3C%2Ftext%3E%3C%2Fsvg%3E"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Miniatura impressa do console Ford F-100 para validação" decoding="async" loading="lazy" src="imagens/cases/miniatura-f100-1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Miniatura do console Ford F-100 impressa pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/miniatura-f100-2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="CAD final do console de direção Ford F-100" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/f100-console-direcao-cad-01.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Console de direção Ford F-100 finalizado em impressão 3D - vista frontal" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Console de direção Ford F-100 finalizado em impressão 3D - vista interna" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Console de direção Ford F-100 instalado no veículo" decoding="async" loading="lazy" src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+</div>
+<button class="bbe-prev" onclick="moveMini(this, -1)" type="button">‹</button>
+<button class="bbe-next" onclick="moveMini(this, 1)" type="button">›</button>
+</div>
+</div>
+<div class="srv-body">
+<div class="srv-ico">🚗</div>
+<h3 class="srv-title">Peças Automotivas e Engenharia Reversa</h3>
+<p class="srv-desc">Peças internas, acabamentos, suportes, moldes e adaptações para veículos, com captura 3D, modelagem CAD e produção sob demanda.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20peça%20automotiva%20ou%20projeto%20de%20engenharia%20reversa%20para%20orçar." onclick="trackWA('segmento-automotivo')" rel="noopener" target="_blank">Quero orçar peça automotiva →</a>
+</div>
+</article>
+<article class="srv-card">
+<div class="srv-thumb">
+<div class="bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD de peça técnica para elevador - vista 1" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102118.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD de peça técnica para elevador - vista 2" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102133.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD de peça técnica para elevador - vista 3" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102153.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Modelagem CAD de peça técnica para elevador - vista 4" decoding="async" loading="lazy" src="imagens/projetos/smj-engenharia-reversa-elevador/Captura de tela 2026-09-01 102213.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Guia técnica para elevador - desenvolvimento CAD" decoding="async" loading="lazy" src="imagens/projetos/smj-guias-elevador/Captura de tela 2026-08-07 095133.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Guia técnica para elevador - refinamento CAD" decoding="async" loading="lazy" src="imagens/projetos/smj-guias-elevador/Captura de tela 2026-08-07 153459.png" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projetos técnicos sob medida" decoding="async" loading="lazy" src="imagens/segmentos/segmento-projeto-tecnico-bbe.jpg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Cilindro pequeno para elevador — modelagem 3D" decoding="async" loading="lazy" src="imagens/projetos/smj-cilindro-pequeno/Captura de tela 2026-09-23 200606.png"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Cilindro pequeno para elevador — corte longitudinal" decoding="async" loading="lazy" src="imagens/projetos/smj-cilindro-pequeno/06_Corte_Longitudinal.png"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça redonda para elevador" decoding="async" loading="lazy" src="imagens/projetos/smj-peca-redonda-e-retangular/WhatsApp Image 2026-09-22 at 10.38.48.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça redonda para elevador — desenho" decoding="async" loading="lazy" src="imagens/projetos/smj-peca-redonda-e-retangular/Captura de tela 2026-09-22 132808.png"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça retangular para elevador — modelagem" decoding="async" loading="lazy" src="imagens/projetos/smj-peca-redonda-e-retangular/Captura de tela 2026-09-22 200212.png"/></div>
+</div>
+<button aria-label="Imagem anterior de projetos técnicos" class="bbe-prev" onclick="moveMini(this, -1)" type="button">‹</button>
+<button aria-label="Próxima imagem de projetos técnicos" class="bbe-next" onclick="moveMini(this, 1)" type="button">›</button>
+</div>
+</div>
+<div class="srv-body">
+<div class="srv-ico">📐</div>
+<h3 class="srv-title">Projetos Técnicos Sob Medida</h3>
+<p class="srv-desc">Soluções personalizadas a partir de foto, amostra, medição ou problema real, com modelagem CAD, engenharia reversa, prototipagem e refinamento técnico para reposição ou fabricação.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20um%20projeto%20técnico%20sob%20medida%20para%20desenvolver." onclick="trackWA('segmento-projeto')" rel="noopener" target="_blank">Quero orçar este tipo →</a>
+</div>
+</article>
+<article class="srv-card">
+<div class="srv-thumb">
+<div class="bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide"><img alt="Aplicação náutica com problema original" decoding="async" loading="lazy" src="imagens/segmentos/caiaque-aplicacao-original-problema.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Aplicação náutica original" decoding="async" loading="lazy" src="imagens/segmentos/caiaque-aplicacao-original.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Aplicação náutica original em caiaque" decoding="async" loading="lazy" src="imagens/segmentos/caiaque-aplicacao-original2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Solução náutica sob medida" decoding="async" loading="lazy" src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.17 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça para aplicação náutica" decoding="async" loading="lazy" src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.20.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça náutica aplicada" decoding="async" loading="lazy" src="imagens/cases/WhatsApp Image 2026-06-17 at 09.48.22.jpeg"/></div>
+</div>
+<button class="bbe-prev" onclick="moveMini(this, -1)" type="button">‹</button>
+<button class="bbe-next" onclick="moveMini(this, 1)" type="button">›</button>
+</div>
+</div>
+<div class="srv-body">
+<div class="srv-ico">🌊</div>
+<h3 class="srv-title">Soluções Náuticas e Marítimas</h3>
+<p class="srv-desc">Peças, adaptações e reposições para caiaques, embarcações e uso em ambiente náutico, com foco em sol, umidade, maresia e esforço funcional.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20náutica%20ou%20marítima%20para%20orçar." onclick="trackWA('segmento-nautico')" rel="noopener" target="_blank">Quero orçar este tipo →</a>
+</div>
+</article>
+<article class="srv-card">
+<div class="srv-thumb"><img alt="Maquetes e plantas humanizadas" decoding="async" loading="lazy" src="imagens/segmentos/segmento-maquetes-bbe.jpg"/></div>
+<div class="srv-body">
+<div class="srv-ico">🏗️</div>
+<h3 class="srv-title">Maquetes e Plantas Humanizadas</h3>
+<p class="srv-desc">Maquetes físicas e plantas em 3D para construtoras, arquitetos e apresentações comerciais, com foco em leitura visual e impacto de apresentação.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20maquete%20ou%20planta%20humanizada." onclick="trackWA('segmento-maquete')" rel="noopener" target="_blank">Quero orçar este tipo →</a>
+</div>
+</article>
+<article class="srv-card">
+<div class="srv-thumb">
+<div class="bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide"><img alt="Organizador de cabos P com embalagem e etiqueta personalizada" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Organizadores de cabos funcionais aplicados em cabos reais" decoding="async" loading="lazy" src="imagens/projetos/organizador-cabo/organizador-cabo2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Lote de chaveiros em formato de ar-condicionado split" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Chaveiros personalizados de mini split" decoding="async" loading="lazy" src="imagens/projetos/chaveiro-ar-cond/chaveiro-split2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Chaveiro Hives personalizado com NFC" decoding="async" loading="lazy" src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-01.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Lote de chaveiros Hives multicor com NFC" decoding="async" loading="lazy" src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-02.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" preload="none" src="imagens/projetos/miniaturas-personalizadas/video-laura-joao.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Miniaturas personalizadas sem pintura produzidas pela BBE 3D" decoding="async" loading="lazy" src="imagens/projetos/miniaturas-personalizadas/laura-joao1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><video aria-label="Troféu temático de grande formato produzido pela BBE 3D" loop="" muted="" playsinline="" poster="imagens/projetos/taca-fifa/taca-fica-1.jpeg" preload="none" src="imagens/projetos/taca-fifa/video-taca-fica.mp4" style="object-fit: contain; object-position: center center; background:#e9f1f9;"></video></div>
+<div class="bbe-mini-carousel-slide"><img alt="Troféu temático finalizado em impressão 3D" decoding="async" loading="lazy" src="imagens/projetos/taca-fifa/taca-fica-1.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Peça temática de Halloween produzida pela BBE 3D" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack2.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Obra decorativa e miniatura produzidas pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/obra-rodin-com-miniatura.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Placa decorativa Banho de Mar personalizada em impressão 3D" decoding="async" loading="lazy" src="imagens/cases/placa-banho-mar.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Base porta-copo personalizada produzida pela BBE 3D" decoding="async" loading="lazy" src="imagens/cases/base-porta-copo-impressao-bbe.jpeg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Souvenirs e itens decorativos personalizados pela BBE 3D" decoding="async" loading="lazy" onerror="this.style.display='none'" src="imagens/segmentos/segmento-souvenirs-bbe.jpg" style="object-fit: contain; object-position: center center; background:#e9f1f9;"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.29.59.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-16 at 08.37.07 (2).jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.06.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.56 - Copia.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.56 (2).jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.56 (3).jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto Kim — miniatura orgânica personalizada" decoding="async" loading="lazy" src="imagens/projetos/kim/WhatsApp Image 2026-09-11 at 07.15.58.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Árvore de Natal personalizada em impressão 3D" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.09 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Árvore de Natal personalizada em impressão 3D" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.33 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Árvore de Natal personalizada em impressão 3D" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.34.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Vasinho personalizado para o Dia dos Professores" decoding="async" loading="lazy" src="imagens/sazonais/dia-professores1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Referência do projeto para o Dia dos Professores" decoding="async" loading="lazy" src="imagens/sazonais/dia-professores2.png"/></div>
+</div>
+<button class="bbe-prev" onclick="moveMini(this, -1)" type="button">‹</button>
+<button class="bbe-next" onclick="moveMini(this, 1)" type="button">›</button>
+</div>
+</div>
+<div class="srv-body">
+<div class="srv-ico">🔑</div>
+<h3 class="srv-title">Souvenirs, Chaveiros e Itens Decorativos</h3>
+<p class="srv-desc">Brindes funcionais, chaveiros, miniaturas, troféus, lembranças e peças decorativas sob encomenda, com personalização de logo, nome, QR code, NFC, cor ou tema.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20chaveiros,%20brindes%20ou%20itens%20decorativos%20em%203D." onclick="trackWA('segmento-souvenir')" rel="noopener" target="_blank">Quero orçar este tipo →</a>
+</div>
+</article>
+<article class="srv-card">
+<div class="srv-thumb">
+<div class="bbe-mini-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide"><img alt="Cases e protótipos para eletrônica" decoding="async" loading="lazy" src="imagens/segmentos/segmento-cases-eletronica-bbe.jpg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto de bobina elétrica — peça e modelagem" decoding="async" loading="lazy" src="imagens/projetos/bobina-eletrica/WhatsApp Image 2026-09-21 at 06.24.022.jpeg"/></div>
+<div class="bbe-mini-carousel-slide"><img alt="Projeto de bobina elétrica — peça e modelagem" decoding="async" loading="lazy" src="imagens/projetos/bobina-eletrica/Captura de tela 2026-09-22 162700.png"/></div>
+</div>
+<button aria-label="Imagem anterior de projetos para eletrônica" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem de projetos para eletrônica" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+</div>
+<div class="srv-body">
+<div class="srv-ico">💻</div>
+<h3 class="srv-title">Cases e Protótipos para Eletrônica</h3>
+<p class="srv-desc">Cases, suportes, alojamentos e protótipos para placas, sensores, displays e conjuntos eletrônicos, inclusive para bancada e trilho DIN.</p>
+<a class="srv-link" href="https://wa.me/5513991455673?text=Olá!%20Preciso%20de%20case%20ou%20protótipo%20para%20eletrônica." onclick="trackWA('segmento-eletronica')" rel="noopener" target="_blank">Quero orçar este tipo →</a>
+</div>
+</article>
+</div>
+<div class="cta-band" style="margin-top:42px">
+<div>
+<h3>Não sabe em qual segmento sua demanda entra?</h3>
+<p>Mande uma foto, medida ou descrição rápida no WhatsApp. A BBE analisa e direciona sua necessidade para o fluxo correto, sem você precisar entender de modelagem, material ou processo.</p>
+</div>
+<a class="btn-wa" href="https://wa.me/5513991455673?text=Olá!%20Tenho%20uma%20demanda%20e%20quero%20ajuda%20para%20entender%20a%20melhor%20solução." onclick="trackWA('segmentos-cta')" rel="noopener" target="_blank">Falar com a BBE agora</a>
+</div>
+</div>
+</section>
+
+
+<section class="sec sazonal-sec" id="datas">
+<div class="sazonal-wrap">
+<div class="sazonal-head">
+<div>
+<p class="lbl">Datas sazonais</p>
+<h2 class="h2">Itens 3D sob encomenda<br/>para as próximas campanhas</h2>
+<p class="desc">Criamos presentes, lembranças, brindes, decorações e itens promocionais em 3D para datas sazonais. A produção é feita sob encomenda, conforme tema, quantidade, personalização e prazo de cada ação.</p>
+</div>
+</div>
+<div class="sazonal-grid">
+<div class="sazonal-carousel-wrap">
+<div class="sazonal-nav">
+<button aria-label="Campanha anterior" onclick="moveSeasonal(-1)" type="button">‹</button>
+<button aria-label="Próxima campanha" onclick="moveSeasonal(1)" type="button">›</button>
+</div>
+<div class="sazonal-carousel">
+<article class="sazonal-slide active">
+<div aria-label="Árvore de Natal personalizada em 3D" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Árvore de Natal personalizada em 3D — imagem 1" decoding="async" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.09 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Árvore de Natal personalizada em 3D — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.33 (1).jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Árvore de Natal personalizada em 3D — imagem 3" decoding="async" loading="lazy" src="imagens/sazonais/WhatsApp Image 2026-09-27 at 08.00.34.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
+<div class="sazonal-slide-content">
+<div class="sazonal-badge">Campanha ativa</div>
+<div class="sazonal-date">Natal | encomendas abertas</div>
+<h3 class="sazonal-title">Árvore de Natal personalizada em 3D</h3>
+<p class="sazonal-copy">A árvore de Natal mostrada é um projeto real da BBE 3D. Recebemos encomendas para adaptar cores, tema, detalhes e quantidade ao seu presente, decoração ou ação comercial.</p>
+<div class="sazonal-items">
+<span class="sazonal-chip">Árvore personalizada</span>
+<span class="sazonal-chip">Presentes</span>
+<span class="sazonal-chip">Decoração</span>
+<span class="sazonal-chip">Sob encomenda</span>
+</div>
+<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Ol%C3%A1%21%20Quero%20encomendar%20uma%20%C3%A1rvore%20de%20Natal%20personalizada%20em%203D.%20Seguem%20minha%20ideia%20e%20o%20prazo%3A" onclick="trackWA('sazonal-natal')" rel="noopener" target="_blank">Encomendar projeto para o Natal</a>
+</div>
+</article>
+<article class="sazonal-slide">
+<div aria-label="Vasinho personalizado para o Dia dos Professores" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Vasinho personalizado para o Dia dos Professores — imagem 1" decoding="async" src="imagens/sazonais/dia-professores1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Vasinho personalizado para o Dia dos Professores — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/dia-professores2.png"/></div>
+</div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
+<div class="sazonal-slide-content">
+<div class="sazonal-badge">Campanha ativa</div>
+<div class="sazonal-date">Dia dos Professores | 15/10/2026</div>
+<h3 class="sazonal-title">Vasinho personalizado para o Dia dos Professores</h3>
+<p class="sazonal-copy">O vasinho e sua referência mostram uma opção de lembrança personalizada para professores. Podemos avaliar nome, mensagem, quantidade e prazo conforme a sua encomenda.</p>
+<div class="sazonal-items">
+<span class="sazonal-chip">Vasinho</span>
+<span class="sazonal-chip">Lembrança</span>
+<span class="sazonal-chip">Personalização</span>
+<span class="sazonal-chip">Sob encomenda</span>
+</div>
+<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Ol%C3%A1%21%20Quero%20or%C3%A7ar%20um%20vasinho%20ou%20lembran%C3%A7a%203D%20para%20o%20Dia%20dos%20Professores.%20Seguem%20quantidade%20e%20prazo%3A" onclick="trackWA('sazonal-professores')" rel="noopener" target="_blank">Consultar encomenda para professores</a>
+</div>
+</article>
+<article class="sazonal-slide">
+<div aria-label="Peças temáticas de Halloween" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 1" decoding="async" src="imagens/sazonais/cabeca-jack2.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack1.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 3" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack3.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 4" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack4.jpeg"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Peças temáticas de Halloween — imagem 5" decoding="async" loading="lazy" src="imagens/sazonais/cabeca-jack5.jpeg"/></div>
+</div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
+<div class="sazonal-slide-content">
+<div class="sazonal-badge">Campanha ativa</div>
+<div class="sazonal-date">Halloween | 31/10/2026</div>
+<h3 class="sazonal-title">Peças temáticas em 3D para Halloween</h3>
+<p class="sazonal-copy">Decoração, personagens, brindes e peças personalizadas para festas, vitrines, eventos e ações promocionais. O item exibido foi produzido pela BBE 3D como demonstração real da campanha.</p>
+<div class="sazonal-items">
+<span class="sazonal-chip">Decoração temática</span>
+<span class="sazonal-chip">Personagens</span>
+<span class="sazonal-chip">Brindes</span>
+<span class="sazonal-chip">Produção sob encomenda</span>
+</div>
+<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20uma%20peça%20ou%20decoração%203D%20para%20Halloween." onclick="trackWA('sazonal-halloween')" rel="noopener" target="_blank">Consultar projeto para Halloween</a>
+</div>
+</article>
+<article class="sazonal-slide">
+<div aria-label="Campanhas de 12 de outubro" class="bbe-mini-carousel sazonal-media-carousel">
+<div class="bbe-mini-carousel-track" data-current="0">
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Campanhas de 12 de outubro — imagem 1" decoding="async" src="imagens/sazonais/homem-aranha-robo-articulado.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Campanhas de 12 de outubro — imagem 2" decoding="async" loading="lazy" src="imagens/sazonais/MARSHALL-PATRULHA-CANINA-1.webp"/></div>
+<div class="bbe-mini-carousel-slide media-contain"><img alt="Campanhas de 12 de outubro — imagem 3" decoding="async" loading="lazy" src="imagens/sazonais/santa-rita-preto-com-escrita-branco.png"/></div>
+</div>
+<button aria-label="Imagem anterior da campanha" class="bbe-prev" onclick="moveMini(this,-1)" type="button">‹</button>
+<button aria-label="Próxima imagem da campanha" class="bbe-next" onclick="moveMini(this,1)" type="button">›</button>
+</div>
+
+<div class="sazonal-slide-content">
+<div class="sazonal-badge">Duas campanhas na mesma data</div>
+<div class="sazonal-date">Dia das Crianças + Nossa Senhora Aparecida | 12/10/2026</div>
+<h3 class="sazonal-title">Itens infantis e religiosos para campanhas de 12 de outubro</h3>
+<p class="sazonal-copy">Atendemos os dois temas de forma independente: brinquedos e personagens decorativos para o Dia das Crianças, além de lembranças, placas e peças religiosas personalizadas.</p>
+<div class="sazonal-items">
+<span class="sazonal-chip">Brinquedos articulados</span>
+<span class="sazonal-chip">Personagens decorativos</span>
+<span class="sazonal-chip">Lembranças religiosas</span>
+<span class="sazonal-chip">Presentes personalizados</span>
+</div>
+<a class="sazonal-cta" href="https://wa.me/5513991455673?text=Olá!%20Quero%20consultar%20um%20item%203D%20para%20o%20Dia%20das%20Crianças%20ou%20para%20uma%20campanha%20religiosa%20de%2012%20de%20outubro." onclick="trackWA('sazonal-doze-outubro')" rel="noopener" target="_blank">Consultar campanha de 12 de outubro</a>
+</div>
+</article>
+</div>
+<div class="sazonal-dots" id="seasonalDots"></div>
+</div>
+<div class="sazonal-cards">
+<article class="sazonal-card">
+<div class="sazonal-card-top"><span class="sazonal-card-tag">Campanha ativa</span><span class="sazonal-card-date">25/12</span></div>
+<h3>Natal personalizado</h3>
+<p>Encomendas abertas para árvores de Natal em 3D e outras peças personalizadas. Envie tema, quantidade e prazo para avaliação.</p>
+<div class="sazonal-card-list"><span class="sazonal-chip">Árvore 3D</span>
+<span class="sazonal-chip">Personalização</span>
+</div>
+<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Ol%C3%A1%21%20Quero%20or%C3%A7ar%20uma%20%C3%A1rvore%20de%20Natal%20personalizada%20em%203D.%20Seguem%20minha%20ideia%20e%20o%20prazo%3A" onclick="trackWA('sazonal-card-natal')" rel="noopener" target="_blank">Solicitar orçamento de Natal →</a>
+</article>
+<article class="sazonal-card">
+<div class="sazonal-card-top"><span class="sazonal-card-tag">Campanha ativa</span><span class="sazonal-card-date">15/10</span></div>
+<h3>Dia dos Professores</h3>
+<p>Vasinho e lembranças em 3D inspirados no projeto mostrado. Personalização e prazo avaliados para cada pedido.</p>
+<div class="sazonal-card-list"><span class="sazonal-chip">Vasinho</span>
+<span class="sazonal-chip">Lembrança</span>
+</div>
+<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Ol%C3%A1%21%20Quero%20or%C3%A7ar%20um%20vasinho%20ou%20lembran%C3%A7a%203D%20para%20o%20Dia%20dos%20Professores.%20Seguem%20quantidade%20e%20prazo%3A" onclick="trackWA('sazonal-card-professores')" rel="noopener" target="_blank">Solicitar orçamento para professores →</a>
+</article>
+<article class="sazonal-card">
+<div class="sazonal-card-top">
+<span class="sazonal-card-tag">Campanha ativa</span>
+<span class="sazonal-card-date">31/10</span>
+</div>
+<h3>Halloween</h3>
+<p>Peças decorativas, personagens, lembranças e brindes temáticos produzidos sob encomenda para festas, eventos, vitrines e campanhas comerciais.</p>
+<div class="sazonal-card-list">
+<span class="sazonal-chip" style="background:#fff0e8;border-color:#ffc9a8;color:#9c4315;">Temático</span>
+<span class="sazonal-chip" style="background:#f5eefb;border-color:#dfcff0;color:#674094;">Personalizado</span>
+</div>
+<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20uma%20peça%20ou%20decoração%203D%20para%20Halloween." onclick="trackWA('sazonal-card-halloween')" rel="noopener" target="_blank">Solicitar orçamento para Halloween →</a>
+</article>
+<article class="sazonal-card">
+<div class="sazonal-card-top">
+<span class="sazonal-card-tag">Agenda aberta</span>
+<span class="sazonal-card-date">12/10</span>
+</div>
+<h3>Dia das Crianças e campanha religiosa</h3>
+<p>Itens infantis e peças religiosas tratados como linhas independentes, com personalização, quantidade e prazo definidos conforme a necessidade do projeto.</p>
+<div class="sazonal-card-list">
+<span class="sazonal-chip" style="background:#fff4e8;border-color:#ffd7ad;color:#985300;">Infantil</span>
+<span class="sazonal-chip" style="background:#f4effb;border-color:#dfd2f2;color:#674094;">Religioso</span>
+</div>
+<a class="sazonal-card-btn" href="https://wa.me/5513991455673?text=Olá!%20Quero%20orçar%20um%20item%203D%20para%20o%20Dia%20das%20Crianças%20ou%20para%20uma%20campanha%20religiosa%20de%2012%20de%20outubro." onclick="trackWA('sazonal-card-doze-outubro')" rel="noopener" target="_blank">Solicitar orçamento para 12 de outubro →</a>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="sec sec-azul">
+<div class="wrap">
+<p class="lbl light">Processo</p>
+<h2 class="h2 light">Como funciona o orçamento?</h2>
+<p class="desc light">Sem complicação. Você manda o que tem, a BBE analisa e orienta o melhor caminho técnico e comercial.</p>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><div class="step-t">Você chama no WhatsApp</div><div class="step-d">Mande foto, medida, amostra física ou apenas a ideia inicial.</div></div>
+<div class="step"><div class="step-num">2</div><div class="step-t">Análise técnica</div><div class="step-d">Avaliamos se a solução pede captura 3D, modelagem CAD, protótipo ou produção direta.</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-t">Orçamento e prazo</div><div class="step-d">Você recebe retorno com material sugerido, prazo, etapas e proposta comercial.</div></div>
+<div class="step"><div class="step-num">4</div><div class="step-t">Produção local</div><div class="step-d">Executamos, validamos e entregamos com acompanhamento direto.</div></div>
+</div>
+</div>
+</section>
+<section class="sec sec-cinza">
+<div class="wrap">
+<p class="lbl">Por que a BBE 3D?</p>
+<h2 class="h2">Fabricação local com<br/>estrutura técnica real</h2>
+<div class="dif-grid">
+<div class="dif"><div class="dif-ico">🔬</div><div><h4>Scanner 3D Profissional</h4><p>CR-Scan Otter com captura de alta precisão integrado ao fluxo de modelagem e produção.</p></div></div>
+<div class="dif"><div class="dif-ico">📍</div><div><h4>Produção local</h4><p>Praia Grande/SP. Atendimento direto com quem analisa, desenvolve e fabrica.</p></div></div>
+<div class="dif"><div class="dif-ico">🧱</div><div><h4>Material conforme aplicação</h4><p>Não é só “imprimir STL”: escolhemos material conforme esforço, exposição e objetivo da peça.</p></div></div>
+<div class="dif"><div class="dif-ico">📐</div><div><h4>Modelagem CAD própria</h4><p>Ajuste dimensional, encaixes, folgas, iteração e prototipagem para solução funcional.</p></div></div>
+<div class="dif"><div class="dif-ico">⚡</div><div><h4>Resposta rápida</h4><p>Orçamento via WhatsApp com análise objetiva e direcionamento por tipo de demanda.</p></div></div>
+<div class="dif"><div class="dif-ico">🎯</div><div><h4>Foco em nichos claros</h4><p>Automotivo, náutica, eletrônica, maquetes e itens personalizados sob encomenda.</p></div></div>
+</div>
+</div>
+</section>
+<section class="sec" id="faq">
+<div class="wrap">
+<p class="lbl">FAQ</p>
+<h2 class="h2">Dúvidas frequentes antes<br/>de pedir orçamento</h2>
+<p class="desc">Reunimos as principais dúvidas de quem procura scanner 3D, modelagem CAD e impressão 3D sob medida. Confira os pontos básicos antes de enviar sua solicitação.</p>
+<div class="faq-grid">
+<details class="faq-item" open="">
+<summary>Vocês fazem peça única?</summary>
+<p>Sim. A BBE atende desde peça única até pequenas e médias tiragens, conforme o tipo de projeto, material e necessidade do cliente.</p>
+</details>
+<details class="faq-item">
+<summary>Dá para copiar uma peça quebrada?</summary>
+<p>Em muitos casos, sim. Podemos analisar peça física, escaneamento 3D, medição manual e remodelagem CAD para chegar a uma solução viável.</p>
+</details>
+<details class="faq-item">
+<summary>Vocês fazem só impressão ou também modelagem?</summary>
+<p>Fazemos os dois. Se você já tiver o arquivo, podemos produzir. Se não tiver, avaliamos captura, modelagem e prototipagem antes da peça final.</p>
+</details>
+<details class="faq-item">
+<summary>Trabalham com material resistente ao sol e maresia?</summary>
+<p>Sim. Dependendo da aplicação, indicamos materiais como Hyper PETG e PETG-CF, que fazem mais sentido para ambiente litorâneo e uso técnico.</p>
+</details>
+<details class="faq-item">
+<summary>Atendem empresas e profissionais técnicos?</summary>
+<p>Sim. A BBE está estruturando foco forte em automotivo, náutica, eletrônica, construtoras, maquetes e demandas técnicas sob medida.</p>
+</details>
+<details class="faq-item">
+<summary>Como agilizo meu orçamento?</summary>
+<p>Envie foto, medida, vídeo curto, referência de uso ou a peça física. Quanto melhor a entrada, mais rápido conseguimos sugerir caminho, material e prazo.</p>
+</details>
+</div>
+</div>
+</section>
+<section class="sec sec-azul" id="contato">
+<div class="wrap ctt-wrap">
+<div class="ctt-info">
+<p class="lbl light">Fale conosco</p>
+<h2>Pronto para pedir<br/>seu orçamento?</h2>
+<p>Atendimento direto via WhatsApp, sem formulário e sem intermediário. A BBE atua a partir de Praia Grande/SP com scanner 3D, modelagem CAD, impressão 3D e engenharia reversa aplicada.</p>
+<div class="ctt-links">
+<a class="ctt-link" href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." onclick="trackWA('contato')" rel="noopener" target="_blank">
+<div class="ctt-link-ico">💬</div><div><span class="ctt-lbl">WhatsApp</span><span class="ctt-val">(13) 99145-5673 — clique para conversar</span></div>
+</a>
+<a class="ctt-link" href="https://www.instagram.com/bbe3dmanufatura3d/" rel="noopener" target="_blank">
+<div class="ctt-link-ico">📸</div><div><span class="ctt-lbl">Instagram</span><span class="ctt-val">@bbe3dmanufatura3d</span></div>
+</a>
+<a class="ctt-link" href="mailto:bbe3dmanufatura@gmail.com">
+<div class="ctt-link-ico">📧</div><div><span class="ctt-lbl">E-mail</span><span class="ctt-val">bbe3dmanufatura@gmail.com</span></div>
+</a>
+<a class="ctt-link" href="https://bbe3d.com.br">
+<div class="ctt-link-ico">🌐</div><div><span class="ctt-lbl">Site</span><span class="ctt-val">bbe3d.com.br</span></div>
+</a>
+<a class="ctt-link" href="/imagens/marca/portfolio-bbe3d.pdf" rel="noopener" target="_blank">
+<div class="ctt-link-ico">📄</div><div><span class="ctt-lbl">Portfólio comercial</span><span class="ctt-val">Versão Comercial 1.0 em PDF</span></div>
+</a>
+<div class="ctt-link">
+<div class="ctt-link-ico">📍</div><div><span class="ctt-lbl">Localização</span><span class="ctt-val">Solemar, Praia Grande — SP</span></div>
+</div>
+</div>
+</div>
+<div class="qr-block">
+<h3>Acesse pelo celular</h3>
+<p>Aponte a câmera e entre em contato agora</p>
+<div class="qr-tabs">
+<button class="qr-tab active" onclick="showQR('wa',this)">WhatsApp</button>
+<button class="qr-tab" onclick="showQR('ig',this)">Instagram</button>
+</div>
+<div class="qr-img-wrap" id="qr-wa"><img alt="QR WhatsApp BBE 3D" decoding="async" loading="lazy" src="imagens/qr-codes/qr-code-whatsapp.svg"/></div>
+<div class="qr-img-wrap" id="qr-ig" style="display:none"><img alt="QR Instagram BBE 3D" decoding="async" loading="lazy" src="imagens/qr-codes/qr-code-instagram.svg"/></div>
+<a href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." onclick="trackWA('qr-block')" rel="noopener" style="display:block;margin-top:18px;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:15px;" target="_blank">
+        💬 Mandar mensagem agora
+      </a>
+</div>
+</div>
+</section>
+<footer>
+<span class="footer-brand">BBE 3D Manufatura</span>
+<p class="footer-txt">© 2026 · Scanner 3D + Impressão 3D · Praia Grande/SP</p>
+<div class="footer-links">
+<a href="https://www.instagram.com/bbe3dmanufatura3d/" rel="noopener" target="_blank">Instagram</a>
+<a href="/imagens/marca/portfolio-bbe3d.pdf" rel="noopener" target="_blank">Portfólio</a>
+<a href="https://wa.me/5513991455673" onclick="trackWA('footer')" rel="noopener" target="_blank">WhatsApp</a>
+<a href="mailto:bbe3dmanufatura@gmail.com">E-mail</a>
+</div>
+</footer>
+<a class="wa-float" href="https://wa.me/5513991455673?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento." onclick="trackWA('float')" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
 <script>
 var GA_CONVERSION_ID = 'AW-18180058403';
 var GA_CONVERSION_LABEL = 'IMgwCKjNkrIcEKPa9txD';
+
 function trackWA(origem) {
   if (typeof gtag === 'function' && GA_CONVERSION_LABEL) {
     gtag('event', 'conversion', {
@@ -45,524 +1765,217 @@ function trackWA(origem) {
     });
   }
 }
+
+function showQR(t, btn){
+  document.querySelectorAll('.qr-tab').forEach(function(x){ x.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('qr-wa').style.display = t === 'wa' ? 'flex' : 'none';
+  document.getElementById('qr-ig').style.display = t === 'ig' ? 'flex' : 'none';
+}
+
+let scanIdx = 0;
+const scanSlides = document.querySelectorAll('.scan-slide');
+const dotsWrap = document.getElementById('scanDots');
+if (scanSlides.length && dotsWrap) {
+  scanSlides.forEach(function(_, i) {
+    const d = document.createElement('button');
+    d.className = 'scan-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.onclick = function(){ goScan(i); };
+    dotsWrap.appendChild(d);
+  });
+}
+function goScan(n) {
+  if (!scanSlides.length || !dotsWrap) return;
+  scanSlides[scanIdx].classList.remove('active');
+  dotsWrap.querySelectorAll('.scan-dot')[scanIdx].classList.remove('active');
+  scanIdx = (n + scanSlides.length) % scanSlides.length;
+  scanSlides[scanIdx].classList.add('active');
+  dotsWrap.querySelectorAll('.scan-dot')[scanIdx].classList.add('active');
+}
+function moveCarousel(dir) { goScan(scanIdx + dir); }
+setInterval(function(){ if (!document.hidden && !window.matchMedia('(max-width: 768px)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) moveCarousel(1); }, 7000);
+
+
+let seasonalIdx = 0;
+const seasonalSlides = document.querySelectorAll('.sazonal-slide');
+const seasonalDotsWrap = document.getElementById('seasonalDots');
+if (seasonalSlides.length && seasonalDotsWrap) {
+  seasonalSlides.forEach(function(_, i) {
+    const d = document.createElement('button');
+    d.className = 'sazonal-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Tema sazonal ' + (i + 1));
+    d.onclick = function(){ goSeasonal(i); };
+    seasonalDotsWrap.appendChild(d);
+  });
+}
+function goSeasonal(n) {
+  if (!seasonalSlides.length || !seasonalDotsWrap) return;
+  seasonalSlides[seasonalIdx].classList.remove('active');
+  seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.remove('active');
+  seasonalIdx = (n + seasonalSlides.length) % seasonalSlides.length;
+  seasonalSlides[seasonalIdx].classList.add('active');
+  seasonalDotsWrap.querySelectorAll('.sazonal-dot')[seasonalIdx].classList.add('active');
+}
+function moveSeasonal(dir) { goSeasonal(seasonalIdx + dir); }
+setInterval(function(){ if (!document.hidden && !window.matchMedia('(max-width: 768px)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) moveSeasonal(1); }, 12000);
+
+// CONTROLE SEGURO DOS NOVOS CARROSSEIS
+function hideBrokenSlide(el) {
+  var slide = el.closest('.bbe-mini-carousel-slide');
+  if (!slide) return;
+  var track = slide.parentElement;
+  slide.remove();
+  var slides = track.querySelectorAll('.bbe-mini-carousel-slide');
+  var current = parseInt(track.getAttribute('data-current') || '0', 10);
+  if (!slides.length) return;
+  if (current >= slides.length) current = 0;
+  track.style.transform = 'translateX(-' + (current * 100) + '%)';
+  track.setAttribute('data-current', current);
+}
+
+function getMiniData(btn) {
+  var carousel = btn.closest('.bbe-mini-carousel');
+  var track = carousel.querySelector('.bbe-mini-carousel-track');
+  var slides = track.querySelectorAll('.bbe-mini-carousel-slide');
+  var current = parseInt(track.getAttribute('data-current') || '0', 10);
+  return { track: track, slides: slides, current: current };
+}
+function moveMini(btn, dir) {
+  var carousel = btn.closest('.bbe-mini-carousel');
+  var data = getMiniData(btn);
+  if (!data.slides.length) return;
+  var current = data.current >= data.slides.length ? 0 : data.current;
+  var target = (current + dir + data.slides.length) % data.slides.length;
+  data.track.style.transform = 'translateX(-' + (target * 100) + '%)';
+  data.track.setAttribute('data-current', target);
+  syncCarouselVideos(carousel);
+}
+
+function toggleNav(btn){
+  var links = document.getElementById('navLinks');
+  if (!links) return;
+  var isOpen = links.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  btn.textContent = isOpen ? '×' : '☰';
+}
+
+document.querySelectorAll('#navLinks a').forEach(function(link){
+  link.addEventListener('click', function(){
+    var links = document.getElementById('navLinks');
+    var btn = document.querySelector('.nav-toggle');
+    if (links) links.classList.remove('open');
+    if (btn){ btn.setAttribute('aria-expanded','false'); btn.textContent='☰'; }
+  });
+});
+
+function scrollReviews(dir){
+  var track = document.getElementById('reviewsTrack');
+  if (!track) return;
+  track.scrollBy({left: dir * Math.min(track.clientWidth * 0.82, 580), behavior:'smooth'});
+}
+
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+var mobileVideoQuery = window.matchMedia('(max-width: 768px)');
+function updateVideoControls(){
+  var showControls = mobileVideoQuery.matches || reduceMotion;
+  document.querySelectorAll('video').forEach(function(video){ video.controls = showControls; });
+}
+updateVideoControls();
+if (mobileVideoQuery.addEventListener) mobileVideoQuery.addEventListener('change', updateVideoControls);
+
+function videoIsOnActiveMiniSlide(video){
+  var carousel = video.closest('.bbe-mini-carousel');
+  if (!carousel) return true;
+  var track = carousel.querySelector('.bbe-mini-carousel-track');
+  if (!track) return true;
+  var slides = Array.prototype.slice.call(track.querySelectorAll('.bbe-mini-carousel-slide'));
+  var activeIndex = parseInt(track.getAttribute('data-current') || '0', 10);
+  return slides[activeIndex] && slides[activeIndex].contains(video);
+}
+
+function syncVideo(video){
+  var active = video.dataset.inview === '1' && videoIsOnActiveMiniSlide(video);
+  if (!active) { video.pause(); return; }
+  if (reduceMotion) return;
+  var promise = video.play();
+  if (promise && promise.catch) promise.catch(function(){ video.controls = true; });
+}
+
+function syncCarouselVideos(carousel){
+  if (!carousel) return;
+  carousel.querySelectorAll('video').forEach(syncVideo);
+}
+
+if ('IntersectionObserver' in window) {
+  var videoObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      entry.target.dataset.inview = entry.isIntersecting && entry.intersectionRatio >= 0.25 ? '1' : '0';
+      syncVideo(entry.target);
+    });
+  }, {threshold:[0,0.25,0.5]});
+  document.querySelectorAll('video').forEach(function(video){ videoObserver.observe(video); });
+} else {
+  document.querySelectorAll('video').forEach(function(video){ video.dataset.inview='1'; syncVideo(video); });
+}
+
+// Swipe horizontal para carrosséis em celular/tablet.
+document.querySelectorAll('.bbe-mini-carousel').forEach(function(carousel){
+  var startX = 0;
+  var startY = 0;
+  carousel.addEventListener('touchstart', function(e){
+    if (!e.touches || !e.touches[0]) return;
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, {passive:true});
+  carousel.addEventListener('touchend', function(e){
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    var dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+    var btn = carousel.querySelector(dx < 0 ? '.bbe-next' : '.bbe-prev');
+    if (btn) moveMini(btn, dx < 0 ? 1 : -1);
+  }, {passive:true});
+});
+
+
+// Swipe horizontal também para o carrossel sazonal em celular/tablet.
+(function(){
+  var seasonal = document.querySelector('.sazonal-carousel-wrap');
+  if (!seasonal) return;
+  var sx = 0, sy = 0;
+  seasonal.addEventListener('touchstart', function(e){
+    if (!e.touches || !e.touches[0]) return;
+    sx = e.touches[0].clientX;
+    sy = e.touches[0].clientY;
+  }, {passive:true});
+  seasonal.addEventListener('touchend', function(e){
+    if (e.target && e.target.closest('.sazonal-media-carousel')) return;
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    var dx = e.changedTouches[0].clientX - sx;
+    var dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+    moveSeasonal(dx < 0 ? 1 : -1);
+  }, {passive:true});
+})();
+
 </script>
-</head>
-<body>
-<a class="skip-link" href="#main">Pular para o conteúdo</a>
-<header class="site-header">
-<div class="container header-inner">
-<a class="brand" href="" aria-label="BBE 3D — início">
-<img src="assets/brand/logo-bbe.svg" alt="" width="48" height="48">
-<span class="brand-text">BBE 3D<small>Manufatura e soluções 3D</small>
-</span>
-</a>
-<button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Abrir menu">
-<span aria-hidden="true">☰</span>
-</button>
-<nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
-<a href="" aria-current="page">Início</a>
-<a href="servicos/">Serviços</a>
-<a href="projetos/">Projetos</a>
-<a href="sobre/">Sobre</a>
-<a href="faq/">FAQ</a>
-<a href="contato/">Contato</a>
-<a class="nav-cta" href="contato/">Pedir orçamento</a>
-</nav>
-</div>
-</header>
-<main id="main">
-<section class="hero">
-<div class="container hero-inner">
-<div>
-<span class="eyebrow light">BBE 3D · Praia Grande, SP</span>
-<h1>Da ideia à <em>peça real.</em>
-</h1>
-<p class="lead light">Scanner 3D, modelagem CAD e impressão 3D para criar, recuperar e personalizar soluções que precisam funcionar no mundo real.</p>
-<ul class="hero-points">
-<li>Peças únicas e pequenos lotes</li>
-<li>Projetos técnicos e criativos</li>
-<li>Atendimento direto</li>
-</ul>
-<div class="button-row">
-<a class="btn btn-beige" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+um+or%C3%A7amento+para+um+projeto+3D." onclick="trackWA('hero-orcamento')" target="_blank" rel="noopener">Pedir orçamento</a>
-<a class="btn btn-outline-light" href="#projetos">Ver projetos reais</a>
-</div>
-</div>
-<figure class="hero-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/ford-480.webp 480w, assets/media/ford-960.webp 960w, assets/media/ford-1440.webp 1440w" sizes="(max-width: 760px) 100vw, 48vw">
-<img src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg" alt="Console de direção produzido pela BBE 3D instalado na Ford F-100" width="1600" height="1200" loading="eager" decoding="async" fetchpriority="high">
-</picture>
-<figcaption>
-<span>Case real</span> Console Ford F-100 · da captura à peça instalada</figcaption>
-</figure>
-</div>
-</section>
-<div class="trust-strip">
-<div class="container trust-inner">
-<div>Captura 3D + CAD + fabricação</div>
-<div>Projetos sob medida</div>
-<div>Praia Grande · atendimento pelo WhatsApp</div>
-</div>
-</div>
-<section class="section alt" aria-labelledby="needs-title">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Seu desafio, nosso ponto de partida</span>
-<h2 id="needs-title">O que você precisa resolver?</h2>
-<p>Uma peça quebrada, uma ideia ainda no papel ou um produto para apresentar? Começamos entendendo a função e o contexto.</p>
-</div>
-<div class="card-grid">
-<article class="card icon-card">
-<div class="icon" aria-hidden="true">◎</div>
-<h3>Recriar uma peça</h3>
-<p>Partimos de amostra física, foto, medidas ou escaneamento para avaliar uma reprodução viável.</p>
-</article>
-<article class="card icon-card">
-<div class="icon" aria-hidden="true">▣</div>
-<h3>Desenvolver um projeto</h3>
-<p>Modelamos em CAD, testamos encaixes e preparamos protótipos para evoluir sua solução.</p>
-</article>
-<article class="card icon-card">
-<div class="icon" aria-hidden="true">✦</div>
-<h3>Personalizar e produzir</h3>
-<p>De peça única a pequeno lote, com materiais, cores e acabamento escolhidos para a aplicação.</p>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="scanner">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Soluções integradas</span>
-<h2>Da referência física ao resultado final</h2>
-<p>Você pode contratar uma etapa ou o fluxo completo. Cada projeto recebe o processo que faz sentido para sua necessidade.</p>
-</div>
-<div class="card-grid">
-<article class="card">
-<div class="card-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/ford-480.webp 480w, assets/media/ford-960.webp 960w, assets/media/ford-1440.webp 1440w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg" alt="Console de direção produzido pela BBE 3D instalado na Ford F-100" width="1600" height="1200" loading="lazy" decoding="async">
-</picture>
-</div>
-<div class="card-body">
-<h3>Scanner 3D e captura técnica</h3>
-<p>Capturamos peças, objetos e referências físicas para gerar uma base digital útil à engenharia reversa, validação e reprodução.</p>
-<a class="card-link" href="servicos/scanner-3d/">Entender o serviço <span aria-hidden="true">→</span>
-</a>
-</div>
-</article>
-<article class="card">
-<div class="card-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/elevadores-480.webp 480w, assets/media/elevadores-960.webp 900w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/projetos/smj-peca-redonda-e-retangular/WhatsApp%20Image%202026-09-22%20at%2010.38.48.jpeg" alt="Referência física de peça redonda para elevador" width="900" height="1600" loading="lazy" decoding="async">
-</picture>
-</div>
-<div class="card-body">
-<h3>Modelagem CAD e engenharia reversa</h3>
-<p>Reconstruímos ou desenvolvemos geometrias com atenção a encaixes, folgas, função e processo de fabricação.</p>
-<a class="card-link" href="servicos/modelagem-cad/">Entender o serviço <span aria-hidden="true">→</span>
-</a>
-</div>
-</article>
-<article class="card">
-<div class="card-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/caiaque-480.webp 480w, assets/media/caiaque-960.webp 960w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/cases/WhatsApp%20Image%202026-06-17%20at%2009.48.22.jpeg" alt="Comparação entre peça original e solução para caiaque produzida pela BBE 3D" width="1200" height="1600" loading="lazy" decoding="async">
-</picture>
-</div>
-<div class="card-body">
-<h3>Impressão 3D sob medida</h3>
-<p>Produzimos peças finais, protótipos e pequenos lotes, escolhendo material conforme a aplicação real.</p>
-<a class="card-link" href="servicos/impressao-3d/">Entender o serviço <span aria-hidden="true">→</span>
-</a>
-</div>
-</article>
-</div>
-<div class="section-footer">
-<a class="btn btn-outline" href="servicos/">Todos os serviços e aplicações</a>
-</div>
-</div>
-</section>
-<section class="section alt" id="projetos">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Projetos entregues</span>
-<h2>Resultados que mostram o processo</h2>
-<p>Veja soluções reais em automotivo, náutica e produtos personalizados.</p>
-</div>
-<div class="card-grid">
-<article class="card" data-categories="scanner cad automotivo">
-<a href="projetos/ford-f100-console-direcao/" aria-label="Ver case Ford F-100 — console de direção">
-<div class="card-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/ford-480.webp 480w, assets/media/ford-960.webp 960w, assets/media/ford-1440.webp 1440w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg" alt="Console de direção produzido pela BBE 3D instalado na Ford F-100" width="1600" height="1200" loading="lazy" decoding="async">
-</picture>
-</div>
-</a>
-<div class="card-body">
-<span class="eyebrow">Engenharia reversa automotiva</span>
-<h3>Ford F-100 — console de direção</h3>
-<p>Da referência física à peça impressa e instalada no veículo: captura 3D, reconstrução CAD e refinamento do conjunto.</p>
-<div class="tag-row">
-<span class="tag">Scanner 3D</span>
-<span class="tag">CAD</span>
-<span class="tag">Automotivo</span>
-</div>
-<a class="card-link" href="projetos/ford-f100-console-direcao/">Ver case <span aria-hidden="true">→</span>
-</a>
-</div>
-</article>
-<article class="card" data-categories="impressao nautica">
-<a href="projetos/peca-nautica-caiaque/" aria-label="Ver case Peça para caiaque em PETG-CF">
-<div class="card-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/caiaque-480.webp 480w, assets/media/caiaque-960.webp 960w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/cases/WhatsApp%20Image%202026-06-17%20at%2009.48.22.jpeg" alt="Comparação entre peça original e solução para caiaque produzida pela BBE 3D" width="1200" height="1600" loading="lazy" decoding="async">
-</picture>
-</div>
-</a>
-<div class="card-body">
-<span class="eyebrow">Aplicação náutica</span>
-<h3>Peça para caiaque em PETG-CF</h3>
-<p>Uma solução sob medida para aplicação em caiaque, com escolha de material orientada ao uso em ambiente náutico.</p>
-<div class="tag-row">
-<span class="tag">Náutica</span>
-<span class="tag">PETG-CF</span>
-<span class="tag">Peça sob medida</span>
-</div>
-<a class="card-link" href="projetos/peca-nautica-caiaque/">Ver case <span aria-hidden="true">→</span>
-</a>
-</div>
-</article>
-<article class="card" data-categories="impressao brindes">
-<a href="projetos/hives-chaveiros-nfc/" aria-label="Ver case Hives — chaveiros multicor com NFC">
-<div class="card-photo">
-<picture>
-<source type="image/webp" srcset="assets/media/hives-480.webp 480w, assets/media/hives-960.webp 960w, assets/media/hives-1440.webp 1440w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/projetos/hives-chaveiros-nfc/hives-chaveiro-nfc-02.jpeg" alt="Lote de chaveiros Hives multicor com NFC produzido pela BBE 3D" width="1600" height="1200" loading="lazy" decoding="async">
-</picture>
-</div>
-</a>
-<div class="card-body">
-<span class="eyebrow">Personalização em lote</span>
-<h3>Hives — chaveiros multicor com NFC</h3>
-<p>Customização do modelo, aplicação da identidade visual em duas cores, tag NFC incorporada e produção em lote curto.</p>
-<div class="tag-row">
-<span class="tag">NFC</span>
-<span class="tag">Multicor</span>
-<span class="tag">Brindes</span>
-</div>
-<a class="card-link" href="projetos/hives-chaveiros-nfc/">Ver case <span aria-hidden="true">→</span>
-</a>
-</div>
-</article>
-</div>
-<div class="section-footer">
-<a class="btn btn-outline" href="projetos/">Explorar todos os cases</a>
-</div>
-</div>
-</section>
-<section class="section beige">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Como trabalhamos</span>
-<h2>Um caminho claro até sua peça</h2>
-</div>
-<ol class="process">
-<li>
-<strong>Conte sua necessidade</strong>
-<span>Envie fotos, medidas, vídeo ou arquivo.</span>
-</li>
-<li>
-<strong>Análise técnica</strong>
-<span>Avaliamos função, material, prazo e processo.</span>
-</li>
-<li>
-<strong>Captura e modelagem</strong>
-<span>Criamos ou ajustamos a geometria quando necessário.</span>
-</li>
-<li>
-<strong>Prototipagem</strong>
-<span>Testamos forma e encaixe conforme o projeto.</span>
-</li>
-<li>
-<strong>Produção e entrega</strong>
-<span>Fabricamos a solução aprovada e combinamos a entrega.</span>
-</li>
-</ol>
-</div>
-</section>
-<section class="section" id="infraestrutura">
-<div class="container feature-split">
-<div>
-<span class="eyebrow">Infraestrutura BBE</span>
-<h2>Tecnologia a serviço do projeto</h2>
-<p class="lead">Com scanner 3D, modelagem CAD, impressão FDM e controle de materiais, conectamos referência e fabricação em um fluxo prático.</p>
-<p>Usamos recursos como scanner Otter, impressora K2 Pro Combo com CFS e secagem SpacePi X4 conforme a demanda. A escolha do material considera resistência, ambiente e função.</p>
-<a class="btn btn-outline" href="sobre/">Conhecer a BBE</a>
-</div>
-<figure class="visual">
-<picture>
-<source type="image/webp" srcset="assets/media/ford-480.webp 480w, assets/media/ford-960.webp 960w, assets/media/ford-1440.webp 1440w" sizes="(max-width: 760px) 100vw, 48vw">
-<img src="imagens/projetos/ford-f100-console-direcao/console-f100-direcao-final3.jpeg" alt="Console de direção produzido pela BBE 3D instalado na Ford F-100" width="1600" height="1200" loading="lazy" decoding="async">
-</picture>
-</figure>
-</div>
-</section>
-<section class="section alt" id="segmentos">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Aplicações</span>
-<h2>Onde a BBE pode ajudar</h2>
-<p>Projetos técnicos e criativos pedem decisões diferentes. Conheça algumas frentes de atuação.</p>
-</div>
-<div class="card-grid">
-<article class="card icon-card">
-<h3>Scanner 3D e captura técnica</h3>
-<p>Peças e malhas para engenharia reversa e base digital utilizável.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+scanner+3d+e+captura+t%C3%A9cnica." onclick="trackWA('segmento-scanner')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-<article class="card icon-card">
-<h3>Automotivo</h3>
-<p>Peças internas, acabamentos, suportes e adaptações para veículos.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+automotivo." onclick="trackWA('segmento-automotivo')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-<article class="card icon-card">
-<h3>Projetos técnicos sob medida</h3>
-<p>Soluções a partir de foto, amostra, medição ou problema real.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+projetos+t%C3%A9cnicos+sob+medida." onclick="trackWA('segmento-projeto')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-<article class="card icon-card">
-<h3>Náutica</h3>
-<p>Peças para caiaques e embarcações, considerando sol, umidade e maresia.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+n%C3%A1utica." onclick="trackWA('segmento-nautico')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-<article class="card icon-card">
-<h3>Maquetes e plantas humanizadas</h3>
-<p>Modelos físicos para arquitetura, construção e apresentação comercial.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+maquetes+e+plantas+humanizadas." onclick="trackWA('segmento-maquete')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-<article class="card icon-card">
-<h3>Souvenirs, chaveiros e itens decorativos</h3>
-<p>Brindes, miniaturas e itens com nome, logo, QR code ou NFC.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+souvenirs%2C+chaveiros+e+itens+decorativos." onclick="trackWA('segmento-souvenir')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-<article class="card icon-card">
-<h3>Cases e protótipos para eletrônica</h3>
-<p>Cases, suportes e alojamentos para placas, sensores e displays.</p>
-<a class="card-link" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+cases+e+prot%C3%B3tipos+para+eletr%C3%B4nica." onclick="trackWA('segmento-eletronica')" target="_blank" rel="noopener">Falar sobre esta aplicação</a>
-</article>
-</div>
-<div class="section-footer">
-<a class="btn btn-primary" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+saber+se+voc%C3%AAs+podem+ajudar+com+meu+projeto." onclick="trackWA('segmentos-cta')" target="_blank" rel="noopener">Falar sobre minha aplicação</a>
-</div>
-</div>
-</section>
-<section class="section" id="avaliacoes">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Avaliações de clientes</span>
-<h2>Quem confiou na BBE conta</h2>
-<p>Nove avaliações de cinco estrelas registradas no Google. Os comentários são transcritos para facilitar a leitura; cada card tem um link para a imagem da avaliação.</p>
-</div>
-<div class="card-grid" id="review-cards">
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Excelente profissional. Superou nossas expectativas. Materiais de qualidade, atendimento atencioso e cordial, busca entender em detalhes o projeto antes de produzir. Difícil encontrar profissionais assim. Recomendo, pois encontramos um parceiro de alto nível.”</blockquote>
-</div>
-<figcaption>Márcio Silva · Google · <a href="imagens/avaliacoes/avaliacao-google-marcio-silva-bbe3d.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Galera muito atenciosa, interação legal mesmo por on line e mensagens, projeto bem especificado e a modelagem ficou como desejava. Parabéns BBE 3D.”</blockquote>
-</div>
-<figcaption>Mychael Cercasin · Google · <a href="imagens/avaliacoes/avaliacao-google-mychael-cercasin-bbe3.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Atendimento rápido, produto de ótima qualidade e entregaram antes do prazo !!!”</blockquote>
-</div>
-<figcaption>Diego Camargo · Google · <a href="imagens/avaliacoes/avaliacao-google-diego-camargo-bbe3d.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Excelente atendimento, muito dedicados, o produto ficou pronto rapidamente e de ótima qualidade! Indico!”</blockquote>
-</div>
-<figcaption>Marcelo Cazelato · Google · <a href="imagens/avaliacoes/avaliacao-google-marcelo-cazelato-bbe3d.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Excelente trabalho e atendimento top. Recomendo a todos. Parabéns e obrigado”</blockquote>
-</div>
-<figcaption>Robison Passarin · Google · <a href="imagens/avaliacoes/avaliacao-google-robison-passarin-bbe3d.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Atendimento impecável! Postura profissional!”</blockquote>
-</div>
-<figcaption>Alex B. · Google · <a href="imagens/avaliacoes/avaliacao-google-alex-bbe3d.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>Avaliação de cinco estrelas sem comentário escrito.</blockquote>
-</div>
-<figcaption>Pedro Lucas · Google · <a href="imagens/avaliacoes/avaliacao-google-pedro-lucas-bbe3d.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Ótimo profissional, rápido e prestativo.”</blockquote>
-</div>
-<figcaption>Cliente BBE · Google · <a href="imagens/avaliacoes/Fabio-ASD-Parts.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-<figure class="card quote-card">
-<div>
-<span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
-<blockquote>“Top demais .. excelente trabalho”</blockquote>
-</div>
-<figcaption>Cliente BBE · Google · <a href="imagens/avaliacoes/Kleber-suporte-pedestal-musicos.png" target="_blank" rel="noopener">Ver imagem da avaliação</a>
-</figcaption>
-</figure>
-</div>
-<h3 class="review-prints-title">Imagens das duas avaliações mais recentes</h3>
-<div class="review-gallery">
-<figure>
-<img src="imagens/avaliacoes/Fabio-ASD-Parts.png" alt="Avaliação de cinco estrelas no Google: Ótimo profissional, rápido e prestativo" width="813" height="238" loading="lazy" decoding="async">
-<figcaption>Avaliação sobre atendimento rápido e prestativo</figcaption>
-</figure>
-<figure>
-<img src="imagens/avaliacoes/Kleber-suporte-pedestal-musicos.png" alt="Avaliação de cinco estrelas no Google: Top demais, excelente trabalho" width="815" height="240" loading="lazy" decoding="async">
-<figcaption>Avaliação sobre a qualidade do trabalho</figcaption>
-</figure>
-</div>
-</div>
-</section>
-<section class="section beige" id="datas" data-campaign-start="2026-11-01" data-campaign-end="2026-12-24" hidden>
-<div class="container">
-<div class="campaign">
-<div class="campaign-inner">
-<div>
-<span class="eyebrow">Campanha de Natal 2026</span>
-<h2>Presentes feitos para contar uma história</h2>
-<p>Peças personalizadas e pequenos lotes para o fim de ano. Consulte viabilidade e prazo de produção antes de fechar o pedido.</p>
-<a class="btn btn-primary" href="campanhas/">Ver campanha</a>
-</div>
-<picture>
-<source type="image/webp" srcset="assets/media/natal-480.webp 480w, assets/media/natal-960.webp 960w, assets/media/natal-1440.webp 1440w" sizes="(max-width: 760px) 100vw, 33vw">
-<img src="imagens/sazonais/WhatsApp%20Image%202026-09-27%20at%2008.00.09%20%281%29.jpeg" alt="Exemplo de item personalizado para presente de Natal" width="1600" height="1200" loading="lazy" decoding="async">
-</picture>
-</div>
-</div>
-</div>
-</section>
-<section class="section alt" id="faq">
-<div class="container">
-<div class="section-intro">
-<span class="eyebrow">Perguntas frequentes</span>
-<h2>Dúvidas antes do projeto?</h2>
-</div>
-<div class="faq-list">
-<details>
-<summary>Vocês fazem peça única?</summary>
-<p>Sim. A BBE atende desde peça única até pequenas e médias tiragens, conforme o tipo de projeto, material e necessidade do cliente.</p>
-</details>
-<details>
-<summary>Dá para copiar uma peça quebrada?</summary>
-<p>Em muitos casos, sim. Podemos analisar peça física, escaneamento 3D, medição manual e remodelagem CAD para chegar a uma solução viável.</p>
-</details>
-<details>
-<summary>Vocês fazem só impressão ou também modelagem?</summary>
-<p>Fazemos os dois. Se você já tiver o arquivo, podemos produzir. Se não tiver, avaliamos captura, modelagem e prototipagem antes da peça final.</p>
-</details>
-<details>
-<summary>Trabalham com material resistente ao sol e maresia?</summary>
-<p>Sim. Dependendo da aplicação, indicamos materiais como Hyper PETG e PETG-CF, que fazem mais sentido para ambiente litorâneo e uso técnico.</p>
-</details>
-</div>
-<div class="section-footer">
-<a class="btn btn-outline" href="faq/">Ver todas as respostas</a>
-</div>
-</div>
-</section>
-<section class="section" id="contato">
-<div class="container">
-<div class="cta-panel">
-<span class="eyebrow light">Vamos conversar</span>
-<h2>Comece com uma foto ou uma ideia.</h2>
-<p>Descreva onde a peça será usada e mande a referência que você tem. Assim conseguimos orientar o próximo passo.</p>
-<a class="btn btn-beige" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+avaliar+um+projeto.+Vou+enviar+fotos+ou+medidas." onclick="trackWA('contato')" target="_blank" rel="noopener">Chamar no WhatsApp</a>
-</div>
-</div>
-</section>
-</main>
-<footer class="site-footer">
-<div class="container">
-<div class="footer-grid">
-<div>
-<h2>BBE 3D</h2>
-<p>Da ideia à peça final: captura, modelagem e impressão 3D sob medida em Praia Grande, SP.</p>
-<a class="btn btn-beige" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+conversar+sobre+um+projeto+3D." onclick="trackWA('footer')" target="_blank" rel="noopener">Conversar no WhatsApp</a>
-</div>
-<div>
-<h2>Explorar</h2>
-<ul>
-<li>
-<a href="servicos/">Serviços</a>
-</li>
-<li>
-<a href="projetos/">Projetos e portfólio</a>
-</li>
-<li>
-<a href="sobre/">Sobre e infraestrutura</a>
-</li>
-<li>
-<a href="faq/">Perguntas frequentes</a>
-</li>
-</ul>
-</div>
-<div>
-<h2>Contato</h2>
-<ul>
-<li>Praia Grande, SP</li>
-<li>
-<a href="mailto:bbe3dmanufatura@gmail.com">bbe3dmanufatura@gmail.com</a>
-</li>
-<li>
-<a href="https://www.instagram.com/bbe3dmanufatura3d/" target="_blank" rel="noopener">Instagram @bbe3dmanufatura3d</a>
-</li>
-<li>
-<a href="tel:+5513991455673">(13) 99145-5673</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">© BBE 3D · Manufatura e soluções 3D · Praia Grande, SP</div>
-</div>
-</footer>
-<div class="sticky-cta">
-<a class="btn btn-primary" href="https://wa.me/5513991455673?text=Ol%C3%A1%2C+BBE%21+Quero+pedir+um+or%C3%A7amento." onclick="trackWA('float')" target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
-</div>
-<script defer src="assets/js/site.js">
-</script>
-</body>
+<script>
+// Rotação automática somente no carrossel principal; pausa ao interagir e respeita redução de movimento.
+(function(){
+  var heroCarousel=document.querySelector('.hero-case-carousel[data-auto="true"]');
+  if(!heroCarousel || reduceMotion) return;
+  var timer=null;
+  function advance(){ if (window.matchMedia('(max-width: 768px)').matches || document.hidden) return; var next=heroCarousel.querySelector('.bbe-next'); if(next) moveMini(next,1); }
+  function start(){ if(timer) return; timer=setInterval(advance,7000); }
+  function stop(){ if(timer){ clearInterval(timer); timer=null; } }
+  heroCarousel.addEventListener('mouseenter',stop);
+  heroCarousel.addEventListener('mouseleave',start);
+  heroCarousel.addEventListener('focusin',stop);
+  heroCarousel.addEventListener('focusout',start);
+  document.addEventListener('visibilitychange',function(){ document.hidden ? stop() : start(); });
+  start();
+})();
+</script></body>
 </html>
